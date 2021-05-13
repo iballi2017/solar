@@ -1,0 +1,14 @@
+@use '../_abstracts/colors';
+.list-style-none {
+    li {
+        list-style: none;
+    }
+}
+
+.dark-link {
+    color: colors.$darkColor;
+    &:hover {
+        text-decoration: none;
+        color: colors.$blackColor;
+    }
+}

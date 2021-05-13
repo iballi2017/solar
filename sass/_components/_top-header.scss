@@ -1,0 +1,36 @@
+@use '../_abstracts/colors';
+@use '../_partials/mixins';
+
+/* TOP HEADER */
+
+#top-header {
+    background-color: colors.$darkColor;
+    color: #ffffff;
+    font-size: .8rem;
+    padding-top: .8em;
+    padding-bottom: .8em;
+    li {
+        padding-top: .4em;
+        padding-bottom: .4em;
+    }
+}
+
+.contact {
+    li {
+        margin-right: 1.5em;
+        &:last-child {
+            margin-left: 0;
+        }
+    }
+}
+
+.social-media {
+    ul {
+        li {
+            margin-left: 1.3em;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+}
