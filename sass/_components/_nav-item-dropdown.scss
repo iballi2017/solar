@@ -1,0 +1,31 @@
+@use '../_partials/mixins';
+.nav-item-dropdown {
+    margin-right: 1.7em;
+    position: relative;
+    >*:first-child:after {
+        @include mixins.after("\f078", inherit);
+    }
+    &:hover {
+        >*:first-child:after {
+            content: "\f077";
+        }
+    }
+    .nav-item-dropdown-content {
+        font-size: .8rem;
+        position: absolute;
+        @include mixins.transform(scaleY(0));
+        @include mixins.transition(all 300ms ease-in-out);
+        transform-origin: top;
+        .list-style-none {
+            width: 160px;
+            background-color: #ffffff;
+            margin-top: 40px;
+        }
+    }
+    &:hover {
+        .nav-item-dropdown-content {
+            @include mixins.transform(scaleY(1));
+            @include mixins.transition(all 300ms ease-in-out);
+        }
+    }
+}

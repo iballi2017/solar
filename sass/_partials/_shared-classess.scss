@@ -9,6 +9,22 @@
     color: colors.$darkColor;
     &:hover {
         text-decoration: none;
-        color: colors.$blackColor;
+        color: colors.$successColor;
     }
+}
+
+.success-link {
+    color: colors.$successColor;
+    &:hover {
+        text-decoration: none;
+        color: colors.$darkColor;
+    }
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.text-warningColor {
+    color: colors.$warningColor;
 }
