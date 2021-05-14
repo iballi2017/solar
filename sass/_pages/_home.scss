@@ -112,6 +112,9 @@
         font-size: 1rem;
         margin-bottom: 3em;
     }
+    .slider-wrapper {
+        position: relative;
+    }
     #what-we-do-slider {
         .item {
             text-align: center;
@@ -132,12 +135,18 @@
                 }
             }
         }
-        .services-slider-control {
-            .prev-control,
-            .next-control {
-                position: absolute;
-                top: 50%;
-            }
+    }
+    .services-slider-control {
+        .prev-control,
+        .next-control {
+            position: absolute;
+            top: 45%;
+        }
+        .prev-control {
+            left: 2em;
+        }
+        .next-control {
+            right: 2em;
         }
     }
 }

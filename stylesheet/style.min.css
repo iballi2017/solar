@@ -374,6 +374,9 @@ body {
   font-size: 1rem;
   margin-bottom: 3em;
 }
+#services .slider-wrapper {
+  position: relative;
+}
 #services #what-we-do-slider .item {
   text-align: center;
   line-height: 27px;
@@ -393,10 +396,16 @@ body {
 #services #what-we-do-slider .item .body-text .success-link {
   font-weight: 600;
 }
-#services #what-we-do-slider .services-slider-control .prev-control,
-#services #what-we-do-slider .services-slider-control .next-control {
+#services .services-slider-control .prev-control,
+#services .services-slider-control .next-control {
   position: absolute;
-  top: 50%;
+  top: 45%;
+}
+#services .services-slider-control .prev-control {
+  left: 2em;
+}
+#services .services-slider-control .next-control {
+  right: 2em;
 }
 
 /*# sourceMappingURL=style.min.css.map */
