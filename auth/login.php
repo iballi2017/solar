@@ -19,12 +19,31 @@ include '../components/header.php'
 
 
         <section>
-            <div class="form-wrapper">
-                <div class="card">
+            <div class="auth-form-container">
+                <div class="card rounded-0">
                     <div class="card-body">
-                        This is some text within a card body.
+                        <form>
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="text" class="form-control" id="username" aria-describedby="username">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password">
+                            </div>
+                            <p>
+                                <small>
+                                    <a href="./forgot-password.php" class="dark-link">Lost your password</a>
+                                </small>
+                            </p>
+                            <button type="submit" class="btn btn-block btn-white rounded-0 bold-600">LOG IN</button>
+                        </form>
                     </div>
                 </div>
+
+                <aside>
+                    <p>DON’T HAVE AN ACCOUT? <a href="./register.php" class="success-link">REGISTER NOW</a></p>
+                </aside>
             </div>
         </section>
     </div>

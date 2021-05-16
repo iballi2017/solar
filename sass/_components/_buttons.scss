@@ -1,3 +1,4 @@
+    @use '../_abstracts/colors';
     .btn {
         border: none;
         transition: all 300ms ease-in-out;
@@ -5,5 +6,16 @@
             border: none;
             outline: 0;
             box-shadow: none;
+        }
+    }
+    
+    .btn-white {
+        background-color: #ffffff;
+        color: colors.$darkColor;
+        border: 1px solid colors.$darkColor;
+        &:hover {
+            background-color: colors.$successColor;
+            border: 1px solid colors.$successColor;
+            color: #ffffff;
         }
     }

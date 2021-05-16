@@ -91,9 +91,9 @@
 
     <!-- main header -->
     <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-light" id="toolbar">
+        <nav class="navbar navbar-expand-lg navbar-light border-bottom" id="toolbar">
             <div class="container auto-wrapper">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="../">
                     <h2>Mainland Solar</h2>
                 </a>
                 <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -134,11 +134,11 @@
                         <div>Hi Guest</div>
                         <div>
                             <span>
-                                <a href="#" class="dark-link">Sign in</a>
+                                <a href="../auth/login.php" class="dark-link">Sign in</a>
                             </span>
                             <span>or</span>
                             <span>
-                                <a href="#" class="dark-link">Register</a>
+                                <a href="../auth/register.php" class="dark-link">Register</a>
                             </span>
                         </div>
                     </div>

@@ -206,11 +206,23 @@
   box-shadow: none;
 }
 
+.btn-white {
+  background-color: #ffffff;
+  color: #414143;
+  border: 1px solid #414143;
+}
+.btn-white:hover {
+  background-color: #209E02;
+  border: 1px solid #209E02;
+  color: #ffffff;
+}
+
 #footer {
   padding-top: 4em;
   padding-bottom: 4em;
   font-size: 0.8rem;
   line-height: 30px;
+  border-top: 1px solid #414143;
 }
 #footer #top-footer-widget .main-footer-links .column {
   margin-bottom: 1.3em;
@@ -405,7 +417,7 @@ select::after {
 }
 
 ul.breadcrumb {
-  padding: 10px 0;
+  padding: 20px 0;
   list-style: none;
 }
 ul.breadcrumb li {
@@ -424,6 +436,36 @@ ul.breadcrumb li a {
 ul.breadcrumb li a:hover {
   color: #209E02;
   text-decoration: none;
+}
+
+.title-wrapper {
+  --titleWidth: 200px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4em;
+}
+.title-wrapper hr {
+  border-top: 1px solid #414143;
+  width: calc(calc(100% - var(--titleWidth))/2);
+}
+.title-wrapper .title {
+  width: var(--titleWidth);
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.auth-form-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.auth-form-container aside {
+  margin: 5em 0;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.auth-form-container aside a {
+  font-weight: 600;
 }
 
 /* TYPOGRAPHY */
@@ -488,6 +530,10 @@ body {
   font-weight: bold;
 }
 
+.bold-600 {
+  font-weight: 600;
+}
+
 .text-warningColor {
   color: #F7B710;
 }
@@ -496,7 +542,7 @@ body {
   color: #209E02;
 }
 
-/* HOME PAGE */
+/* HOME PAGE STYLE */
 #hero {
   position: relative;
 }
@@ -786,25 +832,88 @@ body {
   font-weight: 600;
 }
 
-/* LOGIN PAGE */
-#login-page .title-wrapper {
-  --titleWidth: 200px;
+/* LOGIN PAGE STYLE */
+#login-page {
   display: flex;
-  align-items: center;
 }
-#login-page .title-wrapper hr {
-  border-top: 1px solid #414143;
-  width: calc(calc(100% - var(--titleWidth))/2);
+
+/* LOGIN PAGE STYLE */
+#register-page {
+  display: flex;
 }
-#login-page .title-wrapper .title {
-  width: var(--titleWidth);
-  font-size: 2rem;
-  font-weight: 600;
+#register-page .auth-form-container .card {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+#success-message .inner {
+  padding: 10em 0;
   text-align: center;
 }
-#login-page .form-wrapper {
-  max-width: 500px;
+#success-message .inner h1 {
+  font-weight: 600;
+  color: #209E02;
+}
+#success-message .inner p {
+  font-weight: 500;
+}
+
+/* FORGOT PASSWORD PAGE STYLE */
+#forgot-password-page {
+  display: flex;
+  height: 100vh;
+}
+#forgot-password-page .auth-form-container {
+  max-width: 600px;
+}
+#forgot-password-page .auth-form-container .form-wrapper {
+  max-width: 370px;
   margin: 0 auto;
+}
+#forgot-password-page .auth-form-container .form-wrapper .btn {
+  font-size: 0.8rem;
+}
+#forgot-password-page .title {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+#forgot-password-page .inner {
+  padding: 4em 0;
+}
+#forgot-password-page .inner .logo-img-wrapper {
+  margin-bottom: 3em;
+  display: inline-flex;
+  max-width: 65px;
+}
+
+/* CHANGE PASSWORD PAGE STYLE */
+#change-password-page {
+  display: flex;
+}
+#change-password-page .auth-form-container {
+  max-width: 500px;
+}
+#change-password-page .auth-form-container .form-wrapper {
+  max-width: 370px;
+  margin: 0 auto;
+}
+#change-password-page .auth-form-container .form-wrapper .btn {
+  font-size: 0.8rem;
+}
+#change-password-page .inner {
+  padding: 4em 0;
+}
+#change-password-page .inner .logo-img-wrapper {
+  margin-bottom: 3em;
+  display: inline-flex;
+  max-width: 65px;
+}
+#change-password-page form .card-header {
+  background-color: #F1F2F1;
+  font-weight: 600;
+}
+#change-password-page #success-message h1 {
+  font-size: 1.6rem;
 }
 
 /*# sourceMappingURL=style.min.css.map */

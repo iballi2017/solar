@@ -1,0 +1,27 @@
+/* LOGIN PAGE STYLE */
+
+@use "../_abstracts/colors";
+@use "../_partials/mixins";
+#register-page {
+    display: flex;
+    .auth-form-container {
+        .card {
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+    }
+}
+
+#success-message {
+    .inner {
+        padding: 10em 0;
+        text-align: center;
+        h1 {
+            font-weight: 600;
+            color: colors.$successColor;
+        }
+        p {
+            font-weight: 500;
+        }
+    }
+}

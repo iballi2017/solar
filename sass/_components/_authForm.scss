@@ -1,0 +1,30 @@
+@use '../_abstracts/colors';
+.title-wrapper {
+    --titleWidth: 200px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4em;
+    hr {
+        border-top: 1px solid colors.$darkColor;
+        width: calc(calc(100% - var(--titleWidth))/2);
+    }
+    .title {
+        width: var(--titleWidth);
+        font-size: 1.7rem;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
+.auth-form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    aside {
+        margin: 5em 0;
+        text-align: center;
+        font-size: .8rem;
+        a {
+            font-weight: 600;
+        }
+    }
+}
