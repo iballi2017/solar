@@ -21,7 +21,7 @@ select {
     &:focus {
         outline: 0;
         box-shadow: none;
-        // border: 1px solid $active-component-color;
+        border: 1px solid colors.$successColor;
     }
     &::placeholder {
         // font-family: $primary-font-family;
