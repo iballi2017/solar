@@ -1,0 +1,55 @@
+@use '../_abstracts/colors';
+@use '../_partials/mixins';
+#footer {
+    padding-top: 4em;
+    padding-bottom: 4em;
+    font-size: .8rem;
+    line-height: 30px;
+    #top-footer-widget {
+        .main-footer-links {
+            @include mixins.minmq(100px) {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .column {
+                    flex-basis: 29%;
+                    &#quick-links {
+                        li {
+                            &::before {
+                                content: "-";
+                                font-size: 1.2rem;
+                            }
+                        }
+                        a {
+                            color: inherit;
+                            &:hover {
+                                text-decoration: none;
+                                color: colors.$successColor;
+                            }
+                        }
+                    }
+                }
+            }
+            .social-icons {
+                display: flex;
+                li {
+                    margin-left: 1em;
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+        svg {
+            @include mixins.transition(all 300ms ease-in-out);
+            &:hover {
+                path {
+                    fill: colors.$successColor;
+                }
+                circle {
+                    stroke: colors.$successColor;
+                }
+            }
+        }
+    }
+}

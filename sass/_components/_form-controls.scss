@@ -1,0 +1,78 @@
+@use '../_abstracts/colors';
+@use '../_partials/mixins';
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+input[type="file"],
+
+/*// .custom-file,*/
+
+.custom-file-input,
+.custom-file-label,
+textarea,
+select {
+    border-radius: 0;
+    // border: 1px solid $active-component-color;
+    border: 1px solid #c4c4c4;
+    padding: 0.5em 0.6em;
+    &:focus {
+        outline: 0;
+        box-shadow: none;
+        // border: 1px solid $active-component-color;
+    }
+    &::placeholder {
+        // font-family: $primary-font-family;
+    }
+    &::-webkit-input-placeholder {
+        /* Edge */
+        // font-family: $primary-font-family;
+    }
+    &:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        // font-family: $primary-font-family;
+    }
+}
+
+// * Hide Arrows From Input Number Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Hide Arrows From Input Number Firefox */
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+/* Custom form select dropdown */
+
+select {
+    @include mixins.appearance(none);
+    option {
+        margin: 5em;
+        line-height: 2;
+        font: inherit;
+    }
+    &::after {
+        content: "hhhhh";
+    }
+}
+
+.select-drop-wrapper {
+    &::after {
+        // @include after('\f0d7', 20px);
+        @include mixins.after('\f107', 20px);
+        position: absolute;
+        right: 1.5rem;
+        // color: $active-component-color;
+        pointer-events: none;
+        bottom: 0.44em;
+    }
+}

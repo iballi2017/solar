@@ -115,7 +115,7 @@
     .slider-wrapper {
         position: relative;
     }
-    #what-we-do-slider {
+    #services-slider {
         .item {
             text-align: center;
             line-height: 27px;
@@ -141,12 +141,148 @@
         .next-control {
             position: absolute;
             top: 45%;
+            z-index: 3;
+            opacity: .2;
+            &:hover {
+                opacity: .7;
+            }
         }
         .prev-control {
-            left: 2em;
+            left: 0;
+            @include mixins.minmq(1000px) {
+                left: 2em;
+            }
         }
         .next-control {
-            right: 2em;
+            right: 0;
+            @include mixins.minmq(1000px) {
+                right: 2em;
+            }
+        }
+    }
+}
+
+#why-choose-us {
+    padding-top: 4em;
+    padding-bottom: 4em;
+    .tagline {
+        max-width: 720px;
+        margin: 0 auto;
+        color: colors.$successColor;
+        margin-bottom: 2em;
+    }
+    @include mixins.minmq(1000px) {
+        .tagline {
+            margin-bottom: 4em;
+        }
+    }
+    .features {
+        font-size: .88rem;
+        margin-bottom: 2.5em;
+        @include mixins.minmq(900px) {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-gap: 50px;
+        }
+        li {
+            &.professionalism {
+                grid-column: 1/7;
+                &::before {
+                    content: url(../assets/images/icons/professionalism-icon.svg);
+                }
+            }
+            &.client-focused {
+                grid-column: 7/-1;
+                &::before {
+                    content: url(../assets/images/icons/client-focused-icon.svg);
+                }
+            }
+            &.different-capacity {
+                grid-column: 1/7;
+                &::before {
+                    content: url(../assets/images/icons/different-capacity-icon.svg);
+                }
+            }
+            &.quality {
+                grid-column: 7/-1;
+                &::before {
+                    content: url(../assets/images/icons/quality-icon.svg);
+                }
+            }
+            &.competitive-price {
+                grid-column: 1/7;
+                &::before {
+                    content: url(../assets/images/icons/competitive-price-icon.svg);
+                }
+            }
+            @include mixins.minmq(900px) {
+                display: flex;
+                &::before {
+                    margin-right: 1.5em;
+                }
+            }
+        }
+    }
+    .feature-images {
+        position: relative;
+        @include mixins.minmq(900px) {
+            padding-left: 1.4em;
+        }
+        .feature-images-slider-control {
+            display: flex;
+            position: absolute;
+            right: 0;
+            z-index: 2;
+            bottom: 0;
+        }
+    }
+    @include mixins.maxmq(1000px) {
+        .features-wrapper {
+            order: 1;
+        }
+        .feature-images-wrapper {
+            order: 0;
+            margin-bottom: 2em;
+        }
+    }
+}
+
+#blogposts {
+    padding-top: 4em;
+    padding-bottom: 4em;
+    font-size: .85rem;
+    line-height: 28px;
+    .tagline {
+        margin-bottom: 2em;
+    }
+    .featured-posts {
+        @include mixins.minmq(1000px) {
+            display: flex;
+            justify-content: space-between;
+            .card {
+                margin-bottom: 0;
+            }
+        }
+        >li {
+            flex-basis: 32%;
+            .card {
+                margin-bottom: 1em;
+                .author {
+                    &:before {
+                        content: url(../assets/images/icons/user-avatar-icon.svg);
+                        margin-right: .5em;
+                    }
+                }
+                .date {
+                    &:before {
+                        content: url(../assets/images/icons/calendar-icon.svg);
+                        margin-right: .5em;
+                    }
+                }
+                .card-title {
+                    font-weight: 600;
+                }
+            }
         }
     }
 }
