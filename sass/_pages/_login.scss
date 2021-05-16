@@ -1,0 +1,25 @@
+/* LOGIN PAGE */
+
+@use "../_abstracts/colors";
+@use "../_partials/mixins";
+#login-page {
+    .title-wrapper {
+        --titleWidth: 200px;
+        display: flex;
+        align-items: center;
+        hr {
+            border-top: 1px solid colors.$darkColor;
+            width: calc(calc(100% - var(--titleWidth))/2);
+        }
+        .title {
+            width: var(--titleWidth);
+            font-size: 2rem;
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+    .form-wrapper {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}

@@ -400,6 +400,32 @@ select::after {
   bottom: 0.44em;
 }
 
+.breadcrumb {
+  background-color: unset;
+}
+
+ul.breadcrumb {
+  padding: 10px 0;
+  list-style: none;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 0.85rem;
+}
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/ ";
+}
+ul.breadcrumb li a {
+  color: #209E02;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #209E02;
+  text-decoration: none;
+}
+
 /* TYPOGRAPHY */
 .uppercase {
   text-transform: uppercase;
@@ -470,6 +496,7 @@ body {
   color: #209E02;
 }
 
+/* HOME PAGE */
 #hero {
   position: relative;
 }
@@ -757,6 +784,27 @@ body {
 }
 #blogposts .featured-posts > li .card .card-title {
   font-weight: 600;
+}
+
+/* LOGIN PAGE */
+#login-page .title-wrapper {
+  --titleWidth: 200px;
+  display: flex;
+  align-items: center;
+}
+#login-page .title-wrapper hr {
+  border-top: 1px solid #414143;
+  width: calc(calc(100% - var(--titleWidth))/2);
+}
+#login-page .title-wrapper .title {
+  width: var(--titleWidth);
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+#login-page .form-wrapper {
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.min.css.map */

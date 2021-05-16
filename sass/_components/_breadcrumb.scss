@@ -1,0 +1,29 @@
+@use '../_abstracts/colors';
+@use '../_partials/mixins';
+.breadcrumb {
+    background-color: unset;
+}
+
+ul {
+    &.breadcrumb {
+        padding: 10px 0;
+        list-style: none;
+        li {
+            display: inline;
+            font-size: .85rem;
+            +li:before {
+                padding: 8px;
+                color: black;
+                content: "/\00a0";
+            }
+            a {
+                color: colors.$successColor;
+                text-decoration: none;
+                &:hover {
+                    color: colors.$successColor;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
