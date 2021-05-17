@@ -1,76 +1,87 @@
-@use '../_partials/mixins';
-@use '../_abstracts/colors';
-#toolbar {
-    background-color: #ffffff;
-    .navbar-brand {
-        background-image: url(../assets/images/navbrand-logo.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 80px;
-        width: 80px;
-        h2 {
-            text-indent: -1000px;
-        }
-    }
-    .shopping-cart-wrapper {
-        @include mixins.minmq(1200px) {
-            padding-left: 2em;
-        }
-        .dark-link {
-            font-size: .8rem;
-        }
-    }
-    .user-auth-nav {
-        font-size: .8rem;
-        >div {
-            padding-top: .5em;
-            padding-bottom: .5em;
-        }
-        .dark-link {
-            font-weight: 500;
-        }
-        @include mixins.minmq(1200px) {
-            border-right: 1px solid black;
-            padding-right: 2em;
-            >div {
-                padding-top: 0;
-                padding-bottom: 0;
+    @use '../_partials/mixins';
+    @use '../_abstracts/colors';
+    #toolbar {
+        background-color: #ffffff;
+        .navbar-brand {
+            background-image: url(../assets/images/navbrand-logo.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 80px;
+            width: 80px;
+            h2 {
+                text-indent: -1000px;
             }
         }
-    }
-    .navbar-nav {
-        .nav-item {
-            margin-right: 1.7em;
-            .nav-item-dropdown-content {
+        .shopping-cart-wrapper {
+            @include mixins.minmq(1200px) {
+                padding-left: 2em;
+            }
+            .dark-link {
                 font-size: .8rem;
-                .list-style-none {
-                    width: 160px;
-                    background-color: #ffffff;
-                    margin-top: 40px;
+            }
+        }
+        .user-auth-nav {
+            font-size: .8rem;
+            >div {
+                padding-top: .5em;
+                padding-bottom: .5em;
+            }
+            .dark-link {
+                font-weight: 500;
+            }
+            @include mixins.minmq(1200px) {
+                border-right: 1px solid black;
+                padding-right: 2em;
+                >div {
+                    padding-top: 0;
+                    padding-bottom: 0;
                 }
-                .list-item {
-                    border-bottom: 1px solid colors.$darkColor;
-                    a {
-                        color: colors.$darkColor;
-                        &:hover {
-                            text-decoration: none;
-                            color: colors.$successColor;
+            }
+        }
+        .navbar-nav {
+            .nav-item {
+                margin-right: 1.7em;
+                .nav-link {
+                    text-transform: uppercase;
+                    font-size: .82rem;
+                    font-weight: 600;
+                    white-space: nowrap;
+                    color: colors.$darkColor;
+                    @include mixins.transition(all 300ms ease-in-out);
+                    &:hover {
+                        color: colors.$successColor;
+                    }
+                }
+                &.hover,
+                &.active {
+                    .nav-link {
+                        color: colors.$successColor;
+                    }
+                }
+                .nav-item-dropdown-content {
+                    font-size: .8rem;
+                    .list-style-none {
+                        width: 160px;
+                        background-color: #ffffff;
+                        margin-top: 40px;
+                    }
+                    .list-item {
+                        border-bottom: 1px solid colors.$darkColor;
+                        a {
+                            color: colors.$darkColor;
+                            &:hover {
+                                text-decoration: none;
+                                color: colors.$successColor;
+                            }
+                        }
+                        &:last-child {
+                            border-bottom: none;
                         }
                     }
-                    &:last-child {
-                        border-bottom: none;
-                    }
+                }
+                &:last-child {
+                    margin-right: 0;
                 }
             }
-            &:last-child {
-                margin-right: 0;
-            }
-        }
-        .nav-link {
-            text-transform: uppercase;
-            font-size: .82rem;
-            font-weight: 600;
-            white-space: nowrap;
         }
     }
-}
