@@ -1,0 +1,15 @@
+/* SERVICES PAGE STYLE */
+
+@use "../_abstracts/colors";
+@use "../_partials/mixins";
+#services-page {
+    .services-list {
+        .item {
+            line-height: 32px;
+            margin-bottom: 5em;
+        }
+        .icon-img-wrapper {
+            margin-bottom: 1em;
+        }
+    }
+}

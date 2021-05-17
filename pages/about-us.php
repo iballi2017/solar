@@ -153,10 +153,10 @@ include '../components/header.php'
                                     professional hands to maintain your product.
                                     Battery replacements, repair and upgrade
                                     services are also available.
+                                </p>
                                 <p>
                                     <a href="#">Click here to request
                                     </a>
-                                </p>
                                 </p>
                             </div>
                         </div>
@@ -170,5 +170,5 @@ include '../components/header.php'
 
 <!-- footer-full -->
 <?php
-include '../components/footer.php'
+include '../components/footer-full.php'
 ?>

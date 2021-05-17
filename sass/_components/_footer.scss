@@ -5,9 +5,9 @@
     padding-bottom: 4em;
     font-size: .8rem;
     line-height: 30px;
-    border-top: 1px solid colors.$darkColor;
     #top-footer-widget {
         .main-footer-links {
+            padding-left: 0;
             .column {
                 margin-bottom: 1.3em;
                 &#quick-links {

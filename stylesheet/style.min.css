@@ -233,7 +233,9 @@
   padding-bottom: 4em;
   font-size: 0.8rem;
   line-height: 30px;
-  border-top: 1px solid #414143;
+}
+#footer #top-footer-widget .main-footer-links {
+  padding-left: 0;
 }
 #footer #top-footer-widget .main-footer-links .column {
   margin-bottom: 1.3em;
@@ -1045,6 +1047,15 @@ body {
     padding: 3em 1em;
     font-size: 0.82rem;
   }
+}
+
+/* SERVICES PAGE STYLE */
+#services-page .services-list .item {
+  line-height: 32px;
+  margin-bottom: 5em;
+}
+#services-page .services-list .icon-img-wrapper {
+  margin-bottom: 1em;
 }
 
 /*# sourceMappingURL=style.min.css.map */

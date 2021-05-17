@@ -2,9 +2,9 @@
 
 </main>
 
-        <footer class="bg-white" id="footer">
+        <footer class="bg-white border-top" id="footer">
             <div id="top-footer-widget">
-                <div class="container">
+                <div class="container auto-wrapper">
                     <ul class="list-style-none main-footer-links">
                         <li class="column">
                             <h6>MAINLAND SOLAR</h6>
@@ -44,7 +44,7 @@
                 <li class="column">
                     <h6>Social media links</h6>
 
-                    <ul class="social-icons">
+                    <ul class="social-icons px-0">
                         <li>
                             <a href="#" class="icon-img-wrapper">
                                 <!-- <img src="../assets/images/icons/twitter-icon-alt.svg" alt="" class="img-fluid"> --><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
