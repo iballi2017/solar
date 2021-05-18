@@ -4,9 +4,10 @@
 @use "../_partials/mixins";
 #services-page {
     .services-list {
+        font-size: .83rem;
         .item {
             line-height: 32px;
-            margin-bottom: 5em;
+            margin-bottom: 3em;
         }
         .icon-img-wrapper {
             margin-bottom: 1em;

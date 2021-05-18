@@ -34,7 +34,7 @@
     <i class="fas fa-bars"></i> -->
     <div id="top-header">
         <div class="inner container auto-wrapper d-flex align-items-center justify-content-between flex-wrap">
-            <ul class="contact d-flex list-style-none my-0 flex-wrap">
+            <ul class="contact d-flex list-style-none my-0 p-0 flex-wrap">
                 <li class="email d-flex align-items-center">
                     <div class="mr-1">
                         <span>
@@ -59,7 +59,7 @@
                 </li>
             </ul>
             <div class="social-medial-icons">
-                <ul class="list-style-none d-flex align-items-center my-0">
+                <ul class="list-style-none d-flex align-items-center my-0 p-0">
                     <li>
                         <a href="#">
                             <!-- <img src="../assets/images/icons/twitter-icon.svg" alt="whatsapp icon" class="img-fluid icon-img" /> --><svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">

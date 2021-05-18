@@ -25,4 +25,12 @@ document.addEventListener('readystatechange', () => {
         // console.log('resize!')
         handleSectionWrapper();
     });
-})
+});
+
+
+let dropdown = document.querySelector(".dropdown-wrapper .dropdown").children;
+// let sortRadio = document.querySelectorAll(".sort-radio");
+console.log(dropdown);
+for (let sibling of dropdown) {
+    console.log(sibling);
+}

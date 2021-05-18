@@ -1,0 +1,89 @@
+/* SERVICES PAGE STYLE */
+
+@use "../_abstracts/colors";
+@use "../_partials/mixins";
+#products-page {
+    #sort-options {
+        font-size: .9rem;
+        padding: 2em 0;
+        .inner {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        #sort-input {
+            .input-group {
+                input[type="text"] {
+                    font-size: .8rem;
+                }
+            }
+        }
+        @include mixins.minmq(1000px) {
+            #sort-input {
+                width: 300px;
+                .input-group {
+                    border: 1px solid colors.$greyColor;
+                }
+            }
+        }
+    }
+    #sort-select-dropdown {
+        display: flex;
+        .label {
+            margin-right: .5em;
+            white-space: nowrap;
+            padding-top: .5em;
+            padding-bottom: .5em;
+        }
+        .sort-radios {
+            cursor: pointer;
+            #selected {
+                border: 1px solid colors.$greyColor;
+                padding: .5em;
+                &::after {
+                    @include mixins.after("\f078", inherit);
+                    margin-left: 1em;
+                }
+            }
+            .dropdown-wrapper {
+                display: none;
+                padding-top: .3em;
+            }
+            .dropdown {
+                font-size: .8rem;
+                padding: .5em;
+                position: absolute;
+                border: 1px solid colors.$greyColor;
+                background-color: #ffffff;
+                li {
+                    border-bottom: 1px solid colors.$greyColor;
+                    padding-top: .8em;
+                    padding-bottom: .8em;
+                    label {
+                        margin-bottom: 0;
+                        &.active {
+                            color: colors.$warningColor;
+                        }
+                    }
+                    input[type="radio"] {
+                        // position: absolute;
+                        // opacity: 0;
+                    }
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+            }
+            &:hover {
+                #selected {
+                    &::after {
+                        content: "\f077";
+                    }
+                }
+                .dropdown-wrapper {
+                    display: block;
+                }
+            }
+        }
+    }
+}

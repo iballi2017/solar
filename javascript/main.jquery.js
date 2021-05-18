@@ -95,4 +95,27 @@ $(document).ready(function() {
     //         }
     //     });
     // });
+
+
+
+    /* products sort dropdown radio */
+    function radioSelect(arg1, arg2) {
+        if (arg1.is(':checked')) {
+            arg1.siblings().addClass("active");
+            arg2.html(arg1.siblings("label").html());
+        } else {
+            arg2.html("Recommended");
+        }
+        arg1.on("click", function() {
+            arg2.html($(this).siblings("label").html());
+        });
+    }
+    // PRV form status
+    var selected = $("#selected");
+    var selected_sort = $("input[type='radio'][name='sort']");
+    var selected_sort_checked = $("input[type='radio'][name='sort']:checked");
+    radioSelect(selected_sort, selected)
+    selected.html(selected_sort_checked.siblings("label").html());
+
+
 });

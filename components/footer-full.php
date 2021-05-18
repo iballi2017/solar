@@ -12,7 +12,7 @@
                         </li>
                         <li class="column" id="quick-links">
                             <h6>QUICK LINKS</h6>
-                            <ul>
+                            <ul class="list-style-none p-0">
                                 <li>
                                     <a href="#">About Us</a>
                                 </li>
