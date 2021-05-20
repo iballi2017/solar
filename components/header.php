@@ -92,7 +92,7 @@
     <!-- main header -->
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-light border-bottom" id="toolbar">
-            <div class="container auto-wrapper">
+            <div class="container auto-wrapper inner">
                 <a class="navbar-brand" href="../">
                     <h2>Mainland Solar</h2>
                 </a>
@@ -100,13 +100,13 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item active nav-item-dropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active item-dropdown drop-icon">
                             <a class="nav-link" href="#">
                                 About Us
                                 <span class="sr-only">(current)</span>
                             </a>
-                            <div class="nav-item-dropdown-content">
+                            <div class="item-dropdown-content">
                                 <ul class="list-style-none p-3 shadow-sm">
                                     <li class="py-2 list-item">
                                         <a href="#">What we do</a>
@@ -121,37 +121,69 @@
                             <a class="nav-link" href="#">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Product</a>
+                            <a class="nav-link" href="../pages/products.php">Products</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item item-dropdown drop-icon">
                             <a class="nav-link" href="#">Support and self services</a>
+                            <div class="item-dropdown-content">
+                                <ul class="list-style-none p-3 shadow-sm">
+                                    <li class="py-2 list-item">
+                                        <a href="#">LOAD/SYSTEM QUESTIONNAIRE</a>
+                                    </li>
+                                    <li class="py-2 list-item">
+                                        <a href="#">PROJECT HISTORY</a>
+                                    </li>
+                                    <li class="py-2 list-item">
+                                        <a href="#">CONTACT US</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Resources</a>
                         </li>
+                        <!-- <li class="nav-item item-dropdown">
+                            <a class="nav-link" href="#"><span class="bold uppercase">Hi Akinola</span>&nbsp;/&nbsp;<span><button class="btn btn-sm text-danger p-0">LOGOUT</button></a>
+                            <div class="item-dropdown-content user-account-dropdown">
+                                <ul class="list-style-none p-3 shadow-sm">
+                                    <li class="py-2 list-item">
+                                        <a href="#">ACCOUNT</a>
+                                    </li>
+                                    <li class="py-2 list-item">
+                                        <a href="#">PURCHASE HISTORY</a>
+                                    </li>
+                                    <li class="py-2 list-item">
+                                        <a href="#">WISHLIST</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li> -->
+                        <li class="nav-item user-auth-nav">
+                            <div>Hi Guest</div>
+                            <div>
+                                <span>
+                                    <a href="../auth/login.php" class="dark-link">Sign in</a>
+                                </span>
+                                <span>or</span>
+                                <span>
+                                    <a href="../auth/register.php" class="dark-link">Register</a>
+                                </span>
+                            </div>
+                        </li>
                     </ul>
-                    <div class="user-auth-nav">
-                        <div>Hi Guest</div>
-                        <div>
-                            <span>
-                                <a href="../auth/login.php" class="dark-link">Sign in</a>
-                            </span>
-                            <span>or</span>
-                            <span>
-                                <a href="../auth/register.php" class="dark-link">Register</a>
-                            </span>
-                        </div>
-                    </div>
+                    <div class="horizon-separator"></div>
                     <div class="d-flex align-item-end shopping-cart-wrapper">
                         <img src="../assets/images/icons/shopping-cart-icon.svg" alt="shopping-cart icon" class="img-fluid icon-img mr-2" />
-                        <a href="#" class="dark-link">
+                        <a href="../pages/shopping-cart.php" class="dark-link">
                             <span class="mr-1">Cart</span>
                             <span class="badge bg-white">0</span>
                         </a>
                     </div>
                 </div>
+                <div class="snack-bar show">
+                    Product added to cart
+                </div>
             </div>
         </nav>
     </header>
     <main>
-

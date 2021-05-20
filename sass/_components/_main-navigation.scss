@@ -14,7 +14,7 @@
         }
         .shopping-cart-wrapper {
             @include mixins.minmq(1200px) {
-                padding-left: 2em;
+                // padding-left: 2em;
             }
             .dark-link {
                 font-size: .8rem;
@@ -30,8 +30,8 @@
                 font-weight: 500;
             }
             @include mixins.minmq(1200px) {
-                border-right: 1px solid black;
-                padding-right: 2em;
+                // border-right: 1px solid black;
+                // padding-right: 2em;
                 >div {
                     padding-top: 0;
                     padding-bottom: 0;
@@ -40,7 +40,7 @@
         }
         .navbar-nav {
             .nav-item {
-                margin-right: 1.7em;
+                margin-right: 1.3em;
                 .nav-link {
                     text-transform: uppercase;
                     font-size: .82rem;
@@ -58,30 +58,17 @@
                         color: colors.$successColor;
                     }
                 }
-                .nav-item-dropdown-content {
-                    font-size: .8rem;
-                    .list-style-none {
-                        width: 160px;
-                        background-color: #ffffff;
-                        margin-top: 40px;
-                    }
-                    .list-item {
-                        border-bottom: 1px solid colors.$darkColor;
-                        a {
-                            color: colors.$darkColor;
-                            &:hover {
-                                text-decoration: none;
-                                color: colors.$successColor;
-                            }
-                        }
-                        &:last-child {
-                            border-bottom: none;
-                        }
-                    }
+                .list-style-none {
+                    // width: 160px;
+                    background-color: #ffffff;
+                    margin-top: 40px;
                 }
                 &:last-child {
                     margin-right: 0;
                 }
             }
+        }
+        .user-account-dropdown {
+            width: 200px;
         }
     }

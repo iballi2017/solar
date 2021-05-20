@@ -44,7 +44,7 @@
                 <li class="column">
                     <h6>Social media links</h6>
 
-                    <ul class="social-icons px-0">
+                    <ul class="social-icons px-0 list-style-none">
                         <li>
                             <a href="#" class="icon-img-wrapper">
                                 <!-- <img src="../assets/images/icons/twitter-icon-alt.svg" alt="" class="img-fluid"> --><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">

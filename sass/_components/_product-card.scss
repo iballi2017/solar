@@ -1,0 +1,82 @@
+/* PRODUCT CARD STYLE */
+
+@use "../_abstracts/colors";
+@use "../_partials/mixins";
+.product-card {
+    border-radius: 0;
+    margin: .4em;
+    border: none;
+    &:first-child {
+        margin-left: 0;
+    }
+    .card-text {
+        font-size: .85rem;
+    }
+    .price {
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+    .card-body {
+        padding: .7rem
+    }
+    .action {
+        display: flex;
+        justify-content: space-between;
+        button {
+            border-radius: 0;
+        }
+        .add-to-cart {
+            flex-basis: 85%;
+            button {
+                display: block;
+                word-break: normal;
+                font-size: .7rem;
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .add-to-wishlist {
+            flex-basis: 15%;
+            margin-left: 5px;
+        }
+    }
+    &:hover {
+        border: 1px solid colors.$greyColor;
+        .action-wrapper {
+            @include mixins.transition(all 300 ease-in-out);
+            @include mixins.transform(scaleY(1));
+        }
+    }
+    .action-wrapper {
+        position: absolute;
+        border-right: 1px solid colors.$greyColor;
+        border-left: 1px solid colors.$greyColor;
+        border-bottom: 1px solid colors.$greyColor;
+        top: 100%;
+        right: -1px;
+        left: -1px;
+        padding-top: 0;
+        background-color: #ffffff;
+        z-index: 2;
+        @include mixins.transform(scaleY(0));
+        @include mixins.transition(all 300 ease-in-out);
+    }
+    @include mixins.maxmq(417px) {
+        .action {
+            display: block;
+            justify-content: space-between;
+            button {
+                font-size: .7rem;
+                height: 100%;
+                width: 100%;
+                display: block;
+            }
+            .add-to-cart {
+                margin-bottom: .4em;
+            }
+            .add-to-wishlist {
+                margin-left: 0;
+            }
+        }
+    }
+}

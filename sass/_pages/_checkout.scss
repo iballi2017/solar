@@ -1,0 +1,11 @@
+/* CHECKOUT PAGE STYLE */
+
+@use "../_abstracts/colors";
+@use "../_partials/mixins";
+#order-table {
+    .name-header,
+    .total-header {
+        width: 50%;
+        background-color: colors.$lightColor;
+    }
+}

@@ -1,0 +1,39 @@
+/* RADIO CHECK PAGE STYLE */
+
+@use "../_abstracts/colors";
+@use "../_partials/mixins";
+.custom-check-wrapper {
+    padding-left: 0;
+    margin-right: 2em;
+    &:last-child {
+        margin-right: 0;
+    }
+    .check_rej {
+        position: absolute;
+        opacity: 0;
+        ~label {
+            margin-bottom: 0;
+            cursor: pointer;
+            font-weight: 400;
+            .custom_checkbox {
+                --size: 1.7em;
+                width: calc(var(--size) - .3em);
+                height: calc(var(--size) - .3em);
+                margin-right: calc(var(--size) - .6em);
+                cursor: pointer;
+                border: 3px solid colors.$lightColor;
+                box-shadow: inset 0 0 0 1px colors.$lightColor;
+                padding: 1px;
+                background-color: colors.$greyColor;
+                border-radius: 50px;
+                transform: scale(1);
+                transition: transform 300ms ease-in-out;
+                display: grid;
+                place-content: center;
+            }
+        }
+    }
+    .check_rej[type="radio"]:checked+label .custom_checkbox {
+        background: colors.$successLightColor;
+    }
+}

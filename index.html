@@ -104,21 +104,21 @@
     <!-- main header -->
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-light border-bottom" id="toolbar">
-            <div class="container auto-wrapper">
+            <div class="container auto-wrapper inner">
                 <a class="navbar-brand" href="./">
                     <h2>Mainland Solar</h2>
                 </a>
                 <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item active nav-item-dropdown">
+                        <li class="nav-item active item-dropdown drop-icon">
                             <a class="nav-link" href="#">
                   About Us
                   <span class="sr-only">(current)</span>
                 </a>
-                            <div class="nav-item-dropdown-content">
+                            <div class="item-dropdown-content">
                                 <ul class="list-style-none p-3 shadow-sm">
                                     <li class="py-2 list-item">
                                         <a href="#">What we do</a>
@@ -133,34 +133,65 @@
                             <a class="nav-link" href="#">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Product</a>
+                            <a class="nav-link" href="./pages/products.php">Products</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item item-dropdown drop-icon">
                             <a class="nav-link" href="#">Support and self services</a>
+                            <div class="item-dropdown-content">
+                                <ul class="list-style-none p-3 shadow-sm">
+                                    <li class="py-2 list-item">
+                                        <a href="#">What we do</a>
+                                    </li>
+                                    <li class="py-2 list-item">
+                                        <a href="#">Why choose us</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Resources</a>
                         </li>
+                        <!-- commented shows when user logs in -->
+                        <!-- <li class="nav-item item-dropdown">
+                            <a class="nav-link" href="#"><span class="bold uppercase">Hi Akinola</span>&nbsp;/&nbsp;<span><button class="btn btn-sm text-danger p-0">LOGOUT</button></a>
+                            <div class="item-dropdown-content user-account-dropdown">
+                                <ul class="list-style-none p-3 shadow-sm">
+                                    <li class="py-2 list-item">
+                                        <a href="#">ACCOUNT</a>
+                                    </li>
+                                    <li class="py-2 list-item">
+                                        <a href="#">PURCHASE HISTORY</a>
+                                    </li>
+                                    <li class="py-2 list-item">
+                                        <a href="#">WISHLIST</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li> -->
+                        <li class="nav-item user-auth-nav">
+                            <div>Hi Guest</div>
+                            <div>
+                                <span>
+                                    <a href="./auth/login.php" class="dark-link">Sign in</a>
+                                </span>
+                                <span>or</span>
+                                <span>
+                                    <a href="./auth/register.php" class="dark-link">Register</a>
+                                </span>
+                            </div>
+                        </li>
                     </ul>
-                    <div class="user-auth-nav">
-                        <div>Hi Guest</div>
-                        <div>
-                            <span>
-                                <a href="./auth/login.php" class="dark-link">Sign in</a>
-                            </span>
-                            <span>or</span>
-                            <span>
-                                <a href="#" class="dark-link">Register</a>
-                            </span>
-                        </div>
-                    </div>
+                    <div class="horizon-separator"></div>
                     <div class="d-flex align-item-end shopping-cart-wrapper">
                         <img src="./assets/images/icons/shopping-cart-icon.svg" alt="shopping-cart icon" class="img-fluid icon-img mr-2" />
-                        <a href="#" class="dark-link">
+                        <a href="./pages/shopping-cart.php" class="dark-link">
                             <span class="mr-1">Cart</span>
                             <span class="badge bg-white">0</span>
                         </a>
                     </div>
+                </div>
+                <div class="snack-bar show">
+                    Product added to cart
                 </div>
             </div>
         </nav>
@@ -480,7 +511,7 @@
                     </li>
                     <li class="column" id="quick-links">
                         <h6>QUICK LINKS</h6>
-                        <ul>
+                        <ul class="list-style-none p-0">
                             <li>
                                 <a href="#">About Us</a>
                             </li>
@@ -512,7 +543,7 @@
                     <li class="column">
                         <h6>Social media links</h6>
 
-                        <ul class="social-icons">
+                        <ul class="social-icons px-0 list-style-none">
                             <li>
                                 <a href="#" class="icon-img-wrapper">
                                     <!-- <img src="./assets/images/icons/twitter-icon-alt.svg" alt="" class="img-fluid"> --><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
