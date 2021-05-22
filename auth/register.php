@@ -45,7 +45,7 @@ include '../components/header.php'
                             </div>
                             <p>
                                 <small>
-                                    <a href="#" class="dark-link">Lost your password</a>
+                                    <a href="./forgot-password.php" class="dark-link">Lost your password</a>
                                 </small>
                             </p>
                             <button type="submit" class="btn btn-block btn-white rounded-0 bold-600">SIGN UP</button>

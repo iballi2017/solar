@@ -8,7 +8,8 @@ include '../components/header.php'
         <div class="container auto-wrapper">
             <!-- breadcrumb -->
             <ul class="breadcrumb">
-                <li><a href="#">Home</a></li>
+                <li><a href="../">Home</a></li>
+                <li><a href="./shopping-cart.php">Cart</a></li>
                 <li>Checkout</li>
             </ul>
 
@@ -27,11 +28,11 @@ include '../components/header.php'
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="firstName">First Name</label>
-                            <input type="text" class="form-control" id="username" aria-describedby="username">
+                            <input type="text" class="form-control" id="firstname" aria-describedby="firstname">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="lastName">Last Name</label>
-                            <input type="password" class="form-control" id="lastName">
+                            <input type="text" class="form-control" id="lastName">
                         </div>
                     </div>
 
@@ -43,7 +44,7 @@ include '../components/header.php'
                         </div>
                         <div class="form-group col-md-6">
                             <label for="email">Email Address</label>
-                            <input type="password" class="form-control" id="email">
+                            <input type="email" class="form-control" id="email">
                         </div>
                     </div>
 

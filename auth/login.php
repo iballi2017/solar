@@ -5,7 +5,7 @@ include '../components/header.php'
 
 
 <div id="login-page" class="bg-white">
-    <div class="container">
+    <div class="container auto-wrapper">
         <!-- breadcrumb -->
         <ul class="breadcrumb">
             <li><a href="#">Home</a></li>

@@ -9,7 +9,7 @@ include '../components/header.php'
         <div class="container auto-wrapper">
             <!-- breadcrumb -->
             <ul class="breadcrumb">
-                <li><a href="#">Home</a></li>
+                <li><a href="../">Home</a></li>
                 <li>Cart</li>
             </ul>
 

@@ -1,0 +1,233 @@
+/* USER PROFILE PAGE STYLE */
+
+@use "../_abstracts/colors";
+@use "../_partials/mixins";
+#user-profile-page {
+    #sidebar-toggler {
+        display: none;
+    }
+    .card-header {
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    form {
+        button {
+            width: 100%;
+            @include mixins.minmq(900px) {
+                width: 200px;
+            }
+        }
+    }
+    /* USER ACCOUNT SETTINGS*/
+    #user-account-settings-content {
+        font-size: .85rem;
+        .card-header {
+            font-size: .9rem;
+        }
+        .btn {
+            font-size: .85rem;
+        }
+    }
+    /* USER PURCHASE HISTORY */
+    #user-purchase-history-content {
+        >div {
+            border: 1px solid colors.$greyColor;
+        }
+        #table-header {
+            grid-template-columns: repeat(12, 1fr);
+            grid-gap: 10px;
+            font-size: .8rem;
+            display: none;
+            background-color: colors.$lightColor;
+            font-weight: 600;
+            >div {
+                padding: .75em .5em;
+            }
+            @include mixins.minmq(1000px) {
+                display: grid;
+                .date-col {
+                    grid-column: 1/3;
+                }
+                .shipTo-col {
+                    grid-column: 3/7;
+                }
+                .totalPrice-col {
+                    grid-column: 7/9;
+                }
+                .status-col {
+                    grid-column: 9/11;
+                }
+                .details-col {
+                    grid-column: 11/-1;
+                }
+            }
+        }
+        .table-row {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-gap: 10px;
+            font-size: .75rem;
+            border-bottom: 2px solid colors.$lightColor;
+            >div {
+                padding: .5em;
+            }
+            .btn {
+                font-size: .7rem;
+                font-weight: 600;
+            }
+            &:last-child {
+                border-bottom: 0;
+            }
+            div {
+                padding-top: .5em;
+                padding-bottom: .5em;
+                @include mixins.maxmq(1000px) {
+                    &:nth-child(even) {
+                        background-color: colors.$lightColor;
+                        padding-left: .5em;
+                    }
+                }
+            }
+            .date {
+                grid-column: 1/4;
+            }
+            .shipTo {
+                grid-column: 4/-1;
+            }
+            .totalPrice {
+                grid-column: 1/4;
+                font-weight: 600;
+            }
+            .status {
+                grid-column: 4/-1;
+            }
+            .details {
+                grid-column: 1/-1;
+            }
+            @include mixins.minmq(1000px) {
+                .date {
+                    grid-column: 1/3;
+                }
+                .shipTo {
+                    grid-column: 3/7;
+                }
+                .totalPrice {
+                    grid-column: 7/9;
+                }
+                .status {
+                    grid-column: 9/11;
+                }
+                .details {
+                    grid-column: 11/-1;
+                }
+            }
+        }
+    }
+    /* USER WISHLIST */
+    #user-wishlist-content {
+        font-weight: 600;
+        #table-header {
+            grid-template-columns: repeat(12, 1fr);
+            font-size: .8rem;
+            display: none;
+            background-color: colors.$lightColor;
+            border: 1px solid colors.$greyColor;
+            div {
+                border-right: 1px solid colors.$greyColor;
+                &:last-child {
+                    border-right: none;
+                }
+            }
+            >div {
+                padding: .9em .8em;
+            }
+            @include mixins.minmq(1000px) {
+                display: grid;
+                .productName-col {
+                    grid-column: 1/9;
+                }
+                .price-col {
+                    grid-column: 9/11;
+                }
+                .action-col {
+                    grid-column: 11/-1;
+                }
+            }
+        }
+        .table-row {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            font-size: .75rem;
+            border: 1px solid colors.$greyColor;
+            border-bottom: none;
+            &:last-child {
+                border-bottom: 1px solid colors.$greyColor;
+            }
+            &:first-child {
+                border-top: none;
+            }
+            div {
+                border-right: 1px solid colors.$greyColor;
+                &:last-child {
+                    border-right: none;
+                }
+            }
+            .btn {
+                font-size: .7rem;
+                font-weight: 600;
+            }
+            div {
+                padding: .8em;
+                @include mixins.maxmq(1000px) {
+                    &:first-child {
+                        border-bottom: 1px solid colors.$greyColor;
+                    }
+                    &:nth-child(even) {
+                        padding-left: .5em;
+                    }
+                }
+            }
+            .productName {
+                grid-column: 1/-1;
+            }
+            .price {
+                grid-column: 1/6;
+            }
+            .action {
+                grid-column: 6/-1;
+            }
+            @include mixins.minmq(1000px) {
+                .productName {
+                    grid-column: 1/9;
+                }
+                .price {
+                    grid-column: 9/11;
+                }
+                .action {
+                    grid-column: 11/-1;
+                }
+            }
+        }
+    }
+    @include mixins.maxmq(768px) {
+        .user-greet {
+            margin-bottom: 1em;
+        }
+        #sidebar-toggler {
+            display: block;
+        }
+        .title-wrapper {
+            margin-bottom: 0;
+        }
+        .sidenav-wrapper {
+            position: absolute;
+            z-index: 3;
+            right: .5em;
+            left: .5em;
+            display: none;
+            &.show {
+                display: block;
+            }
+        }
+    }
+}

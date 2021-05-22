@@ -44,9 +44,6 @@
         }
     }
     &:hover {
-        >.nav-link {
-            color: colors.$successColor;
-        }
         .item-dropdown-content {
             @include mixins.transform(scaleY(1));
             @include mixins.transition(all 300ms ease-in-out);

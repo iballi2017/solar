@@ -8,7 +8,7 @@ include '../components/header.php'
         <div class="container">
             <!-- breadcrumb -->
             <ul class="breadcrumb">
-                <li><a href="#">Home</a></li>
+                <li><a href="../">Home</a></li>
                 <li>Services</li>
             </ul>
             <div class="title-wrapper">

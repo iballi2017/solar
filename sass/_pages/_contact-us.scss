@@ -1,0 +1,15 @@
+/* CONTACT US PAGE STYLE */
+
+@use "../_abstracts/colors";
+@use "../_partials/mixins";
+#contact-us-page {
+    .aside {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    form {
+        .btn {
+            width: 200px;
+        }
+    }
+}

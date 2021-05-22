@@ -1,0 +1,35 @@
+@use '../_abstracts/colors';
+@use '../_partials/mixins';
+#user-content-wrapper {
+    min-height: 50vh;
+    .sidenav-wrapper {
+        background-color: #ffffff;
+    }
+    @include mixins.minmq(800px) {
+        --containerSize: 280px;
+        .sidenav-wrapper {
+            width: var(--containerSize);
+            position: absolute;
+            padding: 5px;
+            padding-left: 0;
+        }
+        .main-content {
+            margin-left: var(--containerSize);
+            width: calc(100%-var(--containerSize));
+            padding: 5px;
+        }
+    }
+    @include mixins.maxminmq(800px, 768px) {
+        --containerSize: 200px;
+        .sidenav-wrapper {
+            width: var(--containerSize);
+            position: absolute;
+            padding: 5px;
+        }
+        .main-content {
+            margin-left: var(--containerSize);
+            width: calc(100%-var(--containerSize));
+            padding: 5px;
+        }
+    }
+}

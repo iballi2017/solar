@@ -1,0 +1,13 @@
+/* USER PROJECT HISTORY PAGE STYLE */
+
+@use "../_abstracts/colors";
+@use "../_partials/mixins";
+#user-project-history-page {
+    aside {
+        font-size: 1.2rem;
+    }
+    .form-wrapper {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}

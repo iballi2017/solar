@@ -118,4 +118,32 @@ $(document).ready(function() {
     selected.html(selected_sort_checked.siblings("label").html());
 
 
+    /*  */
+    $(".item-dropdown-content").mouseover(function() {
+        if (!$(this).siblings(".nav-link").hasClass("active")) {
+            $(this).siblings(".nav-link").css({ "color": "#209E02" })
+        }
+    })
+    $(".item-dropdown-content").mouseleave(function() {
+        if (!$(this).siblings(".nav-link").hasClass("active")) {
+            $(this).siblings(".nav-link").css({ "color": "#414143" });
+        }
+    });
+
+
+    /* Overlay effect toggler*/
+    var overlay = $("#overlay");
+
+    /* Toggling user sidenav */
+    var sidebarToggler = $("#sidebar-toggler");
+    var sidenavWrapper = $(".sidenav-wrapper");
+    sidebarToggler.click(function() {
+            overlay.addClass("show");
+            sidenavWrapper.addClass("show");
+        })
+        /* Remove overlay */
+    overlay.click(function() {
+        overlay.removeClass("show");
+        sidenavWrapper.removeClass("show");
+    })
 });

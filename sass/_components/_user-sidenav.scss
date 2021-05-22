@@ -1,0 +1,31 @@
+@use '../_abstracts/colors';
+@use '../_partials/mixins';
+.sidenav {
+    &#user-account-sidenav {
+        padding-left: 0;
+        list-style: none;
+        font-size: .8rem;
+        border: 1px solid colors.$greyColor;
+        .sidenav-item {
+            border-bottom: 1px solid colors.$greyColor;
+            &:last-child {
+                border-bottom: none;
+                .btn {
+                    color: colors.$dangerColor;
+                }
+            }
+            .sidenav-link {
+                display: block;
+                padding: 1em .8em;
+                color: colors.$darkColor;
+                font-weight: 600;
+                @include mixins.transition(all 300ms ease-in-out);
+                &:hover {
+                    text-decoration: none;
+                    background-color: colors.$successColor;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}

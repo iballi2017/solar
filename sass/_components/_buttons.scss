@@ -19,3 +19,14 @@
             color: #ffffff;
         }
     }
+    
+    .btn-success {
+        background-color: colors.$successColor;
+        color: #ffffff;
+        border: 1px solid colors.$successColor;
+        &:hover {
+            background-color: colors.$successLightColor;
+            border: 1px solid colors.$successLightColor;
+            color: #ffffff;
+        }
+    }
