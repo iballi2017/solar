@@ -13,22 +13,45 @@
             }
         }
         .shopping-cart-wrapper {
+            position: relative;
+            &#mobile-shopping-cart-counter {
+                display: flex;
+                align-items: center;
+                @include mixins.minmq(1000px) {
+                    display: none;
+                }
+            }
             @include mixins.minmq(1200px) {
                 // padding-left: 2em;
             }
             .dark-link {
                 font-size: .8rem;
+                font-weight: 600;
+            }
+            .cust-badge {
+                background-color: colors.$successColor;
+                color: #ffffff;
+                border: 1px solid colors.$darkColor;
+                // min-height: 18px;
+                // min-width: 18px;
+                padding: .005em .3em;
+                border-radius: 50%;
+                display: inline-flex;
+                position: absolute;
+                align-items: center;
+                justify-content: center;
+                left: 5px;
+                top: 10px;
             }
         }
         .user-auth-nav {
             font-size: .8rem;
             padding: .5em;
-            >div {
-                padding-top: .5em;
-                padding-bottom: .5em;
-            }
             .dark-link {
                 font-weight: 500;
+            }
+            .greet {
+                display: none;
             }
             @include mixins.minmq(1200px) {
                 // border-right: 1px solid black;
@@ -36,6 +59,9 @@
                 >div {
                     padding-top: 0;
                     padding-bottom: 0;
+                }
+                .greet {
+                    display: block;
                 }
             }
         }

@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mainland Solar | Your No 1 choice for Solar Installations & Support</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" class="img-fluid" href="../assets/images/navbrand-logo.png" class="img-fluid" sizes="16x16">
     <!-- meta tags -->
     <meta name="description" content="Your No 1 choice for Solar Installations & Support">
     <!-- main font family -->
@@ -96,9 +98,18 @@
                 <a class="navbar-brand" href="../">
                     <h2>Mainland Solar</h2>
                 </a>
-                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="d-flex align-items-center">
+                    <div class="shopping-cart-wrapper" id="mobile-shopping-cart-counter">
+                        <img src="../assets/images/icons/shopping-cart-icon.svg" alt="shopping-cart icon" class="img-fluid icon-img mr-2" />
+                        <a href="../pages/shopping-cart.php" class="dark-link">
+                            <span class="mr-1">Cart</span>
+                            <span class="cust-badge">0</span>
+                        </a>
+                    </div>
+                    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active item-dropdown drop-icon">
@@ -109,16 +120,16 @@
                             <div class="item-dropdown-content">
                                 <ul class="list-style-none p-3 shadow-sm">
                                     <li class="py-2 list-item">
-                                        <a href="#">What we do</a>
+                                        <a href="../pages/about-us.php">What we do</a>
                                     </li>
                                     <li class="py-2 list-item">
-                                        <a href="#">Why choose us</a>
+                                        <a href="../pages/about-us.php#value-offered-section">Why choose us</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="../pages/services.php">Services</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../pages/products.php">Products</a>
@@ -131,10 +142,10 @@
                                         <a href="#">LOAD/SYSTEM QUESTIONNAIRE</a>
                                     </li>
                                     <li class="py-2 list-item">
-                                        <a href="#">PROJECT HISTORY</a>
+                                        <a href="../pages/user-project-history.php">PROJECT HISTORY</a>
                                     </li>
                                     <li class="py-2 list-item">
-                                        <a href="#">CONTACT US</a>
+                                        <a href="../pages/contact-us.php">CONTACT US</a>
                                     </li>
                                 </ul>
                             </div>
@@ -159,7 +170,7 @@
                             </div>
                         </li> -->
                         <li class="nav-item user-auth-nav">
-                            <div>Hi Guest</div>
+                            <div class="greet">Hi Guest</div>
                             <div>
                                 <span>
                                     <a href="../auth/login.php" class="dark-link">Sign in</a>
@@ -176,7 +187,7 @@
                         <img src="../assets/images/icons/shopping-cart-icon.svg" alt="shopping-cart icon" class="img-fluid icon-img mr-2" />
                         <a href="../pages/shopping-cart.php" class="dark-link">
                             <span class="mr-1">Cart</span>
-                            <span class="badge bg-white">0</span>
+                            <span class="cust-badge">0</span>
                         </a>
                     </div>
                 </div>

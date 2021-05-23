@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mainland Solar | Your No 1 choice for Solar Installations & Support</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" class="img-fluid" href="./assets/images/navbrand-logo.png" class="img-fluid" sizes="16x16">
     <!-- meta tags -->
     <meta name="description" content="Your No 1 choice for Solar Installations & Support">
     <!-- main font family -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
-    <!-- animate css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- bxSlider -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="./assets/plugins/bxSlider/dist/js/jquery.bxslider.min.css">
@@ -108,9 +110,17 @@
                 <a class="navbar-brand" href="./">
                     <h2>Mainland Solar</h2>
                 </a>
-                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="d-flex align-items-center">
+                    <div class="shopping-cart-wrapper" id="mobile-shopping-cart-counter">
+                        <img src="./assets/images/icons/shopping-cart-icon.svg" alt="shopping-cart icon" class="img-fluid icon-img mr-2" />
+                        <a href="./pages/shopping-cart.php" class="dark-link">
+                            <span class="mr-1">Cart</span>
+                            <span class="cust-badge">0</span>
+                        </a>
+                    </div>
+                    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
+                </button></div>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item active item-dropdown drop-icon">
@@ -121,16 +131,16 @@
                             <div class="item-dropdown-content">
                                 <ul class="list-style-none p-3 shadow-sm">
                                     <li class="py-2 list-item">
-                                        <a href="#">What we do</a>
+                                        <a href="./pages/about-us.php">What we do</a>
                                     </li>
                                     <li class="py-2 list-item">
-                                        <a href="#">Why choose us</a>
+                                        <a href="./pages/about-us.php#value-offered-section">Why choose us</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="./pages/services.php">Services</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./pages/products.php">Products</a>
@@ -140,10 +150,13 @@
                             <div class="item-dropdown-content">
                                 <ul class="list-style-none p-3 shadow-sm">
                                     <li class="py-2 list-item">
-                                        <a href="#">What we do</a>
+                                        <a href="#">LOAD/SYSTEM QUESTIONNAIRE</a>
                                     </li>
                                     <li class="py-2 list-item">
-                                        <a href="#">Why choose us</a>
+                                        <a href="./pages/user-project-history.php">PROJECT HISTORY</a>
+                                    </li>
+                                    <li class="py-2 list-item">
+                                        <a href="./pages/contact-us.php">CONTACT US</a>
                                     </li>
                                 </ul>
                             </div>
@@ -169,7 +182,7 @@
                             </div>
                         </li> -->
                         <li class="nav-item user-auth-nav">
-                            <div>Hi Guest</div>
+                            <div class="greet">Hi Guest</div>
                             <div>
                                 <span>
                                     <a href="./auth/login.php" class="dark-link">Sign in</a>
@@ -186,7 +199,7 @@
                         <img src="./assets/images/icons/shopping-cart-icon.svg" alt="shopping-cart icon" class="img-fluid icon-img mr-2" />
                         <a href="./pages/shopping-cart.php" class="dark-link">
                             <span class="mr-1">Cart</span>
-                            <span class="badge bg-white">0</span>
+                            <span class="cust-badge">0</span>
                         </a>
                     </div>
                 </div>
@@ -198,13 +211,13 @@
     </header>
 
     <main>
-        <section id="hero">
+        <section id="hero" class="d-none">
             <div class="slider">
                 <div class="hero-slider-content" id="slide-1">
                     <img src="./assets/images/hero-banner-1.png" alt="" class="img-fluid">
                     <div class="custom-caption">
                         <div class="inner">
-                            <h1 class="animate__animated animate__fadeIn animate__slow">Say No to <span class="text-warningColor">Irregular</span> Power Supply and <span class="text-warningColor">Embrace</span> Solar Technology
+                            <h1 class="">Say No to <span class="text-warningColor" data-aos="fade-up" data-aos-duration="2000">Irregular</span> Power Supply and <span class="text-warningColor" data-aos="fade-up" data-aos-duration="2500">Embrace</span> Solar Technology
                             </h1>
                         </div>
                     </div>
@@ -264,8 +277,8 @@
                         <div class="img-wrapper">
                             <img class="lazy img-fluid" data-src="./assets/images/featured-image-1.png" alt="" /></div>
                     </div>
-                    <div class="text-content">
-                        <h2 class="title mb-3 uppercase bold  animate__animated animate__fadeIn animate__slow">What we do</h2>
+                    <div class="text-content" data-aos="fade-up" data-aos-duration="2000">
+                        <h2 class="title mb-3 uppercase bold">What we do</h2>
                         <p>Mainland Solar is a fast growing provider of solar energy in Lagos, Nigeria. The driving force of Mainland Solar is to first solve the problem of poor supply of energy by making it affordable and available to you. Our target is
                             to ensure we become the number one Solar Energy company by supplying not just ... <br/><br/><a href="#" class="success-link">READ MORE</a></p>
                     </div>
@@ -286,7 +299,7 @@
             </div>
             <div class="slider-wrapper">
                 <!-- Set up your HTML -->
-                <div class="container">
+                <div class="container auto-wrapper" data-aos="fade-up" data-aos-duration="2000">
                     <div class="owl-carousel owl-theme" id="services-slider">
                         <div class="bg-white item p-3">
                             <div class="icon-img-wrapper">
@@ -318,7 +331,39 @@
                                 <a href="#" class="success-link">READ MORE</a>
                             </p>
                         </div>
-                        <div class="bg-white item p-3"> Your Content </div>
+                        <!-- <div class="bg-white item p-3"> Your Content </div> -->
+                        <div class="bg-white item p-3">
+                            <div class="icon-img-wrapper">
+                                <img src="./assets/images/icons/product-sales-icon.svg" alt="" class="img-fluid">
+                            </div>
+                            <h6 class="title">Product Sales</h6>
+                            <p class="body-text">We provide our clients and prospective clients with a variety of quality solar products which are designed to give you the best value for your money.
+                                <br/> <br/>
+                                <a href="#" class="success-link">READ MORE</a>
+                            </p>
+                        </div>
+                        <div class="bg-white item p-3">
+                            <div class="icon-img-wrapper">
+                                <img src="./assets/images/icons/product-delivery-icon.svg" alt="" class="img-fluid">
+                            </div>
+                            <h6 class="title">Product Delivery</h6>
+                            <p class="body-text">
+                                From our wide range of products and with offerings from our partners, we select the right products for your system that will give the results envisioned...
+                                <br/> <br/>
+                                <a href="#" class="success-link">READ MORE</a>
+                            </p>
+                        </div>
+                        <div class="bg-white item p-3">
+                            <div class="icon-img-wrapper">
+                                <img src="./assets/images/icons/system-maintenance-icon.svg" alt="" class="img-fluid">
+                            </div>
+                            <h6 class="title">System Maintenance</h6>
+                            <p class="body-text">We carry out maintenance service which include but not limited to: 1. installed solar panel cleaning to prevent underperformance, 2. battery inspection and servicing to ensure uniform and...
+
+                                <br/> <br/>
+                                <a href="#" class="success-link">READ MORE</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="services-slider-control d-none">
@@ -347,8 +392,8 @@
 
                 <div class="row no-gutters">
                     <div class="col-12 col-md-7 features-wrapper">
-                        <ul class="list-style-none features">
-                            <li class="professionalism animate__animated animate__fadeInUpBig animate__slow">
+                        <ul class="list-style-none features" data-aos="fade-up" data-aos-duration="2000">
+                            <li class="professionalism">
                                 <!-- <div class="icon-img-wrapper">
                                     <img src="./assets/images/icons/professionalism-icon.svg" alt="professionalism-icon" class="img-fluid">
                                 </div> -->
@@ -444,13 +489,13 @@
         </section>
 
 
-        <section id="blogposts">
+        <section id="blogposts" class="">
             <div class="container">
                 <h2 class="title mb-3 uppercase bold text-center text-successColor">READ OUR LATEST</h2>
                 <h5 class="tagline text-center">Blog post
                 </h5>
-                <ul class="featured-posts list-style-none">
-                    <li>
+                <ul class="featured-posts list-style-none px-0 row no-gutters" data-aos="fade-up" data-aos-duration="2000">
+                    <li class="col-6 col-md-4">
                         <div class="card">
                             <img src="./assets/images/blog-post-featured-image-sample.png" class="card-img-top" alt="blog-post-featured-image-sample">
                             <div class="card-body">
@@ -465,7 +510,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="col-6 col-md-4">
                         <div class="card">
                             <img src="./assets/images/blog-post-featured-image-sample.png" class="card-img-top" alt="blog-post-featured-image-sample">
                             <div class="card-body">
@@ -480,7 +525,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="col-6 col-md-4">
                         <div class="card">
                             <img src="./assets/images/blog-post-featured-image-sample.png" class="card-img-top" alt="blog-post-featured-image-sample">
                             <div class="card-body">
@@ -622,6 +667,11 @@
     <script src="./assets/plugins/bxSlider/dist/js/jquery.bxslider.min.js"></script>
     <!-- Owl carousel2 2.4.3 -->
     <script src="./assets/plugins/owlCarousel/owl.carousel.min.js"></script>
+    <!-- aos animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
     <!-- custom script -->
     <script src="./javascript/main.jquery.js"></script>
     <script src="./javascript/main.js"></script>

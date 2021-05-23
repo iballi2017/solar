@@ -1,4 +1,10 @@
 $(document).ready(function() {
+    /* Show hero slider on home page */
+    if ($("#hero").hasClass("d-none")) {
+        $(" #hero").removeClass(" d-none");
+    }
+
+
     $('.slider').bxSlider({
         mode: 'fade',
         captions: true,

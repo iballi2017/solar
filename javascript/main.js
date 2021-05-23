@@ -1,3 +1,9 @@
+// document.addEventListener('DOMContentLoaded', function() {
+
+// }, false);
+
+
+
 let windowSize = window;
 
 const handleSectionWrapper = () => {

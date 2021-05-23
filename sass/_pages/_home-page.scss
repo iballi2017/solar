@@ -259,16 +259,22 @@
     }
     .featured-posts {
         @include mixins.minmq(1000px) {
-            display: flex;
-            justify-content: space-between;
-            .card {
-                margin-bottom: 0;
-            }
+            // display: flex;
+            // justify-content: space-between;
+            // .card {
+            //     margin-bottom: 0;
+            // }
         }
         >li {
-            flex-basis: 32%;
+            // flex-basis: 32%;
             .card {
-                margin-bottom: 1em;
+                // margin-bottom: 1em;
+                border-radius: 0;
+                margin-right: .5em;
+                margin-bottom: .5em;
+                &:first-child{
+                    margin-left: 0;
+                }
                 .author {
                     &:before {
                         content: url(../assets/images/icons/user-avatar-icon.svg);

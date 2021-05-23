@@ -60,24 +60,52 @@
 #toolbar .navbar-brand h2 {
   text-indent: -1000px;
 }
+#toolbar .shopping-cart-wrapper {
+  position: relative;
+}
+#toolbar .shopping-cart-wrapper#mobile-shopping-cart-counter {
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 1000px) {
+  #toolbar .shopping-cart-wrapper#mobile-shopping-cart-counter {
+    display: none;
+  }
+}
 #toolbar .shopping-cart-wrapper .dark-link {
   font-size: 0.8rem;
+  font-weight: 600;
+}
+#toolbar .shopping-cart-wrapper .cust-badge {
+  background-color: #209E02;
+  color: #ffffff;
+  border: 1px solid #414143;
+  padding: 0.005em 0.3em;
+  border-radius: 50%;
+  display: inline-flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  left: 5px;
+  top: 10px;
 }
 #toolbar .user-auth-nav {
   font-size: 0.8rem;
   padding: 0.5em;
 }
-#toolbar .user-auth-nav > div {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-}
 #toolbar .user-auth-nav .dark-link {
   font-weight: 500;
+}
+#toolbar .user-auth-nav .greet {
+  display: none;
 }
 @media (min-width: 1200px) {
   #toolbar .user-auth-nav > div {
     padding-top: 0;
     padding-bottom: 0;
+  }
+  #toolbar .user-auth-nav .greet {
+    display: block;
   }
 }
 #toolbar .navbar-nav .nav-item {
@@ -822,6 +850,10 @@ body *:focus {
   outline: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #E5E5E5;
 }
@@ -875,6 +907,40 @@ body {
   height: 50px;
   margin-right: 1em;
   margin-left: 1em;
+  display: none;
+}
+@media (min-width: 1000px) {
+  .horizon-separator {
+    display: block;
+  }
+}
+
+/* animation */
+/* This only changes this particular animation duration */
+.animate__animated.animate__bounce {
+  --animate-duration: 3s;
+}
+
+/* This changes all the animations globally */
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+
+#what-we-do .text-content {
+  display: block;
+  margin: 0 0.5rem;
+  animation: fadeInUpBig;
+  /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s;
+  /* don't forget to set a duration! */
+}
+
+#why-choose-us .features-wrapper {
+  animation: fadeInUpBig;
+  /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s;
+  /* don't forget to set a duration! */
 }
 
 /* HOME PAGE STYLE */
@@ -1140,20 +1206,13 @@ body {
 #blogposts .tagline {
   margin-bottom: 2em;
 }
-@media (min-width: 1000px) {
-  #blogposts .featured-posts {
-    display: flex;
-    justify-content: space-between;
-  }
-  #blogposts .featured-posts .card {
-    margin-bottom: 0;
-  }
-}
-#blogposts .featured-posts > li {
-  flex-basis: 32%;
-}
 #blogposts .featured-posts > li .card {
-  margin-bottom: 1em;
+  border-radius: 0;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+}
+#blogposts .featured-posts > li .card:first-child {
+  margin-left: 0;
 }
 #blogposts .featured-posts > li .card .author:before {
   content: url(../assets/images/icons/user-avatar-icon.svg);

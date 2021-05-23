@@ -1,4 +1,5 @@
 @use '../_abstracts/colors';
+@use '../_partials/mixins';
 .list-style-none {
     >li {
         list-style: none;
@@ -52,4 +53,32 @@
     height: 50px;
     margin-right: 1em;
     margin-left: 1em;
+    display: none;
+    @include mixins.minmq(1000px) {
+        display: block;
+    }
+}
+
+
+/* animation */
+/* This only changes this particular animation duration */
+.animate__animated.animate__bounce {
+  --animate-duration: 3s;
+}
+
+/* This changes all the animations globally */
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+#what-we-do .text-content {
+  display: block;
+  margin: 0 0.5rem;
+  animation: fadeInUpBig; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
+}
+
+#why-choose-us .features-wrapper {
+  animation: fadeInUpBig; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
 }
