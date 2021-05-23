@@ -21,6 +21,11 @@
                     display: none;
                 }
             }
+            &#lg-shopping-cart-counter{
+                @include mixins.maxmq(1000px){
+                    display: none;
+                }
+            }
             @include mixins.minmq(1200px) {
                 // padding-left: 2em;
             }

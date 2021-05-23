@@ -72,6 +72,11 @@
     display: none;
   }
 }
+@media (max-width: 1000px) {
+  #toolbar .shopping-cart-wrapper#lg-shopping-cart-counter {
+    display: none;
+  }
+}
 #toolbar .shopping-cart-wrapper .dark-link {
   font-size: 0.8rem;
   font-weight: 600;
