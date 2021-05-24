@@ -181,9 +181,10 @@
     .features {
         font-size: .88rem;
         margin-bottom: 2.5em;
-        @include mixins.minmq(900px) {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
+            grid-gap: 20px;
+        @include mixins.minmq(900px) {
             grid-gap: 50px;
         }
         li {

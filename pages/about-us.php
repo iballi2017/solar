@@ -21,7 +21,7 @@ include '../components/header.php'
             <div id="highlight">
                 <div class="inner">
                     <div class="img-wrapper">
-                        <img src="../assets/images/featured-image-1.png" alt="" class="img-fluid">
+                        <img src="../assets/images/featured-image-1-min.png" alt="" class="img-fluid">
                     </div>
                     <p class="text-highlight">Mainland Solar is a fast growing provider of solar energy in Lagos,
                         Nigeria. The driving force of Mainland Solar is to first solve
@@ -45,7 +45,7 @@ include '../components/header.php'
                     <div class=" feature-card">
                         <div class="inner">
                             <div class="front-side">
-                                <img src="../assets/images/feature-img-thumbnail-1.png" alt="featured image" class="img-fluid">
+                                <img src="../assets/images/feature-img-thumbnail-1-min.png" alt="featured image" class="img-fluid">
 
                                 <div class="caption">
                                     <p>Energy Audit</p>
@@ -69,7 +69,7 @@ include '../components/header.php'
                     <div class=" feature-card">
                         <div class="inner">
                             <div class="front-side">
-                                <img src="../assets/images/feature-img-thumbnail-2.png" alt="featured image" class="img-fluid">
+                                <img src="../assets/images/feature-img-thumbnail-2-min.png" alt="featured image" class="img-fluid">
 
                                 <div class="caption">
                                     <p>Product Sales</p>
@@ -92,7 +92,7 @@ include '../components/header.php'
                     <div class=" feature-card">
                         <div class="inner">
                             <div class="front-side">
-                                <img src="../assets/images/feature-img-thumbnail-3.png" alt="featured image" class="img-fluid">
+                                <img src="../assets/images/feature-img-thumbnail-3-min.png" alt="featured image" class="img-fluid">
 
                                 <div class="caption">
                                     <p>Product Delivery</p>
@@ -116,7 +116,7 @@ include '../components/header.php'
                     <div class=" feature-card">
                         <div class="inner">
                             <div class="front-side">
-                                <img src="../assets/images/feature-img-thumbnail-4.png" alt="featured image" class="img-fluid">
+                                <img src="../assets/images/feature-img-thumbnail-4-min.png" alt="featured image" class="img-fluid">
 
                                 <div class="caption">
                                     <p>System Installation</p>
@@ -141,7 +141,7 @@ include '../components/header.php'
                     <div class=" feature-card">
                         <div class="inner">
                             <div class="front-side">
-                                <img src="../assets/images/feature-img-thumbnail-5.png" alt="featured image" class="img-fluid">
+                                <img src="../assets/images/feature-img-thumbnail-5-min.png" alt="featured image" class="img-fluid">
 
                                 <div class="caption">
                                     <p>Consultation and Support</p>

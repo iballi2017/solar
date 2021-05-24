@@ -3,7 +3,7 @@
     #toolbar {
         background-color: #ffffff;
         .navbar-brand {
-            background-image: url(../assets/images/navbrand-logo.png);
+            background-image: url(../assets/images/navbrand-logo-min.png);
             background-repeat: no-repeat;
             background-size: contain;
             height: 80px;
@@ -69,6 +69,11 @@
                     display: block;
                 }
             }
+        }
+
+        #navbarNav{
+            padding-top: 1em;
+            padding-bottom: 1em;
         }
         .navbar-nav {
             .nav-item {

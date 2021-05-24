@@ -51,7 +51,7 @@
   background-color: #ffffff;
 }
 #toolbar .navbar-brand {
-  background-image: url(../assets/images/navbrand-logo.png);
+  background-image: url(../assets/images/navbrand-logo-min.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: 80px;
@@ -112,6 +112,10 @@
   #toolbar .user-auth-nav .greet {
     display: block;
   }
+}
+#toolbar #navbarNav {
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 #toolbar .navbar-nav .nav-item {
   margin-right: 1.3em;
@@ -274,9 +278,13 @@
 }
 #footer #top-footer-widget .main-footer-links {
   padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 #footer #top-footer-widget .main-footer-links .column {
   margin-bottom: 1.3em;
+  flex-basis: 48%;
 }
 #footer #top-footer-widget .main-footer-links .column#quick-links li::before {
   content: "-";
@@ -305,11 +313,6 @@
   background-color: #41CF1F;
 }
 @media (min-width: 1000px) {
-  #footer #top-footer-widget .main-footer-links {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
   #footer #top-footer-widget .main-footer-links .column {
     flex-basis: 29%;
   }
@@ -823,6 +826,25 @@ ul.breadcrumb li a:hover {
   display: block;
 }
 
+#loading {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #ffff;
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#loading .spinner-border {
+  width: 6rem;
+  height: 6rem;
+}
+
 /* TYPOGRAPHY */
 .uppercase {
   text-transform: uppercase;
@@ -1131,11 +1153,12 @@ body {
 #why-choose-us .features {
   font-size: 0.88rem;
   margin-bottom: 2.5em;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
 }
 @media (min-width: 900px) {
   #why-choose-us .features {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
     grid-gap: 50px;
   }
 }
@@ -1503,6 +1526,7 @@ body {
   position: absolute;
   border: 1px solid #C4C4C4;
   background-color: #ffffff;
+  z-index: 2;
 }
 #products-page #sort-select-dropdown .sort-radios .dropdown li {
   border-bottom: 1px solid #C4C4C4;
@@ -1522,7 +1546,7 @@ body {
 #products-page #sort-select-dropdown .sort-radios .dropdown li input[type=radio] {
   position: absolute;
   opacity: 0;
-  left: 100000000px;
+  left: -50vw;
 }
 #products-page #sort-select-dropdown .sort-radios .dropdown li input[type=radio]:checked + label {
   color: #209E02;

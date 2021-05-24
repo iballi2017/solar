@@ -1,9 +1,9 @@
 $(document).ready(function() {
-    /* Show hero slider on home page */
-    if ($("#hero").hasClass("d-none")) {
-        $(" #hero").removeClass(" d-none");
-    }
-
+    /* page loader */
+var loading = $("#loading");
+if(loading){
+    loading.addClass("d-none");
+}
 
     $('.slider').bxSlider({
         mode: 'fade',
@@ -75,7 +75,9 @@ $(document).ready(function() {
                 }
             }
         },
-        $(".feature-images-slider-control").removeClass("d-none")
+        // setTimeout(() => {
+            $(".feature-images-slider-control").removeClass("d-none")
+        // }, 2000);
     );
     // Go to the next item
     $('.feature-images-slider-control .next-control').click(function() {
@@ -116,7 +118,6 @@ $(document).ready(function() {
             arg2.html($(this).siblings("label").html());
         });
     }
-    // PRV form status
     var selected = $("#selected");
     var selected_sort = $("input[type='radio'][name='sort']");
     var selected_sort_checked = $("input[type='radio'][name='sort']:checked");

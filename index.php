@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mainland Solar | Your No 1 choice for Solar Installations & Support</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/png" class="img-fluid" href="./assets/images/navbrand-logo.png" class="img-fluid" sizes="16x16">
+    <link rel="icon" type="image/png" class="img-fluid" href="./assets/images/navbrand-logo-min.png" class="img-fluid" sizes="16x16">
     <!-- meta tags -->
     <meta name="description" content="Your No 1 choice for Solar Installations & Support">
     <!-- main font family -->
@@ -32,11 +32,16 @@
 </head>
 
 <body>
+<div id="loading">
+    <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
     <!-- <button class="btn btn-primary">Button</button>
     <i class="fas fa-bars"></i> -->
     <div id="top-header">
         <div class="inner container auto-wrapper d-flex align-items-center justify-content-between flex-wrap">
-            <ul class="contact d-flex list-style-none my-0 flex-wrap">
+            <ul class="contact d-flex p-0 list-style-none my-0 flex-wrap">
                 <li class="email d-flex align-items-center">
                     <div class="mr-1">
                         <span>
@@ -73,7 +78,7 @@
                 </li>
             </ul>
             <div class="social-medial-icons">
-                <ul class="list-style-none d-flex align-items-center my-0">
+                <ul class="list-style-none d-flex align-items-center my-0 p-0">
                     <li>
                         <a href="#">
                             <!-- <img src="./assets/images/icons/twitter-icon.svg" alt="whatsapp icon" class="img-fluid icon-img" /> --><svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -211,10 +216,10 @@
     </header>
 
     <main>
-        <section id="hero" class="d-none">
+        <section id="hero">
             <div class="slider">
                 <div class="hero-slider-content" id="slide-1">
-                    <img src="./assets/images/hero-banner-1.png" alt="" class="img-fluid">
+                    <img src="./assets/images/hero-banner-1-min.png" alt="" class="img-fluid">
                     <div class="custom-caption">
                         <div class="inner">
                             <h1 class="">Say No to <span class="text-warningColor" data-aos="fade-up" data-aos-duration="2000">Irregular</span> Power Supply and <span class="text-warningColor" data-aos="fade-up" data-aos-duration="2500">Embrace</span> Solar Technology
@@ -223,7 +228,7 @@
                     </div>
                 </div>
                 <div id="slide-2">
-                    <img src="./assets/images/hero-banner-2.png" alt="" class="img-fluid">
+                    <img src="./assets/images/hero-banner-2-min.png" alt="" class="img-fluid">
                     <div class="custom-caption">
                         <div class="inner">
                             <h1>Mainland Solar Offers <span class="text-warningColor">Quality</span> at <span class="text-warningColor">Convenient Prices</span>
@@ -232,7 +237,7 @@
                     </div>
                 </div>
                 <div id="slide-3">
-                    <img src="./assets/images/hero-banner-3.png" alt="" class="img-fluid">
+                    <img src="./assets/images/hero-banner-3-min.png" alt="" class="img-fluid">
                     <div class="custom-caption">
                         <div class="inner">
                             <h1>Your <span class="text-warningColor">Best</span> Green Energy Power Products are <span class="text-warningColor">available</span> at Mainland Solar
@@ -241,7 +246,7 @@
                     </div>
                 </div>
                 <div id="slide-4">
-                    <img src="./assets/images/hero-banner-4.png" alt="" class="img-fluid">
+                    <img src="./assets/images/hero-banner-4-min.png" alt="" class="img-fluid">
                     <div class="custom-caption">
                         <div class="inner">
                             <h1>We <span class="text-warningColor">offer</span> the <span class="text-warningColor">Unbeatable</span> Technical Support and Services
@@ -250,7 +255,7 @@
                     </div>
                 </div>
                 <div id="slide-5">
-                    <img src="./assets/images/hero-banner-3.png" alt="" class="img-fluid">
+                    <img src="./assets/images/hero-banner-3-min.png" alt="" class="img-fluid">
                     <div class="custom-caption">
                         <div class="inner">
                             <h1>Get Your Apartment and Offices <span class="text-warningColor">Illuminated</span> All Day at <span class="text-warningColor"> Market Efficient Prices</span>
@@ -275,7 +280,7 @@
                 <div class="inner">
                     <div class="image-content">
                         <div class="img-wrapper">
-                            <img class="lazy img-fluid" data-src="./assets/images/featured-image-1.png" alt="" /></div>
+                            <img class="lazy img-fluid" data-src="./assets/images/featured-image-1-min.png" alt="featured image" /></div>
                     </div>
                     <div class="text-content" data-aos="fade-up" data-aos-duration="2000">
                         <h2 class="title mb-3 uppercase bold">What we do</h2>
@@ -385,14 +390,14 @@
 
 
         <section class="bg-white" id="why-choose-us">
-            <div class="container">
+            <div class="container auto-wrapper">
                 <h2 class="title mb-3 uppercase bold text-center">Why Choose Us</h2>
                 <h5 class="tagline text-center">At Mainland Solar, you are highly prioritized. Through us, you can enjoy the benefits of uninterrupted power.
                 </h5>
 
                 <div class="row no-gutters">
-                    <div class="col-12 col-md-7 features-wrapper">
-                        <ul class="list-style-none features" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="col-12 col-sm-12 col-lg-7 features-wrapper">
+                        <ul class="list-style-none features px-0" data-aos="fade-up" data-aos-duration="2000">
                             <li class="professionalism">
                                 <!-- <div class="icon-img-wrapper">
                                     <img src="./assets/images/icons/professionalism-icon.svg" alt="professionalism-icon" class="img-fluid">
@@ -444,7 +449,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-12 col-md-5 feature-images-wrapper">
+                    <div class="col-12 col-sm-6 col-lg-5 feature-images-wrapper">
                         <!-- <div class="feature-image">
                             <div class="img-wrapper">
                                 <img data-src="./assets/images/featured-image-2.png" alt="" class="lazy img-fluid">
@@ -456,12 +461,12 @@
                             <div class="owl-carousel" id="why-choose-us-slider">
                                 <div class="item">
                                     <div class="img-wrapper h-100">
-                                        <img data-src="./assets/images/featured-image-2.png" alt="" class="lazy img-fluid">
+                                        <img data-src="./assets/images/featured-image-2-min.png" alt="" class="lazy img-fluid">
                                     </div>
                                 </div>
                                 <div class="item">
                                     <div class="img-wrapper">
-                                        <img data-src="./assets/images/featured-image-2.png" alt="" class="lazy img-fluid">
+                                        <img data-src="./assets/images/featured-image-2-min.png" alt="" class="lazy img-fluid">
                                     </div>
                                 </div>
                             </div>
@@ -490,14 +495,14 @@
 
 
         <section id="blogposts" class="">
-            <div class="container">
+            <div class="container auto-wrapper">
                 <h2 class="title mb-3 uppercase bold text-center text-successColor">READ OUR LATEST</h2>
                 <h5 class="tagline text-center">Blog post
                 </h5>
                 <ul class="featured-posts list-style-none px-0 row no-gutters" data-aos="fade-up" data-aos-duration="2000">
                     <li class="col-6 col-md-4">
                         <div class="card">
-                            <img src="./assets/images/blog-post-featured-image-sample.png" class="card-img-top" alt="blog-post-featured-image-sample">
+                            <img src="./assets/images/blog-post-featured-image-sample-min.png" class="card-img-top" alt="blog-post-featured-image-sample">
                             <div class="card-body">
                                 <div class="d-flex align-items-end justify-content-between mb-2">
                                     <div class="author">By Sam Wikiwiki</div>
@@ -512,7 +517,7 @@
                     </li>
                     <li class="col-6 col-md-4">
                         <div class="card">
-                            <img src="./assets/images/blog-post-featured-image-sample.png" class="card-img-top" alt="blog-post-featured-image-sample">
+                            <img src="./assets/images/blog-post-featured-image-sample-min.png" class="card-img-top" alt="blog-post-featured-image-sample">
                             <div class="card-body">
                                 <div class="d-flex align-items-center justify-content-between mb-2">
                                     <div class="author">By Sam Wikiwiki</div>
@@ -527,7 +532,7 @@
                     </li>
                     <li class="col-6 col-md-4">
                         <div class="card">
-                            <img src="./assets/images/blog-post-featured-image-sample.png" class="card-img-top" alt="blog-post-featured-image-sample">
+                            <img src="./assets/images/blog-post-featured-image-sample-min.png" class="card-img-top" alt="blog-post-featured-image-sample">
                             <div class="card-body">
                                 <div class="d-flex align-items-center justify-content-between mb-2">
                                     <div class="author">By Sam Wikiwiki</div>
@@ -548,7 +553,7 @@
 
     <footer class="bg-white" id="footer">
         <div id="top-footer-widget">
-            <div class="container">
+            <div class="container auto-wrapper">
                 <ul class="list-style-none main-footer-links">
                     <li class="column">
                         <h6>MAINLAND SOLAR</h6>
@@ -638,7 +643,7 @@
     </footer>
 
     <!-- jquery.lazy -->
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="./assets/plugins/jquery.lazy/jquery.lazy.min.js"></script>
     <script>
         $(document).ready(function() {

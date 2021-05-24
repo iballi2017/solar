@@ -55,6 +55,7 @@
                 position: absolute;
                 border: 1px solid colors.$greyColor;
                 background-color: #ffffff;
+                z-index: 2;
                 li {
                     border-bottom: 1px solid colors.$greyColor;
                     position: relative;
@@ -72,7 +73,7 @@
                     input[type="radio"] {
                         position: absolute;
                         opacity: 0;
-                        left: 100000000px;
+                        left: -50vw;
                         &:checked+label {
                             color: colors.$successColor;
                             font-weight: 600;

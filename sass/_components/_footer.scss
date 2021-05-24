@@ -8,8 +8,12 @@
     #top-footer-widget {
         .main-footer-links {
             padding-left: 0;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
             .column {
                 margin-bottom: 1.3em;
+                    flex-basis: 48%;
                 &#quick-links {
                     li {
                         &::before {
@@ -44,9 +48,6 @@
                 }
             }
             @include mixins.minmq(1000px) {
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
                 .column {
                     flex-basis: 29%;
                 }

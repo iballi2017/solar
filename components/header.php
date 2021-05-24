@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mainland Solar | Your No 1 choice for Solar Installations & Support</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/png" class="img-fluid" href="../assets/images/navbrand-logo.png" class="img-fluid" sizes="16x16">
+    <link rel="icon" type="image/png" class="img-fluid" href="../assets/images/navbrand-logo-min.png" class="img-fluid" sizes="16x16">
     <!-- meta tags -->
     <meta name="description" content="Your No 1 choice for Solar Installations & Support">
     <!-- main font family -->
@@ -32,6 +32,11 @@
 </head>
 
 <body>
+<div id="loading">
+    <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
     <!-- <button class="btn btn-primary">Button</button>
     <i class="fas fa-bars"></i> -->
     <div id="top-header">
