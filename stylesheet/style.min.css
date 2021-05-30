@@ -765,8 +765,24 @@ ul.breadcrumb li a:hover {
   display: grid;
   place-content: center;
 }
-.custom-check-wrapper .check_rej[type=radio]:checked + label .custom_checkbox {
+.custom-check-wrapper .check_rej ~ label .custom_checkbox.checkbox {
+  width: calc(var(--size));
+  height: calc(var(--size));
+  border-radius: 0;
+}
+.custom-check-wrapper .check_rej[type=radio]:checked + label .custom_checkbox,
+.custom-check-wrapper .check_rej[type=checkbox]:checked + label .custom_checkbox {
   background: #41CF1F;
+}
+.custom-check-wrapper .check_rej[type=checkbox]:checked + label .custom_checkbox {
+  background: #41CF1F;
+}
+.custom-check-wrapper .check_rej[type=checkbox]:checked + label .custom_checkbox::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: inherit;
+  color: #ffffff;
 }
 
 #user-content-wrapper {
@@ -2234,5 +2250,7 @@ body {
 #product-details-page #product-details .tab-content #pills-reviews .user-item .comment-rating .star-rating {
   white-space: nowrap;
 }
+
+/* RESOURCES PAGE STYLE */
 
 /*# sourceMappingURL=style.min.css.map */

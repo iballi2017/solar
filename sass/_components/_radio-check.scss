@@ -30,10 +30,23 @@
                 transition: transform 300ms ease-in-out;
                 display: grid;
                 place-content: center;
+                &.checkbox {
+                    width: calc(var(--size));
+                    height: calc(var(--size));
+                    border-radius: 0;
+                }
             }
         }
     }
-    .check_rej[type="radio"]:checked+label .custom_checkbox {
+    .check_rej[type="radio"]:checked+label .custom_checkbox,
+    .check_rej[type="checkbox"]:checked+label .custom_checkbox {
         background: colors.$successLightColor;
+    }
+    .check_rej[type="checkbox"]:checked+label .custom_checkbox {
+        background: colors.$successLightColor;
+        &::before {
+            @include mixins.before('\f00c', inherit);
+            color: #ffffff;
+        }
     }
 }

@@ -46,7 +46,9 @@ function openPreview() {
 
 /* close item preview */
 const closePreviewWidgetBtn = document.querySelector("#close-preview-widget-btn");
-closePreviewWidgetBtn.addEventListener('click', () => {
-    overlay.classList.remove("open");
-    itemPreview.classList.remove("open");
-})
+if (closePreviewWidgetBtn) {
+    closePreviewWidgetBtn.addEventListener('click', () => {
+        overlay.classList.remove("open");
+        itemPreview.classList.remove("open");
+    })
+}

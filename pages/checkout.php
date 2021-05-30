@@ -21,8 +21,9 @@ include '../components/header.php'
             </div>
 
 
-            <!-- checkout form -->
+            <!-- CHECKOUT FORM -->
             <form action="#">
+                <!-- personal details -->
                 <fieldset>
                     <legend>PERSONAL DETAILS</legend>
                     <div class="form-row">
@@ -62,7 +63,18 @@ include '../components/header.php'
                 </fieldset>
 
                 <!-- ##################################### -->
+                <div class="border my-4 p-3">
+                    <div class="d-flex align-items-center">
+                        <div class="my-0 bold-600 mr-3">IF YOU WANT US TO INSTALL IT FOR YOU CLICK ON THE BOX (Not for free)</div>
+                        <div class="custom-check-wrapper">
+                            <input type="checkbox" name="installation" id="installation-option" class="check_rej">
+                            <label for="installation-option">
+                                <span class="fake-radio custom_checkbox checkbox"></span></label>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- your orders -->
                 <fieldset>
                     <legend>YOUR ORDER</legend>
                     <table class="table table-bordered" id="order-table">
