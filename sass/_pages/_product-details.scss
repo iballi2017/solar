@@ -1,0 +1,209 @@
+/* PRODUCT DETAILS PAGE STYLE */
+
+@use "../_abstracts/colors";
+@use "../_partials/mixins";
+#product-details-page {
+    /* style for product-details-v2.php file */
+    min-height: 100vh;
+    // #product-feature-images {
+    //     height: 100%;
+    // }
+    // #img-preview-screen {
+    //     // height: calc(70% - 10px);
+    //     height: 300px;
+    //     display: flex;
+    //     align-items: flex-start;
+    //     border: 1px solid colors.$darkColor;
+    //     background-color: #ffffff;
+    // }
+    // #controls {
+    //     // height: calc(30% - 30px);
+    //     height: 80px;
+    //     ul {
+    //         display: grid;
+    //         grid-template-columns: repeat(3, 1fr);
+    //         grid-gap: 10px;
+    //         margin-right: .5em;
+    //         margin-left: .5em;
+    //         margin-top: 10px;
+    //         li {
+    //             &:nth-child(even) {
+    //                 // background-color: lightcoral;
+    //             }
+    //         }
+    //         .select-img {
+    //             position: relative;
+    //             border: 1px solid colors.$darkColor;
+    //             label {
+    //                 cursor: pointer;
+    //                 // background-color: red;
+    //                 // width: 100%;
+    //                 position: absolute;
+    //                 top: 0;
+    //                 right: 0;
+    //                 left: 0;
+    //                 bottom: 0;
+    //                 margin-bottom: 0;
+    //                 background-color: #ffffff;
+    //             }
+    //             input[type="radio"] {
+    //                 position: absolute;
+    //                 left: -10000px;
+    //             }
+    //         }
+    //     }
+    // }
+    // #share-product {
+    //     margin-top: 1.5em;
+    // }
+    // .product-info {
+    //     font-size: .8rem;
+    //     line-height: 24px;
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: space-between;
+    //     .product-price {
+    //         .label {
+    //             margin-right: 2em;
+    //         }
+    //         .value {
+    //             font-size: 1rem;
+    //         }
+    //     }
+    //     hr {
+    //         border-top: 1px solid colors.$greyColor;
+    //         margin: .7em 0;
+    //     }
+    //     .product-qty {
+    //         display: flex;
+    //         align-items: center;
+    //         .label {
+    //             margin-right: 2em;
+    //         }
+    //         .qty-ctrl {
+    //             min-width: 100px;
+    //         }
+    //     }
+    // }
+    .related-products-widget {
+        .inner {
+            border: 1px solid colors.$greyColor;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .widget-header {
+                border-bottom: 1px solid colors.$greyColor;
+                background-color: colors.$lightColor;
+                padding: .7em .5em;
+                h6 {
+                    font-size: .75rem;
+                }
+            }
+            .widget-item {
+                height: 100%;
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                grid-gap: 10px;
+                font-size: .7rem;
+                border-bottom: 1px solid colors.$greyColor;
+                padding: .5em .7em;
+                &:last-child {
+                    border-bottom: none;
+                }
+                .img-wrapper {
+                    grid-column: 1/5;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .item-details {
+                    grid-column: 5/-1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    #product-details {
+        .nav-pills {
+            max-width: 700px;
+            display: flex;
+            justify-content: space-between;
+            .nav-link {
+                text-transform: uppercase;
+                font-weight: 600;
+                color: colors.$darkColor;
+                padding-right: 0;
+                padding-left: 0;
+                &.active {
+                    background-color: unset;
+                    color: colors.$successColor;
+                }
+            }
+        }
+        .tab-content {
+            font-size: .85rem;
+            line-height: 25px;
+            padding-bottom: 3em;
+            .key-features {
+                dd {
+                    &::before {
+                        content: '-';
+                        margin-right: 1em;
+                    }
+                }
+            }
+            .label {
+                font-weight: 600;
+                margin-right: .5em;
+            }
+            #pills-reviews {
+                table {
+                    max-width: 500px;
+                    .name-head {
+                        min-width: 150px;
+                    }
+                    .comment-head {
+                        min-width: 100px;
+                    }
+                }
+                .user-item {
+                    .inner {
+                        display: flex;
+                        align-items: flex-start;
+                        flex-wrap: wrap;
+                        >div {
+                            margin-right: 1em;
+                        }
+                    }
+                    .name-label {
+                        height: 50px;
+                        width: 50px;
+                        background-color: #1F3200;
+                        color: #ffffff;
+                        border-radius: 50%;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-weight: 600;
+                    }
+                    .customer-name-date {
+                        .name {
+                            font-weight: 600;
+                            text-transform: uppercase;
+                        }
+                        .date {
+                            white-space: nowrap;
+                        }
+                    }
+                    .comment-rating {
+                        .star-rating {
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+ /* USER ACTION STYLE */
+ 
+ @use "../_abstracts/colors";
+ @use "../_partials/mixins";
+ .user-action {
+     display: flex;
+     justify-content: space-between;
+     button {
+         border-radius: 0;
+     }
+     .add-to-cart {
+         flex-basis: 85%;
+         button {
+             display: block;
+             word-break: normal;
+             font-size: .7rem;
+             height: 100%;
+             width: 100%;
+         }
+     }
+     .add-to-wishlist {
+         flex-basis: 15%;
+         margin-left: 5px;
+     }
+ }

@@ -3,9 +3,9 @@
 #overlay {
     position: fixed;
     /* Sit on top of the page content */
-    display: none;
+    // display: none;
     &.show {
-        display: block;
+        // display: block;
     }
     /* Hidden by default */
     width: 100%;
@@ -22,4 +22,8 @@
     /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer;
     /* Add a pointer on hover */
+    @include mixins.transform(scale(0));
+    &.open {
+        @include mixins.transform(scale(1));
+    }
 }

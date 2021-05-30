@@ -32,11 +32,11 @@
 </head>
 
 <body>
-<div id="loading">
-    <div class="spinner-border" role="status">
-        <span class="sr-only">Loading...</span>
+    <div id="loading">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
     </div>
-</div>
     <!-- <button class="btn btn-primary">Button</button>
     <i class="fas fa-bars"></i> -->
     <div id="top-header">
@@ -196,8 +196,11 @@
                         </a>
                     </div>
                 </div>
-                <div class="snack-bar show">
+                <div class="snack-bar added-to-cart show">
                     Product added to cart
+                </div>
+                <div class="snack-bar added-to-wish-list show">
+                    Added to wishlist
                 </div>
             </div>
         </nav>

@@ -32,3 +32,21 @@ document.addEventListener('readystatechange', () => {
         handleSectionWrapper();
     });
 });
+
+
+
+/* open item preview */
+const itemPreview = document.querySelector("#preview-widget");
+const overlay = document.querySelector("#overlay");
+
+function openPreview() {
+    overlay.classList.add("open");
+    itemPreview.classList.add("open");
+}
+
+/* close item preview */
+const closePreviewWidgetBtn = document.querySelector("#close-preview-widget-btn");
+closePreviewWidgetBtn.addEventListener('click', () => {
+    overlay.classList.remove("open");
+    itemPreview.classList.remove("open");
+})

@@ -18,6 +18,12 @@
             border: 1px solid colors.$successColor;
             color: #ffffff;
         }
+        &.alt-warning {
+            &:hover {
+                background-color: colors.$warningColor;
+                border: 1px solid colors.$warningColor;
+            }
+        }
     }
     
     .btn-success {
@@ -28,5 +34,44 @@
             background-color: colors.$successLightColor;
             border: 1px solid colors.$successLightColor;
             color: #ffffff;
+        }
+    }
+    /* quantity control*/
+    
+    .qty-ctrl {
+        border-radius: 16px;
+        display: inline-block;
+        border: 1px solid colors.$greyColor;
+        display: flex;
+        align-items: center;
+        >* {
+            width: (100% / 3);
+        }
+        .count {
+            display: grid;
+            place-content: center;
+            font-size: .8rem;
+        }
+        .btn {
+            color: colors.$successColor;
+            font-weight: 600;
+            &:hover {
+                background-color: colors.$successColor;
+                color: #ffffff;
+            }
+        }
+        .decreament-btn {
+            border-right: 1px solid colors.$greyColor;
+            border-top-left-radius: 16px;
+            border-bottom-left-radius: 16px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        .increament-btn {
+            border-left: 1px solid colors.$greyColor;
+            border-top-right-radius: 16px;
+            border-bottom-right-radius: 16px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
         }
     }

@@ -15,7 +15,17 @@ include '../components/header.php'
                 <div class="inner">
                     <div id="sort-input">
                         <div class="input-group">
-                            <input type="text" class="form-control border-0" placeholder="Search for product" aria-label="Search for product" aria-describedby="button-addon2">
+                            <input type="text" class="form-control border-0" id="product-search-input" placeholder="Search for product" aria-label="Search for product" aria-describedby="button-addon2">
+                            <div class="item-dropdown-content">
+                                <ul class="list-style-none p-3 shadow-sm">
+                                    <li class="py-2 list-item">
+                                        <a href="#">amu</a>
+                                    </li>
+                                    <li class="py-2 list-item">
+                                        <a href="#">Slaadar</a>
+                                    </li>
+                                </ul>
+                            </div>
                             <div class="input-group-append">
                                 <button class="btn" type="button" id="button-addon2"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M15.4479 15.4479C14.8257 16.0702 13.8124 16.0702 13.1902 15.4479L10.2568 12.5146C9.22571 13.1546 8.01682 13.5102 6.70127 13.5102C2.95016 13.5102 -0.0898438 10.4702 -0.0898438 6.70127C-0.0898438 2.93238 2.95016 -0.0898438 6.70127 -0.0898438C10.4524 -0.0898438 13.5102 2.95016 13.5102 6.70127C13.5102 7.99905 13.1368 9.20794 12.5146 10.2568L15.4479 13.1902C16.0702 13.8124 16.0702 14.8257 15.4479 15.4479ZM6.70127 1.90127C4.05238 1.90127 1.90127 4.05238 1.90127 6.70127C1.90127 9.35016 4.05238 11.5013 6.70127 11.5013C9.35016 11.5013 11.5013 9.35016 11.5013 6.70127C11.5013 4.05238 9.36793 1.90127 6.70127 1.90127Z" fill="#414143" />
@@ -70,7 +80,7 @@ include '../components/header.php'
                                         <i class="far fa-star"></i>
                                     </div>
                                     <p class="price"><span>₦</span>&nbsp;71,000</p>
-                                    <!-- <div class="action">
+                                    <!-- <div class="action user-action">
                                         <div class="add-to-cart">
                                             <button class="btn btn-white">ADD TO CART</button>
                                         </div>
@@ -82,7 +92,7 @@ include '../components/header.php'
                                     </div> -->
                                 </div>
                                 <div class="card-body action-wrapper">
-                                    <div class="action">
+                                    <div class="action user-action">
                                         <div class="add-to-cart">
                                             <button class="btn btn-white">ADD TO CART</button>
                                         </div>
@@ -115,7 +125,7 @@ include '../components/header.php'
                                     <p class="price"><span>₦</span>&nbsp;71,000</p>
                                 </div>
                                 <div class="card-body action-wrapper">
-                                    <div class="action">
+                                    <div class="action user-action">
                                         <div class="add-to-cart">
                                             <button class="btn btn-white">ADD TO CART</button>
                                         </div>
@@ -147,7 +157,7 @@ include '../components/header.php'
                                     <p class="price"><span>₦</span>&nbsp;71,000</p>
                                 </div>
                                 <div class="card-body action-wrapper">
-                                    <div class="action">
+                                    <div class="action user-action">
                                         <div class="add-to-cart">
                                             <button class="btn btn-white">ADD TO CART</button>
                                         </div>

@@ -42,7 +42,7 @@ include '../components/header.php'
 
                     <div class="py-2 item-name-wrapper">
                         <div class="item-name">Title of product</div>
-                        <a href="#" class="view-item">Quick view</a>
+                        <button class="view-item btn btn-sm rounded-0" onclick="openPreview()">Quick view</button>
                     </div>
 
                     <div class="action">
@@ -61,7 +61,7 @@ include '../components/header.php'
                     </div>
                 </div>
                 <div class="item-quantity-col">
-                    <div class="inner">
+                    <div class="inner qty-ctrl">
                         <button class="btn btn-sm decreament-btn">-</button>
                         <div class="count">1</div>
                         <button class="btn btn-sm increament-btn">+</button>
@@ -86,7 +86,7 @@ include '../components/header.php'
 
                     <div class="py-2 item-name-wrapper">
                         <div class="item-name">Title of product</div>
-                        <a href="#" class="view-item">Quick view</a>
+                        <button class="view-item btn btn-sm rounded-0" onclick="openPreview()">Quick view</button>
                     </div>
 
                     <div class="action">
@@ -105,7 +105,7 @@ include '../components/header.php'
                     </div>
                 </div>
                 <div class="item-quantity-col">
-                    <div class="inner">
+                    <div class="inner qty-ctrl">
                         <button class="btn btn-sm decreament-btn">-</button>
                         <div class="count">1</div>
                         <button class="btn btn-sm increament-btn">+</button>
@@ -130,8 +130,20 @@ include '../components/header.php'
                 <a href="./checkout.php" class="btn btn-white my-4 rounded-0">PROCEED TO CHECKOUT</a>
             </div>
         </div>
+
+
+
+
+
+        <!-- item prieview -->
+        <div class="preview-wrapper">
+            <?php
+            include '../components/item-preview.php';
+            ?>
+        </div>
     </div>
 </div>
+
 
 
 <!-- footer-full -->

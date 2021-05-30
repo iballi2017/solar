@@ -7,7 +7,6 @@
         position: relative;
         .snack-bar {
             position: absolute;
-            background-color: colors.$successColor;
             padding: 1em;
             color: #ffffff;
             font-size: .7rem;
@@ -15,8 +14,15 @@
             right: 0;
             margin-top: 15px;
             display: none;
+            text-transform: uppercase;
             &.show {
                 display: block;
+            }
+            &.added-to-cart {
+                background-color: colors.$successColor;
+            }
+            &.added-to-wish-list {
+                background-color: colors.$warningColor;
             }
         }
     }

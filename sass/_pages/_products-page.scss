@@ -12,9 +12,23 @@
             flex-wrap: wrap;
         }
         #sort-input {
+            position: relative;
+            .item-dropdown-content {
+                z-index: 2;
+                right: 0;
+                left: 0;
+                width: 100%;
+                margin-top: 40px;
+                @include mixins.transform(scaleY(0));
+            }
             .input-group {
                 input[type="text"] {
                     font-size: .8rem;
+                    &:focus {
+                        +.item-dropdown-content {
+                            @include mixins.transform(scaleY(1));
+                        }
+                    }
                 }
             }
         }
@@ -96,7 +110,7 @@
             }
         }
     }
-    #product-list {
-        .product-card {}
-    }
+    // #product-list {
+    //     .product-card {}
+    // }
 }

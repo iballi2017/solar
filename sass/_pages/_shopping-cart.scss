@@ -85,44 +85,9 @@
         }
         .item-quantity-col {
             grid-column: 7/9;
-            >.inner {
-                border-radius: 16px;
-                display: inline-block;
-                border: 1px solid colors.$greyColor;
-                display: flex;
-                align-items: center;
+            >.inner.qty-ctrl {
                 max-width: 150px;
                 margin: 0 auto;
-                >* {
-                    width: (100% / 3);
-                }
-                .count {
-                    display: grid;
-                    place-content: center;
-                    font-size: .8rem;
-                }
-                .btn {
-                    color: colors.$successColor;
-                    font-weight: 600;
-                    &:hover {
-                        background-color: colors.$successColor;
-                        color: #ffffff;
-                    }
-                }
-                .decreament-btn {
-                    border-right: 1px solid colors.$greyColor;
-                    border-top-left-radius: 16px;
-                    border-bottom-left-radius: 16px;
-                    border-top-right-radius: 0;
-                    border-bottom-right-radius: 0;
-                }
-                .increament-btn {
-                    border-left: 1px solid colors.$greyColor;
-                    border-top-right-radius: 16px;
-                    border-bottom-right-radius: 16px;
-                    border-top-left-radius: 0;
-                    border-bottom-left-radius: 0;
-                }
             }
         }
         .item-price-col {
@@ -163,8 +128,5 @@
     .proceed-to-checkout-link-wrapper {
         text-align: right;
         border-bottom: 1px solid colors.$greyColor;
-        a {
-            // font-weight: 600;
-        }
     }
 }

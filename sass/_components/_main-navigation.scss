@@ -21,8 +21,8 @@
                     display: none;
                 }
             }
-            &#lg-shopping-cart-counter{
-                @include mixins.maxmq(1000px){
+            &#lg-shopping-cart-counter {
+                @include mixins.maxmq(1000px) {
                     display: none;
                 }
             }
@@ -70,8 +70,7 @@
                 }
             }
         }
-
-        #navbarNav{
+        #navbarNav {
             padding-top: 1em;
             padding-bottom: 1em;
         }
@@ -102,6 +101,9 @@
                 }
                 &:last-child {
                     margin-right: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: end;
                 }
             }
         }

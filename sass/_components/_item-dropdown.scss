@@ -15,38 +15,41 @@
         }
     }
     .item-dropdown-content {
-        font-size: .8rem;
-        position: absolute;
-        width: auto;
-        // right: 0;
-        // left: 0;
-        display: inline-block;
         @include mixins.transform(scaleY(0));
-        @include mixins.transition(all 300ms ease-in-out);
-        transform-origin: top;
         .list-style-none {
             width: 250px;
-            background-color: #ffffff;
             margin-top: 40px;
-        }
-        .list-item {
-            border-bottom: 1px solid colors.$darkColor;
-            a {
-                color: colors.$darkColor;
-                &:hover {
-                    text-decoration: none;
-                    color: colors.$successColor;
-                }
-            }
-            &:last-child {
-                border-bottom: none;
-            }
         }
     }
     &:hover {
         .item-dropdown-content {
             @include mixins.transform(scaleY(1));
             @include mixins.transition(all 300ms ease-in-out);
+        }
+    }
+}
+
+.item-dropdown-content {
+    font-size: .8rem;
+    position: absolute;
+    width: auto;
+    display: inline-block;
+    @include mixins.transition(all 300ms ease-in-out);
+    transform-origin: top;
+    .list-style-none {
+        background-color: #ffffff;
+    }
+    .list-item {
+        border-bottom: 1px solid colors.$darkColor;
+        a {
+            color: colors.$darkColor;
+            &:hover {
+                text-decoration: none;
+                color: colors.$successColor;
+            }
+        }
+        &:last-child {
+            border-bottom: none;
         }
     }
 }
