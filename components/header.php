@@ -156,7 +156,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Resources</a>
+                            <a class="nav-link" href="../pages/resources.php">Resources</a>
                         </li>
                         <!-- <li class="nav-item item-dropdown">
                             <a class="nav-link" href="#"><span class="bold uppercase">Hi Akinola</span>&nbsp;/&nbsp;<span><button class="btn btn-sm text-danger p-0">LOGOUT</button></a>

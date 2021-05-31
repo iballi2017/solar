@@ -44,7 +44,7 @@ include '../components/header.php'
                             <div class="productName">
                                 <!-- <span class="mr-1">Title of product</span> -->
                                 <span class="mr-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptates esse blanditiis, expedita voluptatum itaque officia nesciunt ab repellat cupiditate?</span>
-                                <a href="#" class="btn btn-sm btn-success rounded-0">Quick view</a>
+                                <button class="view-item btn btn-sm btn-success rounded-0" onclick="openPreview()">Quick view</button>
                             </div>
                             <div class="price">₦ 71,000</div>
                             <div class="action"><button href="#" class="btn btn-sm btn-white rounded-0">ADD TO CART</button></div>
@@ -54,7 +54,7 @@ include '../components/header.php'
                             <div class="productName">
                                 <!-- <span class="mr-1">Title of product</span> -->
                                 <span class="mr-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptates esse blanditiis, expedita voluptatum itaque officia nesciunt ab repellat cupiditate?</span>
-                                <a href="#" class="btn btn-sm btn-success rounded-0">Quick view</a>
+                                <button class="view-item btn btn-sm btn-success rounded-0" onclick="openPreview()">Quick view</button>
                             </div>
                             <div class="price">₦ 71,000</div>
                             <div class="action"><button href="#" class="btn btn-sm btn-white rounded-0">ADD TO CART</button></div>
@@ -63,6 +63,16 @@ include '../components/header.php'
                 </div>
             </div>
 
+        </div>
+
+
+
+
+        <!-- item prieview -->
+        <div class="preview-wrapper">
+            <?php
+            include '../components/item-preview.php';
+            ?>
         </div>
     </div>
 </div>

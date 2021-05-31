@@ -156,7 +156,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Resources</a>
+                            <a class="nav-link" href="./pages/resources.php">Resources</a>
                         </li>
                         <!-- commented shows when user logs in -->
                         <!-- <li class="nav-item item-dropdown">
@@ -494,7 +494,7 @@
                         <div class="card">
                             <img src="./assets/images/blog-post-featured-image-sample-min.png" class="card-img-top" alt="blog-post-featured-image-sample">
                             <div class="card-body">
-                                <div class="d-flex align-items-end justify-content-between mb-2">
+                                <div class="d-flex align-items-end justify-content-between flex-wrap mb-2">
                                     <div class="author">By Sam Wikiwiki</div>
                                     <div class="date">Apr 27, 2021</div>
                                 </div>
@@ -509,7 +509,7 @@
                         <div class="card">
                             <img src="./assets/images/blog-post-featured-image-sample-min.png" class="card-img-top" alt="blog-post-featured-image-sample">
                             <div class="card-body">
-                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                <div class="d-flex align-items-center justify-content-between flex-wrap mb-2">
                                     <div class="author">By Sam Wikiwiki</div>
                                     <div class="date">Apr 27, 2021</div>
                                 </div>
@@ -524,7 +524,7 @@
                         <div class="card">
                             <img src="./assets/images/blog-post-featured-image-sample-min.png" class="card-img-top" alt="blog-post-featured-image-sample">
                             <div class="card-body">
-                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                <div class="d-flex align-items-center justify-content-between flex-wrap mb-2">
                                     <div class="author">By Sam Wikiwiki</div>
                                     <div class="date">Apr 27, 2021</div>
                                 </div>
