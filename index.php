@@ -574,7 +574,7 @@
                                 <div class="input-group mb-3">
                                     <input type="email" class="form-control" aria-label="Newsletter subscription" aria-describedby="button-addon2">
                                     <div class="input-group-append">
-                                        <button class="btn" type="button" id="button-addon2">GO</button>
+                                        <button class="btn rounded-0" type="button" id="button-addon2">GO</button>
                                     </div>
                             </form>
                         </div>

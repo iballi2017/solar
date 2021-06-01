@@ -47,6 +47,7 @@
                     }
                 }
                 #blogpost-details {
+                    line-height: 30px;
                     .date {
                         &::before {
                             font-size: .7rem;
@@ -120,13 +121,19 @@
     }
     #post-nav {
         margin-bottom: 2em;
+        .post-nav {
+            color: colors.$successColor !important;
+        }
         @include mixins.minmq(768px) {
             text-align: center;
             .inner {
                 display: inline-flex;
                 align-items: center;
-                flex-wrap: wrap;
+                flex-wrap: nowrap;
                 height: 75px;
+                >.dark-link {
+                    height: 100%;
+                }
                 .vertical-separator {
                     border-left: 1px solid colors.$darkColor;
                     height: 100%;

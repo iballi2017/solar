@@ -8,6 +8,7 @@
 
 .dark-link {
     color: colors.$darkColor;
+    @include mixins.transition(all .5s);
     &:hover {
         text-decoration: none;
         color: colors.$successColor;
@@ -16,6 +17,7 @@
 
 .success-link {
     color: colors.$successColor;
+    @include mixins.transition(all .5s);
     &:hover {
         text-decoration: none;
         color: colors.$darkColor;

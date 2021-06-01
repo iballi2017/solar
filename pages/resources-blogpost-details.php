@@ -23,29 +23,42 @@ include '../components/header.php'
                             <div class="card border-0 blog-post">
                                 <img src="../assets/images/blog-post-featured-image-sample-min.png" class="card-img-top rounded-0" alt="...">
                                 <div class="card-body px-0">
-                                    <p class="card-text">Solar energy is the cheapest source of energy. Not only is it cheap and easily accessible, but it is also long-lasting. The source
+                                    <p class="card-text">Solar energy is the cheapest source of energy. Not only is it
+                                        cheap and easily accessible, but it is also long-lasting. The source
                                         of this inexhaustible and environmentally friendly energy is the sun.
                                         The first solar panel cell was created by Russel Ohl in
-                                        1941 while the first commercial panel was brought forward by Bell Laboratories in 1954. However, in 1839, Alexandre Edmond
-                                        Becquerel was known as the father of the photovoltaic effect—that is, the ability to create an electric current from the sun’s
+                                        1941 while the first commercial panel was brought forward by Bell Laboratories
+                                        in 1954. However, in 1839, Alexandre Edmond
+                                        Becquerel was known as the father of the photovoltaic effect—that is, the
+                                        ability to create an electric current from the sun’s
                                         rays.
                                     </p>
-                                    <p>Did you know that over 170,000 terawatts of energy from the sun hits the earth daily? This is enough to power the
-                                        whole planet. And with just one hour of direct sunlight, you could collect enough energy to generate a year’s worth of power
+                                    <p>Did you know that over 170,000 terawatts of energy from the sun hits the earth
+                                        daily? This is enough to power the
+                                        whole planet. And with just one hour of direct sunlight, you could collect
+                                        enough energy to generate a year’s worth of power
                                         for the entire Earth.</p>
                                     <p>
-                                        Solar power is gotten from solar energy, which is energy produced by the sun. When the sunbeams, its
-                                        energy can be stored in solar panels. These solar panels transform energy into power in two different ways – photovoltaic,
-                                        which is power used for electricity, and solar thermal, which is power used for heating. Solar panels can still produce power
-                                        without being directly exposed to sunlight. Solar energy is very dynamic and as long as the sun keeps radiating, solar panels
-                                        can capture different parts of the sun’s light spectrum. So, if the sun is not directly beaming on the panels, or it happens to
-                                        be a cloudy day, this doesn’t mean the hues reflected from the sky aren’t being captured and utilized by the solar panel cells
+                                        Solar power is gotten from solar energy, which is energy produced by the sun.
+                                        When the sunbeams, its
+                                        energy can be stored in solar panels. These solar panels transform energy into
+                                        power in two different ways – photovoltaic,
+                                        which is power used for electricity, and solar thermal, which is power used for
+                                        heating. Solar panels can still produce power
+                                        without being directly exposed to sunlight. Solar energy is very dynamic and as
+                                        long as the sun keeps radiating, solar panels
+                                        can capture different parts of the sun’s light spectrum. So, if the sun is not
+                                        directly beaming on the panels, or it happens to
+                                        be a cloudy day, this doesn’t mean the hues reflected from the sky aren’t being
+                                        captured and utilized by the solar panel cells
                                         to produce power.
-                                        One key advantage of solar energy is that it reduces the emission of carbon dioxide in the atmosphere.
-                                        By installing more solar power systems, we are doing the planet a great favour by keeping the air pure and clean.
+                                        One key advantage of solar energy is that it reduces the emission of carbon
+                                        dioxide in the atmosphere.
+                                        By installing more solar power systems, we are doing the planet a great favour
+                                        by keeping the air pure and clean.
                                     </p>
                                     <div id="share-icons">
-                                        <span class="label">Share with Friends :</span>
+                                        <span class="label bold-600">Share with Friends :</span>
                                         <span>
                                             <ul class="icons px-0 list-style-none">
                                                 <li>
@@ -85,19 +98,22 @@ include '../components/header.php'
                             <div class="col">
                                 <div id="post-nav">
                                     <div class="inner">
-                                        <div id="previous-post">
-                                            <div class="post-nav">
-                                                <a href="#" class="success-link">PREVIOUS POST</a>
+                                        <a href="#" class="dark-link">
+                                            <div id="previous-post">
+                                                <div class="post-nav">
+                                                    PREVIOUS POST
+                                                </div>
+                                                <div class="nav-post-title bold-600">IMPORTANCE OF SOLAR ENERGY</div>
                                             </div>
-                                            <div class="nav-post-title bold-600">IMPORTANCE OF SOLAR ENERGY</div>
-                                        </div>
+                                        </a>
                                         <div class="vertical-separator"></div>
-                                        <div id="next-post">
-                                            <div class="post-nav">
-                                                <a href="#" class="success-link">NEXT POST</a>
+                                        <a href="#" class="dark-link">
+                                            <div id="next-post">
+                                                <div class="post-nav">NEXT POST </div>
+                                                <div class="nav-post-title bold-600">SOLAR ENERGY</div>
+
                                             </div>
-                                            <div class="nav-post-title bold-600">SOLAR ENERGY</div>
-                                        </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

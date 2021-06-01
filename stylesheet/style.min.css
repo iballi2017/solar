@@ -1065,6 +1065,10 @@ body {
 
 .dark-link {
   color: #414143;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .dark-link:hover {
   text-decoration: none;
@@ -1073,6 +1077,10 @@ body {
 
 .success-link {
   color: #209E02;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .success-link:hover {
   text-decoration: none;
@@ -2303,6 +2311,9 @@ body {
   content: url(../assets/images/icons/folder-icon.svg);
   margin-right: 0.5em;
 }
+#resources-page #user-resources-content .inner #content-wrapper #blogpost-details {
+  line-height: 30px;
+}
 #resources-page #user-resources-content .inner #content-wrapper #blogpost-details .date::before {
   font-size: 0.7rem;
 }
@@ -2359,6 +2370,9 @@ body {
 #resources-page #post-nav {
   margin-bottom: 2em;
 }
+#resources-page #post-nav .post-nav {
+  color: #209E02 !important;
+}
 @media (min-width: 768px) {
   #resources-page #post-nav {
     text-align: center;
@@ -2366,8 +2380,11 @@ body {
   #resources-page #post-nav .inner {
     display: inline-flex;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     height: 75px;
+  }
+  #resources-page #post-nav .inner > .dark-link {
+    height: 100%;
   }
   #resources-page #post-nav .inner .vertical-separator {
     border-left: 1px solid #414143;
