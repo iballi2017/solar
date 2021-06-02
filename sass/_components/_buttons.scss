@@ -36,6 +36,17 @@
             color: #ffffff;
         }
     }
+    
+    .btn-danger {
+        background-color: colors.$dangerColor;
+        color: #ffffff;
+        border: 1px solid colors.$dangerColor;
+        &:hover {
+            background-color: rgba(colors.$dangerColor, .8);
+            border: 1px solid rgba(colors.$dangerColor, .8);
+            color: #ffffff;
+        }
+    }
     /* quantity control*/
     
     .qty-ctrl {

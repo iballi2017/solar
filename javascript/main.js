@@ -35,6 +35,19 @@ document.addEventListener('readystatechange', () => {
 
 
 
+/* print page */
+function printPage() {
+    const footerTopWidget = document.querySelector("#top-footer-widget");
+    footerTopWidget.style.display = 'none';
+    window.print();
+}
+
+/* go back */
+function goBack() {
+    window.history.back();
+}
+
+
 /* open item preview */
 const itemPreview = document.querySelector("#preview-widget");
 const overlay = document.querySelector("#overlay");

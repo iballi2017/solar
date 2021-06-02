@@ -209,6 +209,32 @@
             }
         }
     }
+    #user-purchase-details-content {
+        .inner {
+            border: 1px solid colors.$greyColor;
+            .title {
+                border-bottom: 1px solid colors.$greyColor;
+                background-color: colors.$lightColor;
+                padding: .7em;
+            }
+            .order-summary {
+                padding: .7em;
+                li {
+                    margin-bottom: 1em;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .horizontal-separator {
+                border-bottom: 1px solid colors.$greyColor;
+                margin-top: .6em;
+                margin-bottom: .5em;
+                margin-right: 1em;
+                margin-left: 1em;
+            }
+        }
+    }
     @include mixins.maxmq(768px) {
         .user-greet {
             margin-bottom: 1em;

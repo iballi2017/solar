@@ -3,11 +3,47 @@
 @use "../_abstracts/colors";
 @use "../_partials/mixins";
 #user-project-history-page {
-    aside {
-        font-size: 1.2rem;
+    font-size: .9rem;
+    .request-id {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        margin-bottom: 1em;
     }
-    .form-wrapper {
-        max-width: 400px;
-        margin: 0 auto;
+    tr {
+        .inner {
+            padding: 1em;
+        }
+    }
+    .installation-data {
+        width: 100%;
+        margin-bottom: 2em;
+        line-height: 30px;
+        thead {
+            .col {
+                width: 50%;
+            }
+        }
+        .label {
+            font-weight: bold;
+        }
+    }
+    .installation-details {
+        width: 100%;
+        margin-bottom: 2em;
+        thead {
+            background-color: colors.$lightColor;
+            div {
+                padding-left: 1em;
+                padding-right: 1em;
+            }
+            .col {
+                width: 50%;
+            }
+        }
+    }
+    #user-action {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 }

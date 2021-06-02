@@ -147,7 +147,7 @@
                                         <a href="#">LOAD/SYSTEM QUESTIONNAIRE</a>
                                     </li>
                                     <li class="py-2 list-item">
-                                        <a href="./pages/user-project-history.php">PROJECT HISTORY</a>
+                                        <a href="./pages/user-project-history-request.php">PROJECT HISTORY</a>
                                     </li>
                                     <li class="py-2 list-item">
                                         <a href="./pages/contact-us.php">CONTACT US</a>
@@ -164,13 +164,13 @@
                             <div class="item-dropdown-content user-account-dropdown">
                                 <ul class="list-style-none p-3 shadow-sm">
                                     <li class="py-2 list-item">
-                                        <a href="#">ACCOUNT</a>
+                                        <a href="./pages/user-account-settings.php">ACCOUNT</a>
                                     </li>
                                     <li class="py-2 list-item">
-                                        <a href="#">PURCHASE HISTORY</a>
+                                        <a href="./pages/user-project-history-request.php">PURCHASE HISTORY</a>
                                     </li>
                                     <li class="py-2 list-item">
-                                        <a href="#">WISHLIST</a>
+                                        <a href="./pages/user-wishlist.php">WISHLIST</a>
                                     </li>
                                 </ul>
                             </div>

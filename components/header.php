@@ -147,7 +147,7 @@
                                         <a href="#">LOAD/SYSTEM QUESTIONNAIRE</a>
                                     </li>
                                     <li class="py-2 list-item">
-                                        <a href="../pages/user-project-history.php">PROJECT HISTORY</a>
+                                        <a href="../pages/user-project-history-request.php">PROJECT HISTORY</a>
                                     </li>
                                     <li class="py-2 list-item">
                                         <a href="../pages/contact-us.php">CONTACT US</a>
@@ -158,23 +158,23 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../pages/resources.php">Resources</a>
                         </li>
-                        <!-- <li class="nav-item item-dropdown">
-                            <a class="nav-link" href="#"><span class="bold uppercase">Hi Akinola</span>&nbsp;/&nbsp;<span><button class="btn btn-sm text-danger p-0">LOGOUT</button></a>
+                        <li class="nav-item item-dropdown">
+                            <a class="nav-link" href="#"><span class="bold uppercase">Hi Akinola</span>&nbsp;/&nbsp;<span><button class="btn btn-sm text-danger p-0" id="user-logout">LOGOUT</button></a>
                             <div class="item-dropdown-content user-account-dropdown">
                                 <ul class="list-style-none p-3 shadow-sm">
                                     <li class="py-2 list-item">
-                                        <a href="#">ACCOUNT</a>
+                                        <a href="../pages/user-account-settings.php">ACCOUNT</a>
                                     </li>
                                     <li class="py-2 list-item">
-                                        <a href="#">PURCHASE HISTORY</a>
+                                        <a href="../pages/user-project-history-request.php">PURCHASE HISTORY</a>
                                     </li>
                                     <li class="py-2 list-item">
-                                        <a href="#">WISHLIST</a>
+                                        <a href="../pages/user-wishlist.php">WISHLIST</a>
                                     </li>
                                 </ul>
                             </div>
-                        </li> -->
-                        <li class="nav-item user-auth-nav">
+                        </li>
+                        <!-- <li class="nav-item user-auth-nav">
                             <div class="greet">Hi Guest</div>
                             <div>
                                 <span>
@@ -185,7 +185,7 @@
                                     <a href="../auth/register.php" class="dark-link">Register</a>
                                 </span>
                             </div>
-                        </li>
+                        </li> -->
                     </ul>
                     <div class="horizon-separator"></div>
                     <div class="align-item-end shopping-cart-wrapper" id="lg-shopping-cart-counter">

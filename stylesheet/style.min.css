@@ -282,6 +282,17 @@
   color: #ffffff;
 }
 
+.btn-danger {
+  background-color: #EA4B4B;
+  color: #ffffff;
+  border: 1px solid #EA4B4B;
+}
+.btn-danger:hover {
+  background-color: rgba(234, 75, 75, 0.8);
+  border: 1px solid rgba(234, 75, 75, 0.8);
+  color: #ffffff;
+}
+
 /* quantity control*/
 .qty-ctrl {
   border-radius: 16px;
@@ -1085,6 +1096,14 @@ body {
 .success-link:hover {
   text-decoration: none;
   color: #414143;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #414143 !important;
+}
+
+.border {
+  border: 1px solid #414143 !important;
 }
 
 .bold {
@@ -2116,6 +2135,30 @@ body {
     grid-column: 11/-1;
   }
 }
+#user-profile-page #user-purchase-details-content .inner {
+  border: 1px solid #C4C4C4;
+}
+#user-profile-page #user-purchase-details-content .inner .title {
+  border-bottom: 1px solid #C4C4C4;
+  background-color: #F1F2F1;
+  padding: 0.7em;
+}
+#user-profile-page #user-purchase-details-content .inner .order-summary {
+  padding: 0.7em;
+}
+#user-profile-page #user-purchase-details-content .inner .order-summary li {
+  margin-bottom: 1em;
+}
+#user-profile-page #user-purchase-details-content .inner .order-summary li:last-child {
+  margin-bottom: 0;
+}
+#user-profile-page #user-purchase-details-content .inner .horizontal-separator {
+  border-bottom: 1px solid #C4C4C4;
+  margin-top: 0.6em;
+  margin-bottom: 0.5em;
+  margin-right: 1em;
+  margin-left: 1em;
+}
 @media (max-width: 768px) {
   #user-profile-page .user-greet {
     margin-bottom: 1em;
@@ -2145,15 +2188,6 @@ body {
 }
 #contact-us-page form .btn {
   width: 200px;
-}
-
-/* USER PROJECT HISTORY PAGE STYLE */
-#user-project-history-page aside {
-  font-size: 1.2rem;
-}
-#user-project-history-page .form-wrapper {
-  max-width: 400px;
-  margin: 0 auto;
 }
 
 /* PRODUCT DETAILS PAGE STYLE */
@@ -2444,5 +2478,59 @@ body {
     margin-left: 1em;
   }
 }
+
+/* USER PROJECT HISTORY REQUEST PAGE STYLE */
+#user-project-history-request-page aside {
+  font-size: 1.2rem;
+}
+#user-project-history-request-page .form-wrapper {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* USER PROJECT HISTORY PAGE STYLE */
+#user-project-history-page {
+  font-size: 0.9rem;
+}
+#user-project-history-page .request-id {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-bottom: 1em;
+}
+#user-project-history-page tr .inner {
+  padding: 1em;
+}
+#user-project-history-page .installation-data {
+  width: 100%;
+  margin-bottom: 2em;
+  line-height: 30px;
+}
+#user-project-history-page .installation-data thead .col {
+  width: 50%;
+}
+#user-project-history-page .installation-data .label {
+  font-weight: bold;
+}
+#user-project-history-page .installation-details {
+  width: 100%;
+  margin-bottom: 2em;
+}
+#user-project-history-page .installation-details thead {
+  background-color: #F1F2F1;
+}
+#user-project-history-page .installation-details thead div {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+#user-project-history-page .installation-details thead .col {
+  width: 50%;
+}
+#user-project-history-page #user-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* USER PURCHASE DETAILS PAGE STYLE */
 
 /*# sourceMappingURL=style.min.css.map */

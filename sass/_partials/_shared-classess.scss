@@ -24,6 +24,14 @@
     }
 }
 
+.border-bottom {
+    border-bottom: 1px solid colors.$darkColor !important;
+}
+
+.border {
+    border: 1px solid colors.$darkColor !important;
+}
+
 .bold {
     font-weight: bold;
 }
