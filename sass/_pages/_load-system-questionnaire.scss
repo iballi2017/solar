@@ -1,0 +1,131 @@
+/* USER LOAD/SYSTEM QUESTIONAIRE PAGE STYLE */
+
+@use "../_abstracts/colors";
+@use "../_partials/mixins";
+#load-system-questionnaire-page {
+    #progress-bar {
+        max-width: 500px;
+        margin: 0 auto;
+        margin-bottom: 4em;
+        .inner {
+            font-size: .8rem;
+            font-weight: 600;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+    }
+    #form-wizard {
+        max-width: 700px;
+        margin: 0 auto;
+        .inner {
+            --size: 100%;
+            width: var(--size);
+            // background-color: lightpink;
+            overflow: hidden;
+            .step-inner {
+                border: 1px solid colors.$greyColor;
+            }
+            #result-screen {
+                font-size: .8rem;
+                padding-bottom: 2em;
+                table {
+                    max-width: 300px;
+                    margin: 0 auto;
+                    color: #ffffff;
+                    font-weight: 600;
+                    // background-color: lightsalmon;
+                    .col-left,
+                    .col-right {
+                        min-width: 100px;
+                        // background-color: lightpink;
+                    }
+                    .load-value,
+                    .energy-value {
+                        color: colors.$warningColor;
+                        float: right;
+                    }
+                    .pressure-info {
+                        color: #C7F4AB;
+                        .pressure-value {
+                            float: right;
+                        }
+                    }
+                    .null {
+                        color: #C7F4AB;
+                    }
+                }
+            }
+        }
+        form {
+            display: inline-flex;
+            width: calc(var(--size) * 2);
+            .form_step {
+                width: calc(var(--size) / 2);
+                transition: all .3s ease-in-out;
+            }
+        }
+        .disabled_btn {
+            background-color: #ccc;
+            color: #fff;
+        }
+        .horizontal-separator {
+            margin-bottom: 1.5em;
+        }
+        .slidePage {
+            // margin-left: -50%;
+            legend {
+                display: flex;
+                align-items: flex-start;
+                &::before {
+                    content: url(../assets/images/icons/noun_arrow-icon.svg);
+                    margin-right: 1em;
+                }
+            }
+            .form-group {
+                padding-left: 2.5em;
+            }
+        }
+        .step-footer {
+            border: none;
+            border-top: 1px solid colors.$greyColor;
+            // .fake-btn {
+            //     border: 1px solid colors.$greyColor;
+            //     width: 150px;
+            // }
+        }
+        #energy-calculator {
+            #result-screen {
+                min-height: 200px;
+                background-color: colors.$darkColor;
+            }
+            .table-form-wrapper {
+                border: none;
+                border-top: 1px solid colors.$greyColor;
+            }
+            .table-form {
+                .form-group {
+                    margin-bottom: 0;
+                }
+                thead {
+                    #qty-head {
+                        width: 100px;
+                        min-width: 90px;
+                    }
+                    #appliance-head {
+                        width: 300px;
+                        min-width: 250px;
+                    }
+                    #wattage-head {
+                        width: 130px;
+                        min-width: 100px;
+                    }
+                    #hours-head {
+                        width: 130px;
+                        min-width: 100px;
+                    }
+                }
+            }
+        }
+    }
+}

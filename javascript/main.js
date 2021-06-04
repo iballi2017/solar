@@ -65,3 +65,20 @@ if (closePreviewWidgetBtn) {
         itemPreview.classList.remove("open");
     })
 }
+
+
+/* LOAD/SYSTEM QUESTIONAIRE form widget */
+const slidePage = document.querySelector(".slidePage");
+const firstNextBtn = document.querySelector(".firstNextBtn");
+const firstPrevBtn = document.querySelector(".firstPrevBtn");
+const size = 100;
+
+firstNextBtn.addEventListener("click", () => {
+    slidePage.style.marginLeft = -100 / 2 + "%";
+});
+/* PREVIOUS BUTTONS */
+firstPrevBtn.addEventListener("click", () => {
+    slidePage.style.marginLeft = "0%";
+    pregressWidth = (100 / 3)
+    progressStyle()
+})

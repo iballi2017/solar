@@ -210,17 +210,16 @@
         }
     }
     #user-purchase-details-content {
+        font-size: 15px;
         .inner {
             border: 1px solid colors.$greyColor;
             .title {
                 border-bottom: 1px solid colors.$greyColor;
                 background-color: colors.$lightColor;
-                padding: .7em;
             }
             .order-summary {
-                padding: .7em;
                 li {
-                    margin-bottom: 1em;
+                    margin-bottom: .5em;
                     &:last-child {
                         margin-bottom: 0;
                     }
@@ -232,6 +231,52 @@
                 margin-bottom: .5em;
                 margin-right: 1em;
                 margin-left: 1em;
+            }
+            #order-items {
+                .status {
+                    font-weight: 600;
+                    border: 1px solid colors.$greyColor;
+                    border-bottom: none;
+                }
+                .item-list {
+                    .item {
+                        border: 1px solid colors.$greyColor;
+                        border-bottom: none;
+                        &:last-child {
+                            border-bottom: 1px solid colors.$greyColor;
+                        }
+                        .item-details {
+                            font-weight: 600;
+                            .name {
+                                display: flex;
+                                align-items: center;
+                            }
+                            .label {
+                                font-weight: lighter;
+                            }
+                        }
+                    }
+                }
+            }
+            #payment-delivery-info {
+                #payment-info,
+                #delivery-info {
+                    margin-bottom: 1.5em;
+                    .inner {
+                        border: 1px solid colors.$greyColor;
+                        padding: 1.5em;
+                        height: 100%;
+                        h6 {
+                            margin-bottom: 2em;
+                            font-weight: bold;
+                        }
+                        dl {
+                            dd {
+                                margin-bottom: 2em;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

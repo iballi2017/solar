@@ -64,14 +64,15 @@ select {
 }
 
 .select-drop-wrapper {
+    position: relative;
     &::after {
         // @include after('\f0d7', 20px);
-        @include mixins.after('\f107', 20px);
+        @include mixins.after('\f0dd', 20px);
         position: absolute;
-        right: 1.5rem;
+        right: .5rem;
         // color: $active-component-color;
         pointer-events: none;
-        bottom: 0.44em;
+        bottom: 0.3em;
     }
 }
 

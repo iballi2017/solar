@@ -37,7 +37,7 @@ include '../components/header.php'
                     <!-- Purchase details -->
 
                     <div class="inner">
-                        <div class="title p-3">
+                        <div class="title px-3 py-2 bold">
                             <button class="px-0 btn mr-3">
                                 <i class="fas fa-arrow-left"></i>
                             </button>Order Details
@@ -52,14 +52,85 @@ include '../components/header.php'
 
                         <hr class="horizontal-separator" />
 
-                        <section class="item-list p-3">
+                        <section class="p-3" id="order-items">
                             <h6>ITEMS IN YOUR ORDER</h6>
-                            <ul class="px-0 list-style-none">
+                            <div class="status p-3">
+                                STATUS:&nbsp;&nbsp;DELIVERED
+                            </div>
+                            <ul class="px-0 mb-0 list-style-none item-list">
                                 <!-- item 1 -->
-                                <li class="item-1">
-
+                                <li class="item">
+                                    <div class="item-details row p-3">
+                                        <div class="img-wrapper col-4 col-md-2">
+                                            <img src="../assets/images/product-images/product-2-image.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="name col-8 col-md-6">
+                                            Title of product
+                                        </div>
+                                        <div class="qty col-4 col-md-2 text-center">
+                                            <div class="label">Quantity</div>
+                                            <div>1</div>
+                                        </div>
+                                        <div class="price col-8 col-md-2 text-center">
+                                            <div class="label">Price</div>
+                                            <div>₦ 2,500</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- item 2 -->
+                                <li class="item">
+                                    <div class="item-details row p-3">
+                                        <div class="img-wrapper col-4 col-md-2">
+                                            <img src="../assets/images/product-images/product-2-image.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="name col-8 col-md-6">
+                                            Title of product
+                                        </div>
+                                        <div class="qty col-4 col-md-2 text-center">
+                                            <div class="label">Quantity</div>
+                                            <div>1</div>
+                                        </div>
+                                        <div class="price col-8 col-md-2 text-center">
+                                            <div class="label">Price</div>
+                                            <div>₦ 2,500</div>
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
+                        </section>
+
+                        <!--  -->
+                        <section class="p-3" id="payment-delivery-info">
+
+                            <div class="row">
+                                <div id="payment-info" class="col-12 col-md-6">
+                                    <div class="inner">
+                                        <h6>PAYMENT INFORMATION </h6>
+                                        <dl>
+                                            <dt>Payment Method</dt>
+                                            <dd>Bank Transfer / Third-party payment interface</dd>
+                                            <!--  -->
+                                            <dt>Payment Details</dt>
+                                            <dd>Items total: ₦ 5000</dd>
+                                        </dl>
+                                        <p>Shipping Fees: </p>
+
+                                        <p class="bold-600">Total: ₦ 5000</p>
+                                    </div>
+                                </div>
+                                <div id="delivery-info" class="col-12 col-md-6">
+                                    <div class="inner">
+                                        <h6>DELIVERY INFORMATION </h6>
+                                        <dl>
+                                            <dt>Delivery Method</dt>
+                                            <dd>Standard Door Delivery</dd>
+                                            <!--  -->
+                                            <dt>Shipping Address</dt>
+                                            <dd>6a kolawole Shonibare Street, Ilupeju, Lagos Nigeria</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
                         </section>
                     </div>
 

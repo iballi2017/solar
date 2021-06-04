@@ -49,7 +49,7 @@ include '../components/header.php'
                             <div class="totalPrice">₦ 142,000</div>
                             <div class="status">Processing</div>
                             <div class="details">
-                                <a href="#" class="btn btn-sm btn-white rounded-0">Quick view</a>
+                                <a href="./user-purchase-details.php" class="btn btn-sm btn-white rounded-0">Quick view</a>
                             </div>
                         </div>
                         <div class="table-row">
@@ -58,7 +58,7 @@ include '../components/header.php'
                             <div class="totalPrice">₦ 142,000</div>
                             <div class="status">Delivered</div>
                             <div class="details">
-                                <a href="#" class="btn btn-sm btn-white rounded-0">Quick view</a>
+                                <a href="./user-purchase-details.php" class="btn btn-sm btn-white rounded-0">Quick view</a>
                             </div>
                         </div>
                     </div>
