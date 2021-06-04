@@ -6,12 +6,34 @@
     .review-form-wrapper {
         max-width: 500px;
         margin: 0 auto;
+        margin-top: 3em;
+        border: 1px solid colors.$greyColor;
         .header {
             background-color: colors.$lightColor;
             border: 1px solid colors.$greyColor;
             .brandlogo-wrapper {
                 max-width: 70px;
                 margin: 0 auto;
+            }
+        }
+        aside {
+            background-color: colors.$darkColor;
+            padding: .7em;
+            color: #ffffff;
+            font-weight: 600;
+        }
+        .item-preview {
+            .inner {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+            }
+            .img-wrapper {
+                grid-column: 1/4;
+            }
+            .body {
+                grid-column: 4/-1;
+                display: flex;
+                align-items: center;
             }
         }
     }

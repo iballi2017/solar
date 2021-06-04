@@ -1145,6 +1145,10 @@ body {
   }
 }
 
+.horizontal-line {
+  border-top: 1px solid #C4C4C4;
+}
+
 /* animation */
 /* This only changes this particular animation duration */
 .animate__animated.animate__bounce {
@@ -2881,6 +2885,8 @@ body {
 #user-review-page .review-form-wrapper {
   max-width: 500px;
   margin: 0 auto;
+  margin-top: 3em;
+  border: 1px solid #C4C4C4;
 }
 #user-review-page .review-form-wrapper .header {
   background-color: #F1F2F1;
@@ -2889,6 +2895,24 @@ body {
 #user-review-page .review-form-wrapper .header .brandlogo-wrapper {
   max-width: 70px;
   margin: 0 auto;
+}
+#user-review-page .review-form-wrapper aside {
+  background-color: #414143;
+  padding: 0.7em;
+  color: #ffffff;
+  font-weight: 600;
+}
+#user-review-page .review-form-wrapper .item-preview .inner {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+#user-review-page .review-form-wrapper .item-preview .img-wrapper {
+  grid-column: 1/4;
+}
+#user-review-page .review-form-wrapper .item-preview .body {
+  grid-column: 4/-1;
+  display: flex;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.min.css.map */
