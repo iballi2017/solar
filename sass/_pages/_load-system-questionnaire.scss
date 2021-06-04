@@ -11,8 +11,57 @@
             font-size: .8rem;
             font-weight: 600;
             display: flex;
-            align-items: flex-start;
+            // align-items: flex-start;
             justify-content: space-between;
+            position: relative;
+            .label-wrapper {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .label {
+                max-width: 200px;
+            }
+            .bulb {
+                height: 25px;
+                width: 25px;
+                background-color: #ffffff;
+                border: 4px solid colors.$lightColor;
+                box-shadow: inset 0 0 0 1px #f1f2f1;
+                border-radius: 50%;
+                display: inline-block;
+                &.active {
+                    background-color: colors.$successColor;
+                    &.first,
+                    &.second {
+                        &:after {
+                            background-color: colors.$successColor;
+                        }
+                    }
+                }
+                position: relative;
+                &:after {
+                    content: '';
+                    display: block;
+                    background-color: colors.$lightColor;
+                    height: 5px;
+                    width: 200px;
+                    position: absolute;
+                    top: 45%;
+                }
+                &.first {
+                    &:after {
+                        left: 100%;
+                    }
+                }
+                &.second {
+                    &:after {
+                        right: 100%;
+                    }
+                }
+            }
         }
     }
     #form-wizard {
@@ -21,7 +70,6 @@
         .inner {
             --size: 100%;
             width: var(--size);
-            // background-color: lightpink;
             overflow: hidden;
             .step-inner {
                 border: 1px solid colors.$greyColor;
@@ -34,11 +82,9 @@
                     margin: 0 auto;
                     color: #ffffff;
                     font-weight: 600;
-                    // background-color: lightsalmon;
                     .col-left,
                     .col-right {
                         min-width: 100px;
-                        // background-color: lightpink;
                     }
                     .load-value,
                     .energy-value {
@@ -123,6 +169,109 @@
                     #hours-head {
                         width: 130px;
                         min-width: 100px;
+                    }
+                }
+            }
+        }
+    }
+    .calc-btn {
+        background-color: colors.$successColor;
+        color: #ffffff;
+        &:hover {
+            background-color: colors.$warningColor;
+        }
+    }
+}
+
+#load-system-questionnaire-page {
+    #step-1,
+    #step-2 {
+        #form-step-1,
+        #form-step-2 {
+            max-width: 700px;
+            margin: 0 auto;
+            .inner {
+                .step-inner {
+                    border: 1px solid colors.$greyColor;
+                }
+                #result-screen {
+                    font-size: .8rem;
+                    padding-bottom: 2em;
+                    table {
+                        max-width: 300px;
+                        margin: 0 auto;
+                        color: #ffffff;
+                        font-weight: 600;
+                        // background-color: lightsalmon;
+                        .col-left,
+                        .col-right {
+                            min-width: 100px;
+                            // background-color: lightpink;
+                        }
+                        .load-value,
+                        .energy-value {
+                            color: colors.$warningColor;
+                            float: right;
+                        }
+                        .pressure-info {
+                            color: #C7F4AB;
+                            .pressure-value {
+                                float: right;
+                            }
+                        }
+                        .null {
+                            color: #C7F4AB;
+                        }
+                    }
+                }
+            }
+            .slidePage {
+                legend {
+                    display: flex;
+                    align-items: flex-start;
+                    &::before {
+                        content: url(../assets/images/icons/noun_arrow-icon.svg);
+                        margin-right: 1em;
+                    }
+                }
+                .form-group {
+                    padding-left: 2.5em;
+                }
+            }
+            .step-footer {
+                border: none;
+                border-top: 1px solid colors.$greyColor;
+            }
+            #energy-calculator {
+                #result-screen {
+                    min-height: 200px;
+                    background-color: colors.$darkColor;
+                }
+                .table-form-wrapper {
+                    border: none;
+                    border-top: 1px solid colors.$greyColor;
+                }
+                .table-form {
+                    .form-group {
+                        margin-bottom: 0;
+                    }
+                    thead {
+                        #qty-head {
+                            width: 100px;
+                            min-width: 90px;
+                        }
+                        #appliance-head {
+                            width: 300px;
+                            min-width: 250px;
+                        }
+                        #wattage-head {
+                            width: 130px;
+                            min-width: 100px;
+                        }
+                        #hours-head {
+                            width: 130px;
+                            min-width: 100px;
+                        }
                     }
                 }
             }

@@ -40,10 +40,10 @@
     }
     .check_rej[type="radio"]:checked+label .custom_checkbox,
     .check_rej[type="checkbox"]:checked+label .custom_checkbox {
-        background: colors.$successLightColor;
+        background: colors.$successColor;
     }
     .check_rej[type="checkbox"]:checked+label .custom_checkbox {
-        background: colors.$successLightColor;
+        background: colors.$successColor;
         &::before {
             @include mixins.before('\f00c', inherit);
             color: #ffffff;

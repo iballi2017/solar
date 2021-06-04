@@ -1,0 +1,18 @@
+/* USER REVIEW PAGE STYLE */
+
+@use "../_abstracts/colors";
+@use "../_partials/mixins";
+#user-review-page {
+    .review-form-wrapper {
+        max-width: 500px;
+        margin: 0 auto;
+        .header {
+            background-color: colors.$lightColor;
+            border: 1px solid colors.$greyColor;
+            .brandlogo-wrapper {
+                max-width: 70px;
+                margin: 0 auto;
+            }
+        }
+    }
+}

@@ -73,12 +73,16 @@ const firstNextBtn = document.querySelector(".firstNextBtn");
 const firstPrevBtn = document.querySelector(".firstPrevBtn");
 const size = 100;
 
-firstNextBtn.addEventListener("click", () => {
-    slidePage.style.marginLeft = -100 / 2 + "%";
-});
+if (firstNextBtn) {
+    firstNextBtn.addEventListener("click", () => {
+        slidePage.style.marginLeft = -100 / 2 + "%";
+    });
+}
 /* PREVIOUS BUTTONS */
-firstPrevBtn.addEventListener("click", () => {
-    slidePage.style.marginLeft = "0%";
-    pregressWidth = (100 / 3)
-    progressStyle()
-})
+if (firstPrevBtn) {
+    firstPrevBtn.addEventListener("click", () => {
+        slidePage.style.marginLeft = "0%";
+        pregressWidth = (100 / 3)
+        progressStyle()
+    });
+}

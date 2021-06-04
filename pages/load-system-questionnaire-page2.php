@@ -23,7 +23,7 @@ include '../components/header.php'
 
             <!-- FORM WIZARD SECTION -->
 
-            <section class="py-4">
+            <section class="py-4" id="step-2">
                 <div id="progress-bar">
                     <div id="reader" class="default_width"></div>
                     <div class="inner">
@@ -37,83 +37,20 @@ include '../components/header.php'
                             <div class="label mb-3">
                                 CALCULATE ENERGY NEEDED FOR YOUR PRODUCT
                             </div>
-                            <div class="bulb second"></div>
+                            <div class="bulb second active"></div>
                         </div>
                     </div>
                 </div>
-                <div id="form-wizard">
+                <div id="form-step-2">
                     <div class="inner">
-
                         <form action="#">
-                            <!-- step 1 -->
-                            <div class="form_step slidePage">
-                                <div class="step-inner">
-                                    <div class="card border-0 rounded-0">
-                                        <div class="card-body">
-                                            <fieldset>
-                                                <legend>Solar Priority</legend>
-
-                                                <div class="form-group">
-                                                    <div class="custom-check-wrapper">
-                                                        <input type="checkbox" name="solar-priority" id="energy-saving-mode" class="check_rej">
-                                                        <label for="energy-saving-mode" class="d-flex flex-wrap">
-                                                            <span class="fake-radio custom_checkbox checkbox"></span>
-                                                            1. Energy Saving Mode – (Description of Energy Saving Mode)
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="custom-check-wrapper">
-                                                        <input type="checkbox" name="solar-priority" id="grid-utility" class="check_rej">
-                                                        <label for="grid-utility" class="d-flex flex-wrap">
-                                                            <span class="fake-radio custom_checkbox checkbox"></span>
-                                                            2. Grid/Utility – (Description of Grid/Utility)
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </fieldset>
-                                            <!--  -->
-                                            <hr class="horizontal-separator" />
-                                            <!--  -->
-                                            <fieldset>
-                                                <legend>I want to install Solar System as </legend>
-                                                <div class="form-group">
-                                                    <div class="custom-check-wrapper">
-                                                        <input type="checkbox" name="user-installation-choice" id="off-grid" class="check_rej">
-                                                        <label for="off-grid" class="d-flex flex-wrap">
-                                                            <span class="fake-radio custom_checkbox checkbox"></span>
-                                                            1. Off-grid (Description of Off-grid)
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="custom-check-wrapper">
-                                                        <input type="checkbox" name="user-installation-choice" id="grid-support" class="check_rej">
-                                                        <label for="grid-support" class="d-flex flex-wrap">
-                                                            <span class="fake-radio custom_checkbox checkbox"></span>
-                                                            2. Grid-Supported (Description of Grid Supported)
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </fieldset>
-                                        </div>
-                                    </div>
-
-                                    <div class="card rounded-0 step-footer">
-                                        <div class="card-body">
-                                            <span class="btn fake-btn rounded-0 disabled_btn firstNextBtn">NEXT</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                             <!-- step 2 -->
                             <div class="form_step" id="energy-calculator">
                                 <div class="step-inner">
                                     <div class="card border-0 rounded-0">
                                         <div class="card-body">
                                             <div>
-                                                <span class="firstPrevBtn btn btn-sm py-2 px-0">
+                                                <span class="btn btn-sm py-2 px-0" onclick="goBack()">
                                                     <svg width="27" height="29" viewBox="0 0 31 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M15.4997 0.876957C6.94514 0.87102 0.00844755 7.8687 0 16.4925C0.00844755 25.131 6.94514 32.1281 15.4997 32.125C24.0574 32.1281 30.9934 25.131 31 16.4925C30.9937 7.8687 24.0574 0.87102 15.4997 0.876957ZM15.4997 28.5243C8.9178 28.5243 3.58082 23.1418 3.58645 16.4925C3.57988 9.85794 8.9178 4.4736 15.4997 4.47704C22.0847 4.47391 27.4223 9.85826 27.4298 16.4925C27.4223 23.1418 22.0847 28.5243 15.4997 28.5243Z" fill="#EA4B4B" />
                                                         <path d="M22.3924 12.5845L19.421 9.61719L15.4998 13.5338L11.5783 9.61719L8.60693 12.5845L12.5297 16.5033L8.60693 20.4177L11.5783 23.3851L15.4998 19.4684L19.421 23.3851L22.3924 20.4177L18.4709 16.5033L22.3924 12.5845Z" fill="#EA4B4B" />
@@ -156,7 +93,7 @@ include '../components/header.php'
                                                     </tbody>
                                                 </table>
                                             </div>
-                                            <p class="text-center">
+                                            <p class="text-center mb-0">
                                                 <span class="btn rounded-0 uppercase dark-link">
                                                     <svg width="15" height="16" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <g clip-path="url(#clip0)">
@@ -199,11 +136,15 @@ include '../components/header.php'
                                                                             <option value="" selected>Select an
                                                                                 Appliance
                                                                             </option>
-                                                                            <option value="appliance-a">appliance A
+                                                                            <option value="appliance-a">Laptop
                                                                             </option>
-                                                                            <option value="appliance-b">appliance B
+                                                                            <option value="appliance-b">Refrigerator
                                                                             </option>
-                                                                            <option value="appliance-c">appliance C
+                                                                            <option value="appliance-c">Ceiling fan
+                                                                            </option>
+                                                                            <option value="appliance-c">Table fan
+                                                                            </option>
+                                                                            <option value="appliance-c">Microwave
                                                                             </option>
                                                                         </select>
                                                                     </div>
@@ -235,11 +176,15 @@ include '../components/header.php'
                                                                             <option value="" selected>Select an
                                                                                 Appliance
                                                                             </option>
-                                                                            <option value="appliance-a">appliance A
+                                                                            <option value="appliance-a">Laptop
                                                                             </option>
-                                                                            <option value="appliance-b">appliance B
+                                                                            <option value="appliance-b">Refrigerator
                                                                             </option>
-                                                                            <option value="appliance-c">appliance C
+                                                                            <option value="appliance-c">Ceiling fan
+                                                                            </option>
+                                                                            <option value="appliance-c">Table fan
+                                                                            </option>
+                                                                            <option value="appliance-c">Microwave
                                                                             </option>
                                                                         </select>
                                                                     </div>

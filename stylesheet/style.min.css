@@ -785,10 +785,10 @@ ul.breadcrumb li a:hover {
 }
 .custom-check-wrapper .check_rej[type=radio]:checked + label .custom_checkbox,
 .custom-check-wrapper .check_rej[type=checkbox]:checked + label .custom_checkbox {
-  background: #41CF1F;
+  background: #209E02;
 }
 .custom-check-wrapper .check_rej[type=checkbox]:checked + label .custom_checkbox {
-  background: #41CF1F;
+  background: #209E02;
 }
 .custom-check-wrapper .check_rej[type=checkbox]:checked + label .custom_checkbox::before {
   content: "";
@@ -2584,8 +2584,49 @@ body {
   font-size: 0.8rem;
   font-weight: 600;
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
+  position: relative;
+}
+#load-system-questionnaire-page #progress-bar .inner .label-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#load-system-questionnaire-page #progress-bar .inner .label {
+  max-width: 200px;
+}
+#load-system-questionnaire-page #progress-bar .inner .bulb {
+  height: 25px;
+  width: 25px;
+  background-color: #ffffff;
+  border: 4px solid #F1F2F1;
+  box-shadow: inset 0 0 0 1px #f1f2f1;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+#load-system-questionnaire-page #progress-bar .inner .bulb.active {
+  background-color: #209E02;
+}
+#load-system-questionnaire-page #progress-bar .inner .bulb.active.first:after, #load-system-questionnaire-page #progress-bar .inner .bulb.active.second:after {
+  background-color: #209E02;
+}
+#load-system-questionnaire-page #progress-bar .inner .bulb:after {
+  content: "";
+  display: block;
+  background-color: #F1F2F1;
+  height: 5px;
+  width: 200px;
+  position: absolute;
+  top: 45%;
+}
+#load-system-questionnaire-page #progress-bar .inner .bulb.first:after {
+  left: 100%;
+}
+#load-system-questionnaire-page #progress-bar .inner .bulb.second:after {
+  right: 100%;
 }
 #load-system-questionnaire-page #form-wizard {
   max-width: 700px;
@@ -2683,6 +2724,171 @@ body {
 #load-system-questionnaire-page #form-wizard #energy-calculator .table-form thead #hours-head {
   width: 130px;
   min-width: 100px;
+}
+#load-system-questionnaire-page .calc-btn {
+  background-color: #209E02;
+  color: #ffffff;
+}
+#load-system-questionnaire-page .calc-btn:hover {
+  background-color: #F7B710;
+}
+
+#load-system-questionnaire-page #step-1 #form-step-1,
+#load-system-questionnaire-page #step-1 #form-step-2,
+#load-system-questionnaire-page #step-2 #form-step-1,
+#load-system-questionnaire-page #step-2 #form-step-2 {
+  max-width: 700px;
+  margin: 0 auto;
+}
+#load-system-questionnaire-page #step-1 #form-step-1 .inner .step-inner,
+#load-system-questionnaire-page #step-1 #form-step-2 .inner .step-inner,
+#load-system-questionnaire-page #step-2 #form-step-1 .inner .step-inner,
+#load-system-questionnaire-page #step-2 #form-step-2 .inner .step-inner {
+  border: 1px solid #C4C4C4;
+}
+#load-system-questionnaire-page #step-1 #form-step-1 .inner #result-screen,
+#load-system-questionnaire-page #step-1 #form-step-2 .inner #result-screen,
+#load-system-questionnaire-page #step-2 #form-step-1 .inner #result-screen,
+#load-system-questionnaire-page #step-2 #form-step-2 .inner #result-screen {
+  font-size: 0.8rem;
+  padding-bottom: 2em;
+}
+#load-system-questionnaire-page #step-1 #form-step-1 .inner #result-screen table,
+#load-system-questionnaire-page #step-1 #form-step-2 .inner #result-screen table,
+#load-system-questionnaire-page #step-2 #form-step-1 .inner #result-screen table,
+#load-system-questionnaire-page #step-2 #form-step-2 .inner #result-screen table {
+  max-width: 300px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-weight: 600;
+}
+#load-system-questionnaire-page #step-1 #form-step-1 .inner #result-screen table .col-left,
+#load-system-questionnaire-page #step-1 #form-step-1 .inner #result-screen table .col-right,
+#load-system-questionnaire-page #step-1 #form-step-2 .inner #result-screen table .col-left,
+#load-system-questionnaire-page #step-1 #form-step-2 .inner #result-screen table .col-right,
+#load-system-questionnaire-page #step-2 #form-step-1 .inner #result-screen table .col-left,
+#load-system-questionnaire-page #step-2 #form-step-1 .inner #result-screen table .col-right,
+#load-system-questionnaire-page #step-2 #form-step-2 .inner #result-screen table .col-left,
+#load-system-questionnaire-page #step-2 #form-step-2 .inner #result-screen table .col-right {
+  min-width: 100px;
+}
+#load-system-questionnaire-page #step-1 #form-step-1 .inner #result-screen table .load-value,
+#load-system-questionnaire-page #step-1 #form-step-1 .inner #result-screen table .energy-value,
+#load-system-questionnaire-page #step-1 #form-step-2 .inner #result-screen table .load-value,
+#load-system-questionnaire-page #step-1 #form-step-2 .inner #result-screen table .energy-value,
+#load-system-questionnaire-page #step-2 #form-step-1 .inner #result-screen table .load-value,
+#load-system-questionnaire-page #step-2 #form-step-1 .inner #result-screen table .energy-value,
+#load-system-questionnaire-page #step-2 #form-step-2 .inner #result-screen table .load-value,
+#load-system-questionnaire-page #step-2 #form-step-2 .inner #result-screen table .energy-value {
+  color: #F7B710;
+  float: right;
+}
+#load-system-questionnaire-page #step-1 #form-step-1 .inner #result-screen table .pressure-info,
+#load-system-questionnaire-page #step-1 #form-step-2 .inner #result-screen table .pressure-info,
+#load-system-questionnaire-page #step-2 #form-step-1 .inner #result-screen table .pressure-info,
+#load-system-questionnaire-page #step-2 #form-step-2 .inner #result-screen table .pressure-info {
+  color: #C7F4AB;
+}
+#load-system-questionnaire-page #step-1 #form-step-1 .inner #result-screen table .pressure-info .pressure-value,
+#load-system-questionnaire-page #step-1 #form-step-2 .inner #result-screen table .pressure-info .pressure-value,
+#load-system-questionnaire-page #step-2 #form-step-1 .inner #result-screen table .pressure-info .pressure-value,
+#load-system-questionnaire-page #step-2 #form-step-2 .inner #result-screen table .pressure-info .pressure-value {
+  float: right;
+}
+#load-system-questionnaire-page #step-1 #form-step-1 .inner #result-screen table .null,
+#load-system-questionnaire-page #step-1 #form-step-2 .inner #result-screen table .null,
+#load-system-questionnaire-page #step-2 #form-step-1 .inner #result-screen table .null,
+#load-system-questionnaire-page #step-2 #form-step-2 .inner #result-screen table .null {
+  color: #C7F4AB;
+}
+#load-system-questionnaire-page #step-1 #form-step-1 .slidePage legend,
+#load-system-questionnaire-page #step-1 #form-step-2 .slidePage legend,
+#load-system-questionnaire-page #step-2 #form-step-1 .slidePage legend,
+#load-system-questionnaire-page #step-2 #form-step-2 .slidePage legend {
+  display: flex;
+  align-items: flex-start;
+}
+#load-system-questionnaire-page #step-1 #form-step-1 .slidePage legend::before,
+#load-system-questionnaire-page #step-1 #form-step-2 .slidePage legend::before,
+#load-system-questionnaire-page #step-2 #form-step-1 .slidePage legend::before,
+#load-system-questionnaire-page #step-2 #form-step-2 .slidePage legend::before {
+  content: url(../assets/images/icons/noun_arrow-icon.svg);
+  margin-right: 1em;
+}
+#load-system-questionnaire-page #step-1 #form-step-1 .slidePage .form-group,
+#load-system-questionnaire-page #step-1 #form-step-2 .slidePage .form-group,
+#load-system-questionnaire-page #step-2 #form-step-1 .slidePage .form-group,
+#load-system-questionnaire-page #step-2 #form-step-2 .slidePage .form-group {
+  padding-left: 2.5em;
+}
+#load-system-questionnaire-page #step-1 #form-step-1 .step-footer,
+#load-system-questionnaire-page #step-1 #form-step-2 .step-footer,
+#load-system-questionnaire-page #step-2 #form-step-1 .step-footer,
+#load-system-questionnaire-page #step-2 #form-step-2 .step-footer {
+  border: none;
+  border-top: 1px solid #C4C4C4;
+}
+#load-system-questionnaire-page #step-1 #form-step-1 #energy-calculator #result-screen,
+#load-system-questionnaire-page #step-1 #form-step-2 #energy-calculator #result-screen,
+#load-system-questionnaire-page #step-2 #form-step-1 #energy-calculator #result-screen,
+#load-system-questionnaire-page #step-2 #form-step-2 #energy-calculator #result-screen {
+  min-height: 200px;
+  background-color: #414143;
+}
+#load-system-questionnaire-page #step-1 #form-step-1 #energy-calculator .table-form-wrapper,
+#load-system-questionnaire-page #step-1 #form-step-2 #energy-calculator .table-form-wrapper,
+#load-system-questionnaire-page #step-2 #form-step-1 #energy-calculator .table-form-wrapper,
+#load-system-questionnaire-page #step-2 #form-step-2 #energy-calculator .table-form-wrapper {
+  border: none;
+  border-top: 1px solid #C4C4C4;
+}
+#load-system-questionnaire-page #step-1 #form-step-1 #energy-calculator .table-form .form-group,
+#load-system-questionnaire-page #step-1 #form-step-2 #energy-calculator .table-form .form-group,
+#load-system-questionnaire-page #step-2 #form-step-1 #energy-calculator .table-form .form-group,
+#load-system-questionnaire-page #step-2 #form-step-2 #energy-calculator .table-form .form-group {
+  margin-bottom: 0;
+}
+#load-system-questionnaire-page #step-1 #form-step-1 #energy-calculator .table-form thead #qty-head,
+#load-system-questionnaire-page #step-1 #form-step-2 #energy-calculator .table-form thead #qty-head,
+#load-system-questionnaire-page #step-2 #form-step-1 #energy-calculator .table-form thead #qty-head,
+#load-system-questionnaire-page #step-2 #form-step-2 #energy-calculator .table-form thead #qty-head {
+  width: 100px;
+  min-width: 90px;
+}
+#load-system-questionnaire-page #step-1 #form-step-1 #energy-calculator .table-form thead #appliance-head,
+#load-system-questionnaire-page #step-1 #form-step-2 #energy-calculator .table-form thead #appliance-head,
+#load-system-questionnaire-page #step-2 #form-step-1 #energy-calculator .table-form thead #appliance-head,
+#load-system-questionnaire-page #step-2 #form-step-2 #energy-calculator .table-form thead #appliance-head {
+  width: 300px;
+  min-width: 250px;
+}
+#load-system-questionnaire-page #step-1 #form-step-1 #energy-calculator .table-form thead #wattage-head,
+#load-system-questionnaire-page #step-1 #form-step-2 #energy-calculator .table-form thead #wattage-head,
+#load-system-questionnaire-page #step-2 #form-step-1 #energy-calculator .table-form thead #wattage-head,
+#load-system-questionnaire-page #step-2 #form-step-2 #energy-calculator .table-form thead #wattage-head {
+  width: 130px;
+  min-width: 100px;
+}
+#load-system-questionnaire-page #step-1 #form-step-1 #energy-calculator .table-form thead #hours-head,
+#load-system-questionnaire-page #step-1 #form-step-2 #energy-calculator .table-form thead #hours-head,
+#load-system-questionnaire-page #step-2 #form-step-1 #energy-calculator .table-form thead #hours-head,
+#load-system-questionnaire-page #step-2 #form-step-2 #energy-calculator .table-form thead #hours-head {
+  width: 130px;
+  min-width: 100px;
+}
+
+/* USER REVIEW PAGE STYLE */
+#user-review-page .review-form-wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+}
+#user-review-page .review-form-wrapper .header {
+  background-color: #F1F2F1;
+  border: 1px solid #C4C4C4;
+}
+#user-review-page .review-form-wrapper .header .brandlogo-wrapper {
+  max-width: 70px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.min.css.map */
