@@ -12,7 +12,7 @@ include '../components/header.php'
                     </div>
                 </div>
                 <aside>Help us improve more by giving your feedback</aside>
-                <div class="item-preview">
+                <div class="item-preview px-3">
                     <div class="inner">
                         <div class="img-wrapper">
                             <img src="../assets/images/product-images/product-2-image.png" alt="" class="img-fluid">
@@ -36,8 +36,27 @@ include '../components/header.php'
                         <label for="comment">Comment</label>
                         <textarea class="form-control" name="comment" id="comment" cols="30" rows="6"></textarea>
                     </div>
+
+                    <div class="form-group form_grp">
+                        <label for="rating" class="my-0" style="display: block">Rate</label>
+                        <!-- star rating -->
+                        <span class="star-rating">
+                            <i class="far fa-star text-warning review_star"></i>
+                            <i class="far fa-star text-warning review_star"></i>
+                            <i class="far fa-star text-warning review_star"></i>
+                            <i class="far fa-star text-warning review_star"></i>
+                            <i class="far fa-star text-warning review_star"></i>
+                        </span>
+                        <!-- star rating hidden input field-->
+                        <input type="text" id="rating_value" style="visibility: hidden" required>
+                    </div>
                     <button type="submit" class="btn btn-block btn-white rounded-0 bold-600">SUBMIT</button>
                 </form>
+            </div>
+
+
+            <div id="success-message-wrapper">
+                <p>THANK YOU FOR YOUR FEEDBACK</p>
             </div>
         </div>
 
