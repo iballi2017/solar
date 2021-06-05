@@ -1,0 +1,267 @@
+:root {
+    --dangerColor: #EA4B4B;
+    --successColor: #209E02;
+    --successLightColor: #41CF1F;
+    --warningColor: #F7B710;
+    --darkColor: #414143;
+    --greyColor: #C4C4C4;
+    --lightColor: #F1F2F1;
+    --blackColor: #202020;
+    --mainBodyColor: #E5E5E5;
+    --bodyFontFamily: 'Montserrat', sans-serif;
+    --headerFontFamily: 'Montserrat', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* TYPOGRAPHY */
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+
+/* FORM CONTROLS */
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+input[type="file"],
+.custom-file-input,
+.custom-file-label,
+textarea,
+select,
+.form-control {
+    border-radius: 0;
+    border: 1px solid #c4c4c4;
+    padding: 0.5em 0.6em;
+    font-size: .88rem;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="file"]:focus,
+.custom-file-input:focus,
+.custom-file-label:focus,
+textarea:focus,
+select:focus,
+.form-control:focus {
+    outline: 0;
+    box-shadow: none;
+    border: 1px solid var(--successColor);
+}
+
+
+/* // * Hide Arrows From Input Number Chrome, Safari, Edge, Opera */
+
+*/ input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Hide Arrows From Input Number Firefox */
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+/* Custom form select dropdown */
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+select option {
+    margin: 5em;
+    line-height: 2;
+    font: inherit;
+}
+
+.select-drop-wrapper {
+    position: relative;
+}
+
+.select-drop-wrapper::after {
+    content: " \f0dd";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 20px;
+    position: absolute;
+    right: .5rem;
+    pointer-events: none;
+    bottom: 0.3em;
+}
+
+legend {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+form label,
+.btn {
+    font-size: .85rem;
+}
+
+
+/* COMPONENTS */
+
+.btn {
+    border: none;
+    transition: all 300ms ease-in-out;
+}
+
+.btn:focus {
+    border: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn-white {
+    background-color: #ffffff;
+    color: var(--darkColor);
+    border: 1px solid var(--darkColor);
+}
+
+.btn-white:hover {
+    background-color: var(--successColor);
+    border: 1px solid var(--successColor);
+    color: #ffffff;
+}
+
+.btn-white.alt-warning:hover {
+    background-color: var(--warningColor);
+    border: 1px solid var(--warningColor);
+}
+
+
+/* SHARED CLASSES */
+
+.bold {
+    font-weight: bold;
+}
+
+.bold-600 {
+    font-weight: 600;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 16px;
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: var(--bodyFontFamily);
+}
+
+html,
+body *:focus {
+    box-shadow: none;
+    outline: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#user-review-page .review-form-wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    border: 1px solid var(--greyColor);
+}
+
+#user-review-page .review-form-wrapper .header {
+    background-color: var(--lightColor);
+    border: 1px solid var(--lightColor);
+}
+
+.review-form-wrapper .header .brandlogo-wrapper {
+    max-width: 70px;
+    margin: 0 auto;
+}
+
+#user-review-page #success-message-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#user-review-page #success-message-wrapper p {
+    text-align: center;
+    font-weight: 600;
+}
+
+.review-form-wrapper aside {
+    background-color: var(--darkColor);
+    border: 2px solid var(--darkColor);
+    padding: .7em;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.review-form-wrapper .item-preview .inner {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.review-form-wrapper .item-preview .img-wrapper {
+    grid-column: 1/5;
+}
+
+.review-form-wrapper .item-preview .body {
+    grid-column: 5/-1;
+    display: flex;
+    align-items: center;
+}
+
+@media(min-width: 768px) {
+    .review-form-wrapper .item-preview .img-wrapper {
+        grid-column: 1/4;
+    }
+    .review-form-wrapper .item-preview .body {
+        grid-column: 4/-1;
+    }
+}
+
+.review-form-wrapper label {
+    font-weight: 600;
+}
+
+.review-form-wrapper .review_star {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.review-form-wrapper #rating_value {
+    position: absolute;
+    left: -100vw;
+}
