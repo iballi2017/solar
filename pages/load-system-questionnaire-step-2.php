@@ -208,10 +208,10 @@ include '../components/header.php'
                                     </div>
                                     <div class="card rounded-0 step-footer">
                                         <div class="card-body">
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <span class="btn btn-lg rounded-0 btn-white">ADD ANOTHER
-                                                    APPLIANCE</span>
-                                                <span class="btn btn-lg px-5 rounded-0 calc-btn">CALCULATE</span>
+                                            <div class="step-2-action-btn">
+                                                <button type="button" class="btn my-1 btn-lg rounded-0 btn-white">ADD ANOTHER
+                                                    APPLIANCE</button>
+                                                <button type="button" class="btn my-1 btn-lg px-5 rounded-0 calc-btn">CALCULATE</button>
                                             </div>
                                         </div>
                                     </div>

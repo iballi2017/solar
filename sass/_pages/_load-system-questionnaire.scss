@@ -37,12 +37,14 @@
                 display: inline-block;
                 &.active {
                     background-color: colors.$successColor;
-                    // &.first,
-                    // &.second {
-                    //     &:after {
-                    //         background-color: colors.$successColor;
-                    //     }
-                    // }
+                }
+                &.active-full {
+                    &.first,
+                    &.second {
+                        &:after {
+                            background-color: colors.$successColor;
+                        }
+                    }
                 }
                 position: relative;
                 &:after {
@@ -179,9 +181,24 @@
     }
     .calc-btn {
         background-color: colors.$successColor;
+        border: 1px solid colors.$successColor;
         color: #ffffff;
         &:hover {
             background-color: colors.$warningColor;
+            border: 1px solid colors.$warningColor;
+        }
+    }
+    .step-2-action-btn {
+        .btn {
+            width: 100%;
+        }
+        @include mixins.minmq(600px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .btn {
+                width: auto;
+            }
         }
     }
 }

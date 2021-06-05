@@ -76,14 +76,29 @@ const size = 100;
 if (firstNextBtn) {
     firstNextBtn.addEventListener("click", () => {
         slidePage.style.marginLeft = -100 / 2 + "%";
+        var bulbs = document.querySelectorAll(".bulb");
+        for (let i = 0; i < bulbs.length; i++) {
+            if (!bulbs[i].classList.contains("active-full")) {
+                bulbs[i].classList.add("active");
+                bulbs[i].classList.add("active-full");
+            }
+        }
     });
 }
 /* PREVIOUS BUTTONS */
 if (firstPrevBtn) {
     firstPrevBtn.addEventListener("click", () => {
         slidePage.style.marginLeft = "0%";
-        pregressWidth = (100 / 3)
-        progressStyle()
+        pregressWidth = (100 / 3);
+        var bulbs = document.querySelectorAll(".bulb");
+        for (let i = 0; i < bulbs.length; i++) {
+            if (bulbs[i].classList.contains("active-full")) {
+                bulbs[i].parentElement.lastElementChild.classList.remove("active-full");
+                if (bulbs[i].classList.contains("second") && bulbs[i].classList.contains("active")) {
+                    bulbs[i].classList.remove("active");
+                }
+            }
+        }
     });
 }
 

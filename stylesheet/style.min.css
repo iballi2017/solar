@@ -2625,6 +2625,9 @@ body {
 #load-system-questionnaire-page #progress-bar .inner .bulb.active {
   background-color: #209E02;
 }
+#load-system-questionnaire-page #progress-bar .inner .bulb.active-full.first:after, #load-system-questionnaire-page #progress-bar .inner .bulb.active-full.second:after {
+  background-color: #209E02;
+}
 #load-system-questionnaire-page #progress-bar .inner .bulb:after {
   content: "";
   display: block;
@@ -2739,10 +2742,25 @@ body {
 }
 #load-system-questionnaire-page .calc-btn {
   background-color: #209E02;
+  border: 1px solid #209E02;
   color: #ffffff;
 }
 #load-system-questionnaire-page .calc-btn:hover {
   background-color: #F7B710;
+  border: 1px solid #F7B710;
+}
+#load-system-questionnaire-page .step-2-action-btn .btn {
+  width: 100%;
+}
+@media (min-width: 600px) {
+  #load-system-questionnaire-page .step-2-action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #load-system-questionnaire-page .step-2-action-btn .btn {
+    width: auto;
+  }
 }
 
 #load-system-questionnaire-page #step-1 #form-step-1,
