@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product review mail</title>
+    <!-- main font family -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <!-- fontawesome 5.15.3 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <style>
+         :root {
+            --darkColor: #9F9F9F;
+        }
+        
+        html,
+        body {
+            font-size: 14px;
+            width: 100%;
+            min-height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            word-break: break-word;
+        }
+        
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 1em;
+        }
+        
+        thead {
+            background-color: #F1F2F1;
+            border: 1px solid #C4C4C4;
+        }
+        
+        .brand-logo {
+            max-width: 70px;
+            margin: 0 auto;
+        }
+        
+        .brand-logo img {
+            width: 100%;
+        }
+        
+        .header {
+            padding: .5em 0;
+        }
+        
+        .item-card {
+            font-size: .8rem;
+            border: 1px solid var(--darkColor);
+            padding: .5em;
+        }
+        
+        .item-card .inner {
+            overflow: auto;
+        }
+        
+        .item-card .inner .img {
+            width: 38%;
+            float: left;
+        }
+        
+        img {
+            width: 100%;
+        }
+        
+        .item-card .inner .img,
+        .item-card .inner .body {}
+        
+        .item-card .inner .body {
+            width: 60%;
+            float: right;
+        }
+        @media(max-width:430px){
+            .item-card .inner .body {
+                margin-top: 2em;
+            }
+        }
+        .item-name,
+        .item-qty {
+            margin-bottom: .5em;
+        }
+        
+        .footer-brand-logo .img-wrapper {
+            width: 50px;
+        }
+        /*  */
+        /* general classnames */
+        
+        .px-0 {
+            padding-right: 0;
+            padding-left: 0;
+        }
+        
+        .list-style-none {
+            list-style: none;
+        }
+        
+        .bold-600 {
+            font-weight: 600;
+        }
+        
+        .pl-2 {
+            padding-left: 1em;
+        }
+        
+        .px-0 {
+            padding-right: 0;
+            padding-left: 0;
+        }
+        
+        .p-0 {
+            padding-right: 0;
+            padding-left: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        
+        .m-0 {
+            margin-right: 0;
+            margin-left: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        
+        .my-0 {
+            margin-bottom: 0;
+        }
+        
+        .link-decoration-none {
+            text-decoration: none;
+        }
+        
+        .link-decoration-none:hover {
+            text-decoration: none;
+        }
+        
+        .ratings-label-wrapper {
+            background-color: #202020;
+            padding: .5em;
+        }
+        
+        .ratings-label-wrapper .label {
+            color: #ffffff;
+        }
+        
+        .ratings-label-wrapper .star-rating .fa-star {
+            color: #F7B710;
+        }
+        
+        .product-list .item-card {
+            margin-bottom: 3px;
+        }
+            .ratings-label-wrapper {
+                overflow: auto;
+            }
+            .ratings-label-wrapper .label {
+                float: left;
+                height: 100%;
+            }
+            .ratings-label-wrapper .star-rating {
+                float: right;
+                white-space: nowrap;
+            }
+        
+        @media screen and (min-width: 430px) {
+            /*  */   .item-card .inner .img {
+            width:35%;
+        }
+        .item-card .inner .body {
+            width: 63%;
+        }
+            .product-list {
+                overflow: auto;
+            }
+            .product-list .item-card {
+                width: calc(100%/2 - 15px);
+                background: #ffffff;
+            }
+            .product-list .item-card:nth-child(odd) {
+                float: left;
+                /* background-color: lightgray; */
+            }
+            .product-list .item-card:nth-child(even) {
+                float: right;
+                /* background-color: lightskyblue; */
+            }
+            /*  */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th colspan="2">
+                        <div class="header">
+                            <div class="img-wrapper brand-logo">
+                                <img src="./assets/images/navbrand-logo-min.png" alt="">
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        <p>Dear OLUWATOBI,<br/><br/> Thank you for stopping by Mainland solar.<br/><br/> Please help us improve our service and give all customers a better understanding about the product(s) you ordered!
+                        </p>
+                    </td>
+                </tr>
+
+                <!-- row 1 -->
+                <tr>
+                    <td>
+                        <div class="product-list">
+                            <!-- item 1 -->
+                            <div class="item-card">
+                                                <a href="#" class="link-decoration-none">
+                                <div class="inner">
+                                    <div class="img">
+                                        <div class="img-wrapper">
+                                            <img src="./assets/images/product-images/product-1-image.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="body">
+                                        <div>
+                                            <div class="item-name">Solar Panel 380 W Monocrystalline
+                                            </div>
+                                            <div class="item-qty">Qty: 1</div>
+                                            <div>
+                                                    <div class="ratings-label-wrapper">
+                                                        <div class="label">Rate it:&nbsp;</div>
+                                                        <div class="star-rating list-style-none px-0 m-0">
+                                                            <span><i class="fas fa-star"></i></span>
+                                                            <span><i class="fas fa-star"></i></span>
+                                                            <span><i class="fas fa-star"></i></span>
+                                                            <span><i class="fas fa-star"></i></span>
+                                                            <span><i class="fas fa-star"></i></span>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                            <!-- item 2 -->
+                            <div class="item-card">
+                                                <a href="#" class="link-decoration-none">
+                                <div class="inner">
+                                    <div class="img">
+                                        <div class="img-wrapper">
+                                            <img src="./assets/images/product-images/product-1-image.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="body">
+                                        <div>
+                                            <div class="item-name">Solar Panel 380 W Monocrystalline
+                                            </div>
+                                            <div class="item-qty">Qty: 1</div>
+                                            <div>
+                                                    <div class="ratings-label-wrapper">
+                                                        <div class="label">Rate it:&nbsp;</div>
+                                                        <div class="star-rating list-style-none px-0 m-0">
+                                                            <span><i class="fas fa-star"></i></span>
+                                                            <span><i class="fas fa-star"></i></span>
+                                                            <span><i class="fas fa-star"></i></span>
+                                                            <span><i class="fas fa-star"></i></span>
+                                                            <span><i class="fas fa-star"></i></span>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                            <!-- item 3 -->
+                            <div class="item-card">
+                                                <a href="#" class="link-decoration-none">
+                                <div class="inner">
+                                    <div class="img">
+                                        <div class="img-wrapper">
+                                            <img src="./assets/images/product-images/product-1-image.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="body">
+                                        <div>
+                                            <div class="item-name">Solar Panel 380 W Monocrystalline
+                                            </div>
+                                            <div class="item-qty">Qty: 1</div>
+                                            <div>
+                                                    <div class="ratings-label-wrapper">
+                                                        <div class="label">Rate it:&nbsp;</div>
+                                                        <div class="star-rating list-style-none px-0 m-0">
+                                                            <span><i class="fas fa-star"></i></span>
+                                                            <span><i class="fas fa-star"></i></span>
+                                                            <span><i class="fas fa-star"></i></span>
+                                                            <span><i class="fas fa-star"></i></span>
+                                                            <span><i class="fas fa-star"></i></span>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                            <!-- item 4 -->
+                            <div class="item-card">
+                                                <a href="#" class="link-decoration-none">
+                                <div class="inner">
+                                    <div class="img">
+                                        <div class="img-wrapper">
+                                            <img src="./assets/images/product-images/product-1-image.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="body">
+                                        <div>
+                                            <div class="item-name">Solar Panel 380 W Monocrystalline
+                                            </div>
+                                            <div class="item-qty">Qty: 1</div>
+                                            <div>
+                                                    <div class="ratings-label-wrapper">
+                                                        <div class="label">Rate it:&nbsp;</div>
+                                                        <div class="star-rating list-style-none px-0 m-0">
+                                                            <span><i class="fas fa-star"></i></span>
+                                                            <span><i class="fas fa-star"></i></span>
+                                                            <span><i class="fas fa-star"></i></span>
+                                                            <span><i class="fas fa-star"></i></span>
+                                                            <span><i class="fas fa-star"></i></span>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>Happy Shopping!
+                            <br/><br/> Best Regards, <br/><br/></p>
+                        <div class="footer-brand-logo">
+                            <div class="img-wrapper">
+                                <img src="./assets/images/navbrand-logo-min.png" alt="" class="">
+                            </div>
+                        </div>
+                        <p>MS Team</p>
+
+                        <p><span class="bold-600">Got any questions?</span><br/><span class="pl-2">Get in touch wit us via email or call +2348099973409</span></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</body>
+
+</html>

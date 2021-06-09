@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forgot password email message</title>
+    <title>Product review mail</title>
     <!-- main font family -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <!-- fontawesome 5.15.3 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 
     <style>
          :root {
@@ -58,14 +60,12 @@
         }
         
         .item-card .inner {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            overflow: auto;
         }
         
         .item-card .inner .img {
-            flex-basis: 35%;
-            justify-content: center;
+            width: 35%;
+            float: left;
         }
         
         img {
@@ -73,13 +73,11 @@
         }
         
         .item-card .inner .img,
-        .item-card .inner .body {
-            display: flex;
-            align-items: center;
-        }
+        .item-card .inner .body {}
         
         .item-card .inner .body {
-            flex-basis: 63%;
+            width: 63%;
+            float: right;
         }
         
         .item-name,
@@ -110,6 +108,64 @@
             padding-left: 1em;
         }
         
+        .px-0 {
+            padding-right: 0;
+            padding-left: 0;
+        }
+        
+        .p-0 {
+            padding-right: 0;
+            padding-left: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        
+        .m-0 {
+            margin-right: 0;
+            margin-left: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        
+        .my-0 {
+            margin-bottom: 0;
+        }
+        
+        .link-decoration-none {
+            text-decoration: none;
+        }
+        
+        .link-decoration-none:hover {
+            text-decoration: none;
+        }
+        
+        .ratings-label-wrapper {
+            background-color: #202020;
+            padding: .5em;
+        }
+        
+        .ratings-label-wrapper .label {
+            color: #ffffff;
+        }
+        
+        .ratings-label-wrapper .star-rating .fa-star {
+            color: #F7B710;
+        }
+        
+        @media (min-width: 768px) {
+            .ratings-label-wrapper {
+                overflow: auto;
+            }
+            .ratings-label-wrapper .label {
+                float: left;
+                height: 100%;
+            }
+            .ratings-label-wrapper .star-rating {
+                float: right;
+                white-space: nowrap;
+            }
+        }
+        
         @media screen and (min-width: 600px) {}
     </style>
 </head>
@@ -137,6 +193,12 @@
                     </td>
                 </tr>
 
+                <!-- temp -->
+                <tr>
+                <td width="50%"></td>
+                <td width="50%"></td>
+                </tr>
+
                 <!-- row 1 -->
                 <tr>
                     <td>
@@ -153,9 +215,16 @@
                                         </div>
                                         <div class="item-qty">Qty: 1</div>
                                         <div>
-                                            <a href="#">
-                                                <div class="img-wrapper">
-                                                    <img src="./assets/images/rating-sticker.svg" alt="">
+                                            <a href="#" class="link-decoration-none">
+                                                <div class="ratings-label-wrapper">
+                                                    <div class="label">Rate it:&nbsp;</div>
+                                                    <div class="star-rating list-style-none px-0 m-0">
+                                                        <span><i class="fas fa-star"></i></span>
+                                                        <span><i class="fas fa-star"></i></span>
+                                                        <span><i class="fas fa-star"></i></span>
+                                                        <span><i class="far fa-star"></i></span>
+                                                        <span><i class="far fa-star"></i></span>
+                                                    </div>
                                                 </div>
                                             </a>
                                         </div>
@@ -178,9 +247,16 @@
                                         </div>
                                         <div class="item-qty">Qty: 1</div>
                                         <div>
-                                            <a href="#">
-                                                <div class="img-wrapper">
-                                                    <img src="./assets/images/rating-sticker.svg" alt="">
+                                            <a href="#" class="link-decoration-none">
+                                                <div class="ratings-label-wrapper">
+                                                    <div class="label">Rate it:&nbsp;</div>
+                                                    <div class="star-rating list-style-none px-0 m-0">
+                                                        <span><i class="fas fa-star"></i></span>
+                                                        <span><i class="fas fa-star"></i></span>
+                                                        <span><i class="fas fa-star"></i></span>
+                                                        <span><i class="far fa-star"></i></span>
+                                                        <span><i class="far fa-star"></i></span>
+                                                    </div>
                                                 </div>
                                             </a>
                                         </div>
@@ -206,9 +282,16 @@
                                         </div>
                                         <div class="item-qty">Qty: 1</div>
                                         <div>
-                                            <a href="#">
-                                                <div class="img-wrapper">
-                                                    <img src="./assets/images/rating-sticker.svg" alt="">
+                                            <a href="#" class="link-decoration-none">
+                                                <div class="ratings-label-wrapper">
+                                                    <div class="label">Rate it:&nbsp;</div>
+                                                    <div class="star-rating list-style-none px-0 m-0">
+                                                        <span><i class="fas fa-star"></i></span>
+                                                        <span><i class="fas fa-star"></i></span>
+                                                        <span><i class="fas fa-star"></i></span>
+                                                        <span><i class="far fa-star"></i></span>
+                                                        <span><i class="far fa-star"></i></span>
+                                                    </div>
                                                 </div>
                                             </a>
                                         </div>
@@ -231,9 +314,16 @@
                                         </div>
                                         <div class="item-qty">Qty: 1</div>
                                         <div>
-                                            <a href="#">
-                                                <div class="img-wrapper">
-                                                    <img src="./assets/images/rating-sticker.svg" alt="">
+                                            <a href="#" class="link-decoration-none">
+                                                <div class="ratings-label-wrapper">
+                                                    <div class="label">Rate it:&nbsp;</div>
+                                                    <div class="star-rating list-style-none px-0 m-0">
+                                                        <span><i class="fas fa-star"></i></span>
+                                                        <span><i class="fas fa-star"></i></span>
+                                                        <span><i class="fas fa-star"></i></span>
+                                                        <span><i class="far fa-star"></i></span>
+                                                        <span><i class="far fa-star"></i></span>
+                                                    </div>
                                                 </div>
                                             </a>
                                         </div>
@@ -241,20 +331,6 @@
                                 </div>
                             </div>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <p>Happy Shopping!
-                            <br/><br/> Best Regards, <br/><br/></p>
-                        <div class="footer-brand-logo">
-                            <div class="img-wrapper">
-                                <img src="./assets/images/navbrand-logo-min.png" alt="" class="">
-                            </div>
-                        </div>
-                        <p>MS Team</p>
-
-                        <p><span class="bold-600">Got any questions?</span><br/><span class="pl-2">Get in touch wit us via email or call +2348099973409</span></p>
                     </td>
                 </tr>
             </tbody>
