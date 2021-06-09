@@ -255,7 +255,9 @@
                     }
                 }
                 .form-group {
-                    padding-left: 2.5em;
+                    @include mixins.minmq(768px) {
+                        padding-left: 2.5em;
+                    }
                 }
             }
             .step-footer {
