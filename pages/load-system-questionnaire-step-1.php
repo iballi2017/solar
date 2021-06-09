@@ -74,9 +74,9 @@ include '../components/header.php'
                                                             <span class="fake-radio custom_checkbox checkbox tick"></span>
                                                             <div class="bold-600">2. Energy saving/Bill offset system</div>
                                                             <!-- (Description of Grid Supported) -->
-                                                            <aside>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                            <aside>(Lorem ipsum dolor sit amet consectetur adipisicing
                                                                 elit. Expedita, eos quae voluptatem odio a omnis
-                                                                architecto mollitia repellat non sit.</aside>
+                                                                architecto mollitia repellat non sit.)</aside>
                                                         </label>
                                                     </div>
                                                 </div>
@@ -88,9 +88,9 @@ include '../components/header.php'
                                                             <span class="fake-radio custom_checkbox checkbox tick"></span>
                                                             <div class="bold-600">3. Uninterrupted power supply</div>
                                                             <!-- (Description of Grid Supported) -->
-                                                            <aside>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                            <aside>(Lorem ipsum dolor sit amet consectetur adipisicing
                                                                 elit. Expedita, eos quae voluptatem odio a omnis
-                                                                architecto mollitia repellat non sit.</aside>
+                                                                architecto mollitia repellat non sit.)</aside>
                                                         </label>
                                                     </div>
                                                 </div>
