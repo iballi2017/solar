@@ -803,6 +803,16 @@ ul.breadcrumb li a:hover {
   font-size: inherit;
   color: #ffffff;
 }
+.custom-check-wrapper .check_rej[type=radio]:checked + label .custom_checkbox.tick {
+  background: #209E02;
+}
+.custom-check-wrapper .check_rej[type=radio]:checked + label .custom_checkbox.tick::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: inherit;
+  color: #ffffff;
+}
 
 #user-content-wrapper {
   min-height: 50vh;

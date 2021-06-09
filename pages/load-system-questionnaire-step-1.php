@@ -51,47 +51,46 @@ include '../components/header.php'
                                     <div class="card border-0 rounded-0">
                                         <div class="card-body">
                                             <fieldset>
-                                                <legend>Solar Priority</legend>
-
-                                                <div class="form-group">
-                                                    <div class="custom-check-wrapper">
-                                                        <input type="checkbox" name="solar-priority" id="energy-saving-mode" class="check_rej">
-                                                        <label for="energy-saving-mode" class="d-flex flex-wrap">
-                                                            <span class="fake-radio custom_checkbox checkbox"></span>
-                                                            1. Energy Saving Mode – (Description of Energy Saving Mode)
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="custom-check-wrapper">
-                                                        <input type="checkbox" name="solar-priority" id="grid-utility" class="check_rej">
-                                                        <label for="grid-utility" class="d-flex flex-wrap">
-                                                            <span class="fake-radio custom_checkbox checkbox"></span>
-                                                            2. Grid/Utility – (Description of Grid/Utility)
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </fieldset>
-                                            <!--  -->
-                                            <hr class="horizontal-separator" />
-                                            <!--  -->
-                                            <fieldset>
                                                 <legend>I want to install Solar System as </legend>
+                                                <!-- option 1 -->
                                                 <div class="form-group">
                                                     <div class="custom-check-wrapper">
-                                                        <input type="checkbox" name="user-installation-choice" id="off-grid" class="check_rej">
+                                                        <input type="radio" name="user-installation-choice" id="off-grid" class="check_rej">
                                                         <label for="off-grid" class="d-flex flex-wrap">
-                                                            <span class="fake-radio custom_checkbox checkbox"></span>
-                                                            1. Off-grid (Description of Off-grid)
+                                                            <span class="fake-radio custom_checkbox checkbox tick"></span>
+                                                            <div class="bold-600">1. Off-grid</div>
+                                                            <!-- (Description of Off-grid) -->
+                                                            <aside>(Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                elit. Culpa eius quas quo officia voluptatem ratione a
+                                                                sequi similique nobis labore?)</aside>
                                                         </label>
                                                     </div>
                                                 </div>
+                                                <!-- option 2 -->
                                                 <div class="form-group">
                                                     <div class="custom-check-wrapper">
-                                                        <input type="checkbox" name="user-installation-choice" id="grid-support" class="check_rej">
-                                                        <label for="grid-support" class="d-flex flex-wrap">
-                                                            <span class="fake-radio custom_checkbox checkbox"></span>
-                                                            2. Grid-Supported (Description of Grid Supported)
+                                                        <input type="radio" name="user-installation-choice" id="energy-saving-bill-offset-system" class="check_rej">
+                                                        <label for="energy-saving-bill-offset-system" class="d-flex flex-wrap">
+                                                            <span class="fake-radio custom_checkbox checkbox tick"></span>
+                                                            <div class="bold-600">2. Energy saving/Bill offset system</div>
+                                                            <!-- (Description of Grid Supported) -->
+                                                            <aside>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                elit. Expedita, eos quae voluptatem odio a omnis
+                                                                architecto mollitia repellat non sit.</aside>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <!-- option 3 -->
+                                                <div class="form-group">
+                                                    <div class="custom-check-wrapper">
+                                                        <input type="radio" name="user-installation-choice" id="uninterrupted-power-supply" class="check_rej">
+                                                        <label for="uninterrupted-power-supply" class="d-flex flex-wrap">
+                                                            <span class="fake-radio custom_checkbox checkbox tick"></span>
+                                                            <div class="bold-600">3. Uninterrupted power supply</div>
+                                                            <!-- (Description of Grid Supported) -->
+                                                            <aside>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                elit. Expedita, eos quae voluptatem odio a omnis
+                                                                architecto mollitia repellat non sit.</aside>
                                                         </label>
                                                     </div>
                                                 </div>

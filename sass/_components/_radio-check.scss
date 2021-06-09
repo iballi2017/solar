@@ -49,4 +49,11 @@
             color: #ffffff;
         }
     }
+    .check_rej[type="radio"]:checked+label .custom_checkbox.tick {
+        background: colors.$successColor;
+        &::before {
+            @include mixins.before('\f00c', inherit);
+            color: #ffffff;
+        }
+    }
 }
