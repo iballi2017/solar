@@ -115,6 +115,7 @@ include '../components/header.php'
                                                 <table class="table table-borderless table-form">
                                                     <thead>
                                                         <tr>
+                                                            <th scope="col" id="action">#</th>
                                                             <th scope="col" id="qty-head">Quantity</th>
                                                             <th scope="col" id="appliance-head">Appliance</th>
                                                             <th scope="col" id="wattage-head">Wattage</th>
@@ -125,10 +126,13 @@ include '../components/header.php'
                                                         <!-- row 1 -->
                                                         <tr>
                                                             <th scope="row">
+                                                                <!-- empty -->
+                                                            </th>
+                                                            <td>
                                                                 <div class="form-group">
                                                                     <input type="number" class="form-control" name="quantity">
                                                                 </div>
-                                                            </th>
+                                                            </td>
                                                             <td>
                                                                 <div class="form-group">
                                                                     <div class="select-drop-wrapper">
@@ -165,10 +169,60 @@ include '../components/header.php'
                                                         <!-- row 2 -->
                                                         <tr>
                                                             <th scope="row">
+                                                                <button class="btn btn-sm text-danger p-0" type="button">
+                                                                    <i class="fas fa-trash"></i>
+                                                                </button>
+                                                            </th>
+                                                            <td>
                                                                 <div class="form-group">
                                                                     <input type="number" class="form-control" name="quantity">
                                                                 </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="form-group">
+                                                                    <div class="select-drop-wrapper">
+                                                                        <select name="appliance" id="" class="w-100">
+                                                                            <option value="" selected>Select an
+                                                                                Appliance
+                                                                            </option>
+                                                                            <option value="appliance-a">Laptop
+                                                                            </option>
+                                                                            <option value="appliance-b">Refrigerator
+                                                                            </option>
+                                                                            <option value="appliance-c">Ceiling fan
+                                                                            </option>
+                                                                            <option value="appliance-c">Table fan
+                                                                            </option>
+                                                                            <option value="appliance-c">Microwave
+                                                                            </option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="form-group">
+                                                                    <input type="number" class="form-control" name="wattage">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="form-group">
+                                                                    <input type="number" class="form-control" name="hours">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <!-- row 3 -->
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <button class="btn btn-sm text-danger p-0" type="button">
+                                                                    <i class="fas fa-trash"></i>
+                                                                </button>
                                                             </th>
+                                                            <td>
+                                                                <div class="form-group">
+                                                                    <input type="number" class="form-control" name="quantity">
+                                                                </div>
+                                                            </td>
                                                             <td>
                                                                 <div class="form-group">
                                                                     <div class="select-drop-wrapper">

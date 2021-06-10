@@ -178,6 +178,7 @@ include '../components/header.php'
                                                 <table class="table table-borderless table-form">
                                                     <thead>
                                                         <tr>
+                                                            <th scope="col" id="action">#</th>
                                                             <th scope="col" id="qty-head">Quantity</th>
                                                             <th scope="col" id="appliance-head">Appliance</th>
                                                             <th scope="col" id="wattage-head">Wattage</th>
@@ -188,10 +189,13 @@ include '../components/header.php'
                                                         <!-- row 1 -->
                                                         <tr>
                                                             <th scope="row">
+                                                            <!-- empty -->
+                                                            </th>
+                                                            <td>
                                                                 <div class="form-group">
                                                                     <input type="number" class="form-control" name="quantity">
                                                                 </div>
-                                                            </th>
+                                                            </td>
                                                             <td>
                                                                 <div class="form-group">
                                                                     <div class="select-drop-wrapper">
@@ -224,10 +228,15 @@ include '../components/header.php'
                                                         <!-- row 2 -->
                                                         <tr>
                                                             <th scope="row">
+                                                                <button class="btn btn-sm text-danger p-0" type="button">
+                                                                    <i class="fas fa-trash"></i>
+                                                                </button>
+                                                            </th>
+                                                            <td>
                                                                 <div class="form-group">
                                                                     <input type="number" class="form-control" name="quantity">
                                                                 </div>
-                                                            </th>
+                                                            </td>
                                                             <td>
                                                                 <div class="form-group">
                                                                     <div class="select-drop-wrapper">

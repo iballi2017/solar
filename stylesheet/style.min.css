@@ -2895,6 +2895,12 @@ body {
 #load-system-questionnaire-page #step-2 #form-step-2 #energy-calculator .table-form .form-group {
   margin-bottom: 0;
 }
+#load-system-questionnaire-page #step-1 #form-step-1 #energy-calculator .table-form thead #action,
+#load-system-questionnaire-page #step-1 #form-step-2 #energy-calculator .table-form thead #action,
+#load-system-questionnaire-page #step-2 #form-step-1 #energy-calculator .table-form thead #action,
+#load-system-questionnaire-page #step-2 #form-step-2 #energy-calculator .table-form thead #action {
+  width: 10px;
+}
 #load-system-questionnaire-page #step-1 #form-step-1 #energy-calculator .table-form thead #qty-head,
 #load-system-questionnaire-page #step-1 #form-step-2 #energy-calculator .table-form thead #qty-head,
 #load-system-questionnaire-page #step-2 #form-step-1 #energy-calculator .table-form thead #qty-head,
@@ -2979,6 +2985,27 @@ body {
 #user-review-page #success-message-wrapper p {
   text-align: center;
   font-weight: 600;
+}
+
+#page-not-found-page .content {
+  min-height: 90vh;
+  background-color: #F1F2F1;
+  background-image: url(../assets/images/hero-banner-1-min.png);
+  background-blend-mode: soft-light;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#page-not-found-page .content .title {
+  font-size: 1.6rem;
+}
+#page-not-found-page .content .status {
+  font-size: 7rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 90px;
 }
 
 /*# sourceMappingURL=style.min.css.map */
