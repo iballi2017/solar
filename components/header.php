@@ -32,11 +32,11 @@
 </head>
 
 <body>
-    <div id="loading">
+    <!-- <div id="loading">
         <div class="spinner-border" role="status">
             <span class="sr-only">Loading...</span>
         </div>
-    </div>
+    </div> -->
     <!-- <button class="btn btn-primary">Button</button>
     <i class="fas fa-bars"></i> -->
     <div id="top-header">

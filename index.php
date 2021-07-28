@@ -32,11 +32,11 @@
 </head>
 
 <body>
-    <div id="loading">
+   <!--  <div id="loading">
         <div class="spinner-border" role="status">
             <span class="sr-only">Loading...</span>
         </div>
-    </div>
+    </div> -->
     <!-- <button class="btn btn-primary">Button</button>
     <i class="fas fa-bars"></i> -->
     <div id="top-header">
@@ -294,7 +294,7 @@
             </div>
             <div class="slider-wrapper">
                 <!-- Set up your HTML -->
-                <div class="container auto-wrapper" data-aos="fade-up" data-aos-duration="2000">
+                <div class="container auto-wrapper">
                     <div class="owl-carousel owl-theme" id="services-slider">
                         <div class="bg-white item p-3">
                             <div class="icon-img-wrapper">

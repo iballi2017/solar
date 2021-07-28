@@ -97,7 +97,10 @@
                 .list-style-none {
                     // width: 160px;
                     background-color: #ffffff;
-                    margin-top: 40px;
+                    margin-top: 0;
+                    @include mixins.minmq(1000px){                    
+                        margin-top: 40px;
+                    }
                 }
                 &:last-child {
                     margin-right: 0;

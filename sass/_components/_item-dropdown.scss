@@ -15,10 +15,11 @@
         }
     }
     .item-dropdown-content {
+        z-index: 20;
         @include mixins.transform(scaleY(0));
         .list-style-none {
             width: 250px;
-            margin-top: 40px;
+            //margin-top: 40px;
         }
     }
     &:hover {
