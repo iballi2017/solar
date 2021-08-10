@@ -8,7 +8,7 @@ $(document).ready(function() {
     // });
 
     $('.slider').bxSlider({
-        // auto: true,
+        auto: true,
         mode: 'fade',
         captions: true,
         slideWidth: 1440,
