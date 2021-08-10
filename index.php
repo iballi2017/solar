@@ -32,7 +32,7 @@
 </head>
 
 <body>
-   <!--  <div id="loading">
+    <!--  <div id="loading">
         <div class="spinner-border" role="status">
             <span class="sr-only">Loading...</span>
         </div>
@@ -208,56 +208,44 @@
         <section id="hero">
             <div class="slider">
                 <div class="hero-slider-content" id="slide-1">
-                    <img src="./assets/images/hero-banner-1-min.png" alt="" class="img-fluid">
-                    <div class="custom-caption">
+                    <img src="./assets/images/hero-banner-1.png" alt="" class="img-fluid">
+                    <div class="custom-caption container auto-wrapper">
                         <div class="inner">
-                            <h1 class="">Say No to <span class="text-warningColor" data-aos="fade-up" data-aos-duration="2000">Irregular</span> Power Supply and <span class="text-warningColor" data-aos="fade-up" data-aos-duration="2500">Embrace</span> Solar Technology
-                            </h1>
+                            <h1 data-aos="fade-down" data-aos-duration="2000">No generator, no noise, no fuel, no worries</h1>
+                            <a href="" class="btn hero-btn" data-aos="fade-up" data-aos-duration="2000">SHOP NOW</a>
                         </div>
+                    </div>
+                    <div class="tag-label">
+                        <span>Looking to acquire our products</span>
                     </div>
                 </div>
                 <div id="slide-2">
-                    <img src="./assets/images/hero-banner-2-min.png" alt="" class="img-fluid">
-                    <div class="custom-caption">
-                        <div class="inner">
-                            <h1>Mainland Solar Offers <span class="text-warningColor">Quality</span> at <span class="text-warningColor">Convenient Prices</span>
-                            </h1>
+                    <img src="./assets/images/hero-banner-2.png" alt="" class="img-fluid">
+                    <div class="custom-caption container auto-wrapper">
+                        <div class="inner for-right">
+                            <h1>Power from the sun, power for your house, power for your business</h1>
+                            <a href="" class="btn hero-btn">SHOP NOW</a>
                         </div>
+                    </div>
+                    <div class="tag-label">
+                        <span>Having any problem or what to request for our service</span>
                     </div>
                 </div>
                 <div id="slide-3">
-                    <img src="./assets/images/hero-banner-3-min.png" alt="" class="img-fluid">
-                    <div class="custom-caption">
+                    <img src="./assets/images/hero-banner-3.png" alt="" class="img-fluid">
+                    <div class="custom-caption container auto-wrapper">
                         <div class="inner">
-                            <h1>Your <span class="text-warningColor">Best</span> Green Energy Power Products are <span class="text-warningColor">available</span> at Mainland Solar
-                            </h1>
+                            <h1>Harness energy from the sun, for
+                                uninterrupted power supply</h1>
+                            <a href="" class="btn hero-btn">SHOP NOW</a>
                         </div>
                     </div>
-                </div>
-                <div id="slide-4">
-                    <img src="./assets/images/hero-banner-4-min.png" alt="" class="img-fluid">
-                    <div class="custom-caption">
-                        <div class="inner">
-                            <h1>We <span class="text-warningColor">offer</span> the <span class="text-warningColor">Unbeatable</span> Technical Support and Services
-                            </h1>
-                        </div>
+                    <div class="tag-label">
+                        <span>Know the power of your appliances for your panel</span>
                     </div>
                 </div>
-                <div id="slide-5">
-                    <img src="./assets/images/hero-banner-3-min.png" alt="" class="img-fluid">
-                    <div class="custom-caption">
-                        <div class="inner">
-                            <h1>Get Your Apartment and Offices <span class="text-warningColor">Illuminated</span> All Day at <span class="text-warningColor"> Market Efficient Prices</span>
-                            </h1>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
             </div>
-            <nav class='custom-slider-controls'>
+            <nav class='custom-slider-controls hide'>
                 <a href='#' id='PREV' class='controls bxPrev'></a>
                 <a href='#' id='NEXT' class='controls bxNext'></a>
             </nav>
@@ -269,7 +257,7 @@
                 <div class="inner">
                     <div class="image-content">
                         <div class="img-wrapper">
-                            <img class="lazy img-fluid" data-src="./assets/images/featured-image-1-min.png" alt="featured image" />
+                            <img class="lazy img-fluid" data-src="./assets/images/featured-image-1.png" alt="featured image" />
                         </div>
                     </div>
                     <div class="text-content" data-aos="fade-up" data-aos-duration="2000">
