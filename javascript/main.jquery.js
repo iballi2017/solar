@@ -8,10 +8,11 @@ $(document).ready(function() {
     // });
 
     $('.slider').bxSlider({
+        // auto: true,
         mode: 'fade',
         captions: true,
         slideWidth: 1440,
-        pager: false,
+        pager: true,
         controls: true,
         nextSelector: '.custom-slider-controls .bxNext',
         prevSelector: '.custom-slider-controls .bxPrev',

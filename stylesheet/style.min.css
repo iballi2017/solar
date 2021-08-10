@@ -1259,6 +1259,33 @@ body {
     margin-left: 50%;
   }
 }
+#hero .bx-wrapper .bx-wrapper {
+  position: relative;
+}
+#hero .bx-wrapper .bx-controls {
+  display: none;
+}
+@media (min-width: 768px) {
+  #hero .bx-wrapper .bx-controls {
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 95px;
+  }
+  #hero .bx-wrapper .bx-controls .bx-pager {
+    padding-top: 0;
+    display: inline-block;
+  }
+  #hero .bx-wrapper .bx-controls .bx-pager a {
+    background: #FFFFFF;
+    border: 1px solid #737373;
+  }
+  #hero .bx-wrapper .bx-controls .bx-pager a.active,
+#hero .bx-wrapper .bx-controls .bx-pager a :focus,
+#hero .bx-wrapper .bx-controls .bx-pager a :hover {
+    background: #209E02;
+  }
+}
 #hero .custom-slider-controls .controls g {
   transition: all 300ms ease-in-out;
   -webkit-transition: all 300ms ease-in-out;

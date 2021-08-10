@@ -55,6 +55,31 @@
                 }
             }
         }
+        .bx-wrapper {
+            position: relative;
+        }
+        .bx-controls {
+            display: none;
+            @include mixins.minmq(768px) {
+                display: block;
+                position: absolute;
+                width: 100%;
+                bottom: 95px;
+                .bx-pager {
+                    padding-top: 0;
+                    display: inline-block;
+                    a {
+                        background: #FFFFFF;
+                        border: 1px solid #737373;
+                        &.active,
+                         :focus,
+                         :hover {
+                            background: #209E02;
+                        }
+                    }
+                }
+            }
+        }
     }
     .custom-slider-controls {
         .controls {
