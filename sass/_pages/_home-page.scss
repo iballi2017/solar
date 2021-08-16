@@ -11,7 +11,7 @@
         top: 324px;
         background: #209E02;
         color: #FFFFFF;
-        display: flex;
+        display: inline-flex;
         align-items: center;
         justify-content: center;
         border-radius: 0;
@@ -25,59 +25,90 @@
             background-color: colors.$successLightColor;
         }
     }
-    .bx-wrapper {
-        .custom-caption {
-            .inner {
-                h1 {
-                    font-family: Roboto;
-                    font-style: normal;
-                    font-weight: 900;
-                    font-size: 20px;
-                    color: #15120F;
-                    max-width: 550px;
-                    @include mixins.maxminmq(1000px, 500px) {
-                        font-size: 30px;
-                    }
-                }
-                @include mixins.minmq(1000px) {
-                    h1 {
-                        font-size: 40px;
-                        line-height: 47px;
-                        color: #15120F;
-                        max-width: 550px;
-                    }
-                    &.for-left {
-                        text-align: left;
-                    }
-                    &.for-right {
-                        margin-left: 50%;
-                    }
+    .carousel.slide {
+        position: relative;
+    }
+    .custom-slider-nav {
+        @include mixins.maxmq(500px) {
+            display: none;
+        }
+        .controls {
+            position: absolute;
+            top: 40%;
+            z-index: 10;
+            &#prev {
+                left: 0;
+            }
+            &#next {
+                right: 0;
+            }
+            g {
+                @include mixins.transition(all 300ms ease-in-out);
+            }
+            &:hover {
+                g {
+                    opacity: 1;
                 }
             }
         }
-        .bx-wrapper {
-            position: relative;
+    }
+    .carousel-caption {
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        h1 {
+            width: 100%;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 20px;
+            color: #15120F;
+            @include mixins.minmq(1000px) {
+                font-size: 40px;
+                line-height: 47px;
+            }
+            @include mixins.maxminmq(1000px, 500px) {
+                font-size: 25px;
+            }
         }
-        .bx-controls {
-            display: none;
-            @include mixins.minmq(768px) {
-                display: block;
-                position: absolute;
-                width: 100%;
-                bottom: 95px;
-                .bx-pager {
-                    padding-top: 0;
-                    display: inline-block;
-                    a {
-                        background: #FFFFFF;
-                        border: 1px solid #737373;
-                        &.active,
-                         :focus,
-                         :hover {
-                            background: #209E02;
-                        }
-                    }
-                }
+        &.caption-right {
+            .inner {
+                margin-left: 50%;
+            }
+        }
+        &.caption-left {
+            .inner {
+                max-width: 483px;
+                text-align: left;
+            }
+        }
+        &.caption-center {
+            .inner {
+                max-width: 483px;
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+    }
+    .carousel-indicators {
+        margin-bottom: 70px;
+        @include mixins.maxmq(768px) {
+            margin-bottom: 10px;
+        }
+        li {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: #FFFFFF;
+            border: 1px solid #737373;
+            &:hover,
+            &.active {
+                background: #209E02;
             }
         }
     }

@@ -205,7 +205,106 @@
     </header>
 
     <main>
-        <section id="hero">
+        <div id="hero">
+
+            <div id="carouselExampleCaptions" class="carousel slide container-fluid px-0" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/images/hero-banner-1.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption caption-left">
+                            <div class="container auto-wrapper">
+                                <div class="inner">
+                                    <h1 data-aos="fade-down" data-aos-duration="2000">No generator, no noise, no fuel, no worries</h1>
+                                    <a href="" class="btn hero-btn" data-aos="fade-up" data-aos-duration="2000">SHOP NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tag-label">
+                            <span>Looking to acquire our products</span>
+                        </div>
+                        <!-- <div class="carousel-caption d-none d-md-block">
+                            <div class="custom-caption container auto-wrapper">
+                                <div class="inner">
+                                    <h1 data-aos="fade-down" data-aos-duration="2000">No generator, no noise, no fuel, no worries</h1>
+                                    <a href="" class="btn hero-btn" data-aos="fade-up" data-aos-duration="2000">SHOP NOW</a>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/hero-banner-2.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption text-left caption-right">
+                            <div class="container auto-wrapper">
+                                <div class="inner">
+                                    <h1 data-aos="fade-down" data-aos-duration="2000">Power from the sun, power for your house, power for your business</h1>
+                                    <a href="" class="btn hero-btn" data-aos="fade-up" data-aos-duration="2000">SHOP NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tag-label">
+                            <span>Having any problem or what to request for our service</span>
+                        </div>
+                        <!-- <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+
+                        </div> -->
+                        <!-- <div class="custom-caption container auto-wrapper">
+                                <div class="inner for-right">
+                                    <h1>Power from the sun, power for your house, power for your business</h1>
+                                    <a href="" class="btn hero-btn">SHOP NOW</a>
+                                </div>
+                            </div> -->
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/hero-banner-3.png" class="d-block w-100" alt="...">
+                        <!-- <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div> -->
+                        <!-- <div class="custom-caption container auto-wrapper">
+                                <div class="inner">
+                                    <h1>Harness energy from the sun, for
+                                        uninterrupted power supply</h1>
+                                    <a href="" class="btn hero-btn">SHOP NOW</a>
+                                </div>
+                            </div> -->
+                        <div class="carousel-caption caption-left">
+                            <div class="container auto-wrapper">
+                                <div class="inner">
+                                    <h1 data-aos="fade-down" data-aos-duration="2000">Harness energy from the sun, for uninterrupted power supply</h1>
+                                    <a href="" class="btn hero-btn" data-aos="fade-up" data-aos-duration="2000">SHOP NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tag-label">
+                            <span>Know the power of your appliances for your panel</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-slider-nav">
+                    <a class="btn controls" id="prev" href="#carouselExampleCaptions" role="button" data-slide="prev"><svg width="54" height="50" viewBox="0 0 64 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.3">
+                                <rect x="1.5" y="1.5" width="61" height="57" rx="28.5" fill="white" stroke="#209E02" stroke-width="3" />
+                                <path d="M39.5 19.6831C39.5 17.8152 37.2416 16.8797 35.9208 18.2006L28.6256 25.4957C26.138 27.9833 26.138 32.0166 28.6256 34.5043L35.9208 41.7994C37.2416 43.1203 39.5 42.1848 39.5 40.3169C39.5 39.7608 39.2791 39.2275 38.8859 38.8343L37.3539 37.3024C33.321 33.2694 33.321 26.7306 37.3539 22.6976L38.8859 21.1657C39.2791 20.7725 39.5 20.2392 39.5 19.6831Z" fill="#414143" stroke="#209E02" stroke-width="3" />
+                            </g>
+                        </svg></a>
+                    <a class="btn controls" id="next" href="#carouselExampleCaptions" role="button" data-slide="next"><svg width="54" height="50" viewBox="0 0 64 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.3">
+                                <rect x="-1.5" y="1.5" width="61" height="57" rx="28.5" transform="matrix(-1 0 0 1 61 0)" fill="white" stroke="#209E02" stroke-width="3" />
+                                <path d="M25.5 19.6831C25.5 17.8152 27.7584 16.8797 29.0792 18.2006L36.3744 25.4957C38.862 27.9833 38.862 32.0166 36.3744 34.5043L29.0792 41.7994C27.7584 43.1203 25.5 42.1848 25.5 40.3169C25.5 39.7608 25.7209 39.2275 26.1141 38.8343L27.6461 37.3024C31.679 33.2694 31.679 26.7306 27.6461 22.6976L26.1141 21.1657C25.7209 20.7725 25.5 20.2392 25.5 19.6831Z" fill="#414143" stroke="#209E02" stroke-width="3" />
+                            </g>
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- <section id="hero">
             <div class="slider">
                 <div class="hero-slider-content" id="slide-1">
                     <img src="./assets/images/hero-banner-1.png" alt="" class="img-fluid">
@@ -249,7 +348,7 @@
                 <a href='#' id='PREV' class='controls bxPrev'></a>
                 <a href='#' id='NEXT' class='controls bxNext'></a>
             </nav>
-        </section>
+        </section> -->
 
 
         <section id="what-we-do" class="bg-white">

@@ -1215,7 +1215,7 @@ body {
   top: 324px;
   background: #209E02;
   color: #FFFFFF;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 0;
@@ -1232,59 +1232,92 @@ body {
 #hero .hero-btn:hover {
   background-color: #41CF1F;
 }
-#hero .bx-wrapper .custom-caption .inner h1 {
+#hero .carousel.slide {
+  position: relative;
+}
+@media (max-width: 500px) {
+  #hero .custom-slider-nav {
+    display: none;
+  }
+}
+#hero .custom-slider-nav .controls {
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+}
+#hero .custom-slider-nav .controls#prev {
+  left: 0;
+}
+#hero .custom-slider-nav .controls#next {
+  right: 0;
+}
+#hero .custom-slider-nav .controls g {
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+#hero .custom-slider-nav .controls:hover g {
+  opacity: 1;
+}
+#hero .carousel-caption {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#hero .carousel-caption h1 {
+  width: 100%;
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
   font-size: 20px;
   color: #15120F;
-  max-width: 550px;
-}
-@media screen and (max-width: 1000px) and (min-width: 500px) {
-  #hero .bx-wrapper .custom-caption .inner h1 {
-    font-size: 30px;
-  }
 }
 @media (min-width: 1000px) {
-  #hero .bx-wrapper .custom-caption .inner h1 {
+  #hero .carousel-caption h1 {
     font-size: 40px;
     line-height: 47px;
-    color: #15120F;
-    max-width: 550px;
-  }
-  #hero .bx-wrapper .custom-caption .inner.for-left {
-    text-align: left;
-  }
-  #hero .bx-wrapper .custom-caption .inner.for-right {
-    margin-left: 50%;
   }
 }
-#hero .bx-wrapper .bx-wrapper {
-  position: relative;
+@media screen and (max-width: 1000px) and (min-width: 500px) {
+  #hero .carousel-caption h1 {
+    font-size: 25px;
+  }
 }
-#hero .bx-wrapper .bx-controls {
-  display: none;
+#hero .carousel-caption.caption-right .inner {
+  margin-left: 50%;
 }
-@media (min-width: 768px) {
-  #hero .bx-wrapper .bx-controls {
-    display: block;
-    position: absolute;
-    width: 100%;
-    bottom: 95px;
+#hero .carousel-caption.caption-left .inner {
+  max-width: 483px;
+  text-align: left;
+}
+#hero .carousel-caption.caption-center .inner {
+  max-width: 483px;
+  text-align: center;
+  margin: 0 auto;
+}
+#hero .carousel-indicators {
+  margin-bottom: 70px;
+}
+@media (max-width: 768px) {
+  #hero .carousel-indicators {
+    margin-bottom: 10px;
   }
-  #hero .bx-wrapper .bx-controls .bx-pager {
-    padding-top: 0;
-    display: inline-block;
-  }
-  #hero .bx-wrapper .bx-controls .bx-pager a {
-    background: #FFFFFF;
-    border: 1px solid #737373;
-  }
-  #hero .bx-wrapper .bx-controls .bx-pager a.active,
-#hero .bx-wrapper .bx-controls .bx-pager a :focus,
-#hero .bx-wrapper .bx-controls .bx-pager a :hover {
-    background: #209E02;
-  }
+}
+#hero .carousel-indicators li {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  border: 1px solid #737373;
+}
+#hero .carousel-indicators li:hover, #hero .carousel-indicators li.active {
+  background: #209E02;
 }
 #hero .custom-slider-controls .controls g {
   transition: all 300ms ease-in-out;
