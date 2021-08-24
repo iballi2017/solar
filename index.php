@@ -207,7 +207,7 @@
     <main>
         <div id="hero">
 
-            <div id="carouselExampleCaptions" class="carousel slide container-fluid px-0" data-ride="carousel">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -356,7 +356,7 @@
                 <div class="inner">
                     <div class="image-content">
                         <div class="img-wrapper">
-                            <img class="lazy img-fluid" data-src="./assets/images/featured-image-1.png" alt="featured image" />
+                            <img class="lazy img-fluid" data-src="./assets/images/featured-image-1.jpg" alt="featured image" />
                         </div>
                     </div>
                     <div class="text-content" data-aos="fade-up" data-aos-duration="2000">
@@ -368,9 +368,9 @@
             </div>
         </section>
 
-        <section id="services" class="lazy" data-loader="examplePlugin">
+        <section id="services" data-loader="examplePlugin">
             <div class="container auto-wrapper">
-                <div class="inner">
+                <div class="inner" data-aos="fade-up" data-aos-duration="2000">
                     <div class="title-wrapper">
                         <hr>
                         <h2 class="title uppercase bold mb-0">Services</h2>
@@ -447,20 +447,20 @@
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="services-slider-control d-none">
-                    <button class="btn btn-sm prev-control">
-                        <svg width="47" height="44" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="1.27734" y="1.43091" width="44.8667" height="42" rx="21" fill="#414143" stroke="white" />
-                            <path d="M29.6602 15.0371C29.6602 13.1862 27.4223 12.2592 26.1135 13.568L20.8853 18.7962C18.8779 20.8036 18.8779 24.0582 20.8853 26.0655L26.1134 31.2937C27.4223 32.6026 29.6602 31.6756 29.6602 29.8246C29.6602 29.2736 29.4413 28.7452 29.0516 28.3555L27.9537 27.2576C25.288 24.5919 25.288 20.2699 27.9537 17.6041L29.0516 16.5062C29.4413 16.1166 29.6602 15.5881 29.6602 15.0371Z" fill="white" stroke="white" />
-                        </svg>
-                    </button>
-                    <button class="btn btn-sm next-control">
-                        <svg width="46" height="43" viewBox="0 0 46 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="-0.5" y="0.5" width="44.8667" height="42" rx="21" transform="matrix(-1 0 0 1 44.8672 0)" fill="#414143" stroke="white" />
-                            <path d="M16.9844 14.1062C16.9844 12.2553 19.2223 11.3283 20.5311 12.6371L25.7593 17.8653C27.7666 19.8727 27.7666 23.1273 25.7593 25.1346L20.5311 30.3628C19.2223 31.6716 16.9844 30.7447 16.9844 28.8937C16.9844 28.3427 17.2033 27.8143 17.5929 27.4246L18.6908 26.3267C21.3566 23.661 21.3566 19.3389 18.6908 16.6732L17.5929 15.5753C17.2033 15.1857 16.9844 14.6572 16.9844 14.1062Z" fill="white" stroke="white" />
-                        </svg>
-                    </button>
+                    <div class="services-slider-control d-none">
+                        <button class="btn btn-sm prev-control">
+                            <svg width="47" height="44" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="1.27734" y="1.43091" width="44.8667" height="42" rx="21" fill="#414143" stroke="white" />
+                                <path d="M29.6602 15.0371C29.6602 13.1862 27.4223 12.2592 26.1135 13.568L20.8853 18.7962C18.8779 20.8036 18.8779 24.0582 20.8853 26.0655L26.1134 31.2937C27.4223 32.6026 29.6602 31.6756 29.6602 29.8246C29.6602 29.2736 29.4413 28.7452 29.0516 28.3555L27.9537 27.2576C25.288 24.5919 25.288 20.2699 27.9537 17.6041L29.0516 16.5062C29.4413 16.1166 29.6602 15.5881 29.6602 15.0371Z" fill="white" stroke="white" />
+                            </svg>
+                        </button>
+                        <button class="btn btn-sm next-control">
+                            <svg width="46" height="43" viewBox="0 0 46 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="-0.5" y="0.5" width="44.8667" height="42" rx="21" transform="matrix(-1 0 0 1 44.8672 0)" fill="#414143" stroke="white" />
+                                <path d="M16.9844 14.1062C16.9844 12.2553 19.2223 11.3283 20.5311 12.6371L25.7593 17.8653C27.7666 19.8727 27.7666 23.1273 25.7593 25.1346L20.5311 30.3628C19.2223 31.6716 16.9844 30.7447 16.9844 28.8937C16.9844 28.3427 17.2033 27.8143 17.5929 27.4246L18.6908 26.3267C21.3566 23.661 21.3566 19.3389 18.6908 16.6732L17.5929 15.5753C17.2033 15.1857 16.9844 14.6572 16.9844 14.1062Z" fill="white" stroke="white" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -471,24 +471,18 @@
                 <h2 class="title mb-3 uppercase bold text-center">Why Choose Us</h2>
                 <h5 class="tagline text-center">At Mainland Solar, you are highly prioritized. Through us, you can enjoy the benefits of uninterrupted power.
                 </h5>
+                <!--  -->
 
-                <div class="row no-gutters">
-                    <div class="col-12 col-sm-12 col-lg-7 features-wrapper">
-                        <ul class="list-style-none features px-0" data-aos="fade-up" data-aos-duration="2000">
-                            <li class="professionalism">
-                                <!-- <div class="icon-img-wrapper">
-                                    <img src="./assets/images/icons/professionalism-icon.svg" alt="professionalism-icon" class="img-fluid">
-                                </div> -->
+                <div class="row">
+                    <div class="col-12 col-md-7 feature-list">
+                        <ul class="list" data-aos="fade-up" data-aos-duration="1500">
+                            <li class="professionalism ">
                                 <div class="content">
                                     <h5 class="title">Professionalism</h5>
-                                    <p class="body">Highly and expertly trained solar professionals who would ensure you get quality service through installation, maintenance, and consultation.
-                                    </p>
+                                    <p class="body">Highly and expertly trained solar professionals who would ensure you get quality service through installation, maintenance, and consultation.</p>
                                 </div>
                             </li>
                             <li class="client-focused">
-                                <!-- <div class="icon-img-wrapper">
-                                    <img src="./assets/images/icons/client-focused-icon.svg" alt="client-focused-icon" class="img-fluid">
-                                </div> -->
                                 <div class="content">
                                     <h5 class="title">Client Focused</h5>
                                     <p class="body">We ensure absolute customer satisfaction by focusing on what you need and giving you the best.
@@ -496,18 +490,12 @@
                                 </div>
                             </li>
                             <li class="different-capacity">
-                                <!-- <div class="icon-img-wrapper">
-                                    <img src="./assets/images/icons/different-capacity-icon.svg" alt="different-capacity-icon" class="img-fluid">
-                                </div> -->
                                 <div class="content">
-                                    <h5 class="title">Different Capacity</h5>
+                                    <h5 class="title">Different Capacity</h5>                                    
                                     <p class="body">We offer various alternatives and dynamic services.</p>
                                 </div>
-                            </li>
+                            </li>                            
                             <li class="quality">
-                                <!-- <div class="icon-img-wrapper">
-                                    <img src="./assets/images/icons/quality-icon.svg" alt="quality-icon" class="img-fluid">
-                                </div> -->
                                 <div class="content">
                                     <h5 class="title">Quality</h5>
                                     <p class="body">We are not only provide you quality products, but also guarantee you efficient results.
@@ -515,10 +503,7 @@
                                 </div>
                             </li>
                             <li class="competitive-price">
-                                <!-- <div class="icon-img-wrapper">
-                                    <img src="./assets/images/icons/competitive-price-icon.svg" alt="competitive-price-icon" class="img-fluid">
-                                </div> -->
-                                <div class="content">
+                                                           <div class="content">
                                     <h5 class="title">Competitive Price</h5>
                                     <p class="body">Our prices reflect the excellent services we render to our clients.
                                     </p>
@@ -526,15 +511,10 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-5 feature-images-wrapper">
-                        <!-- <div class="feature-image">
-                            <div class="img-wrapper">
-                                <img data-src="./assets/images/featured-image-2.png" alt="" class="lazy img-fluid">
-                            </div>
-                        </div> -->
 
+                    <div class="col-12 col-md-5">
                         <!-- Set up your HTML -->
-                        <div class="feature-images">
+                        <div class="feature-slider" data-aos="fade-up" data-aos-duration="2000">
                             <div class="owl-carousel" id="why-choose-us-slider">
                                 <div class="item">
                                     <div class="img-wrapper h-100">
@@ -549,14 +529,12 @@
                             </div>
                             <div class="feature-images-slider-control d-none">
                                 <button class="btn p-0 m-0 prev-control">
-                                    <!-- icon -->
                                     <svg width="47" height="44" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect x="0.90625" y="0.956787" width="44.8667" height="42" fill="white" stroke="#209E02" />
                                         <path d="M29.2891 15.4236L29.2891 9.54719L16.8795 21.9568L29.2891 34.3663L29.2891 28.4899L23.1094 22.3103L22.7559 21.9568L23.1094 21.6032L29.2891 15.4236Z" fill="#209E02" stroke="#209E02" />
                                     </svg>
                                 </button>
                                 <button class="btn p-0 m-0 next-control">
-                                    <!-- icon -->
                                     <svg width="47" height="44" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect x="-0.5" y="0.5" width="44.8667" height="42" transform="matrix(-1 0 0 1 45.7227 0.845215)" fill="white" stroke="#209E02" />
                                         <path d="M17.8398 15.812L17.8398 9.93562L30.2494 22.3452L17.8398 34.7547L17.8398 28.8784L24.0195 22.6987L24.373 22.3452L24.0195 21.9916L17.8398 15.812Z" fill="#209E02" stroke="#209E02" />
@@ -566,7 +544,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
@@ -725,15 +702,15 @@
     <script>
         $(document).ready(function() {
             $(function() {
-                $('.lazy').lazy({
-                    visibleOnly: true,
-                    effect: "fadeIn",
-                    effectTime: 2000,
-                    threshold: 0,
-                    onError: function(element) {
-                        console.log('error loading ' + element.data('src'));
-                    }
-                });
+                    $('.lazy').lazy({
+                        visibleOnly: true,
+                        effect: "fadeIn",
+                        effectTime: 2000,
+                        threshold: 0,
+                        onError: function(element) {
+                            console.log('error loading ' + element.data('src'));
+                        }
+                    });
             });
 
         })

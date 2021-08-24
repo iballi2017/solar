@@ -46,7 +46,9 @@ $(document).ready(function() {
         servicesSlider.trigger('prev.owl.carousel', [300]);
     });
 
-    var whyChooseUsSlider = $("#why-choose-us-slider");
+
+
+     var whyChooseUsSlider = $("#why-choose-us-slider");
     whyChooseUsSlider.owlCarousel({
             animateOut: 'animate__fadeIn',
             animateIn: 'animate__fadeOut',
@@ -54,7 +56,7 @@ $(document).ready(function() {
             dots: false,
             speed: 1000,
             slideTransition: 'linear',
-            // autoplay: true,
+            autoplay: true,
             autoplaySpeed: 4500,
             lazyLoad: true,
             autoplayTimeout: 6000,
