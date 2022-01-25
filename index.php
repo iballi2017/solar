@@ -293,7 +293,8 @@
                                 <rect x="1.5" y="1.5" width="61" height="57" rx="28.5" fill="white" stroke="#209E02" stroke-width="3" />
                                 <path d="M39.5 19.6831C39.5 17.8152 37.2416 16.8797 35.9208 18.2006L28.6256 25.4957C26.138 27.9833 26.138 32.0166 28.6256 34.5043L35.9208 41.7994C37.2416 43.1203 39.5 42.1848 39.5 40.3169C39.5 39.7608 39.2791 39.2275 38.8859 38.8343L37.3539 37.3024C33.321 33.2694 33.321 26.7306 37.3539 22.6976L38.8859 21.1657C39.2791 20.7725 39.5 20.2392 39.5 19.6831Z" fill="#414143" stroke="#209E02" stroke-width="3" />
                             </g>
-                        </svg></a>
+                        </svg>
+                    </a>
                     <a class="btn controls" id="next" href="#carouselExampleCaptions" role="button" data-slide="next"><svg width="54" height="50" viewBox="0 0 64 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g opacity="0.3">
                                 <rect x="-1.5" y="1.5" width="61" height="57" rx="28.5" transform="matrix(-1 0 0 1 61 0)" fill="white" stroke="#209E02" stroke-width="3" />

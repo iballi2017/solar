@@ -35,7 +35,7 @@ include '../components/header.php'
                         </div>
                     </div>
                     <div id="sort-select-dropdown">
-                        <div class="label">Sort by:</div>
+                        <div class="label">Sort byhh:</div>
                         <div class="sort-radios">
                             <div id="selected">Recommended</div>
                             <div class="dropdown-wrapper">
@@ -65,7 +65,7 @@ include '../components/header.php'
                     <div class="row no-gutters">
                         <!-- item 1 -->
                         <div class="col-6 col-sm-4 col-md-3">
-                            <div class="product-card card">
+                            <div class="product-card card out-of-stock">
                                 <img src="../assets/images/product-images/product-1-image.png" class="card-img-top" alt="product image 1">
                                 <div class="card-body">
                                     <p class="card-text mb-0">
@@ -107,7 +107,7 @@ include '../components/header.php'
                         </div>
                         <!-- item 2 -->
                         <div class="col-6 col-sm-4 col-md-3">
-                            <div class="product-card card">
+                            <div class="product-card card out-of-stock">
                                 <img src="../assets/images/product-images/product-2-image.png" class="card-img-top" alt="product image 2">
                                 <div class="card-body">
 
