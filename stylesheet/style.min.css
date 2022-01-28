@@ -3151,4 +3151,166 @@ body {
   line-height: 90px;
 }
 
+/* SHOPPING CART PAGE STYLE */
+#solar-audit-page .audit-progress-bar {
+  max-width: 700px;
+  margin: 0 auto;
+}
+#solar-audit-page .audit-progress-bar li {
+  text-align: center;
+  flex-basis: 33.3333333333%;
+}
+#solar-audit-page .audit-progress-bar .labels {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #414143;
+}
+#solar-audit-page .audit-progress-bar .indicators {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#solar-audit-page .audit-progress-bar .indicators li {
+  text-align: center;
+  flex-basis: 33.3333333333%;
+  cursor: pointer;
+}
+#solar-audit-page .audit-progress-bar .indicators li:last-child .ball::after {
+  display: none;
+}
+#solar-audit-page .audit-progress-bar .indicators li.active .ball {
+  background-color: #209e02;
+}
+#solar-audit-page .audit-progress-bar .indicators .ball {
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  border: 3px solid #c4c4c4;
+  display: inline-block;
+  position: relative;
+  background-color: #ffffff;
+  z-index: 2;
+  box-shadow: inset 0 2px 0 #ffffff, inset -2px 0 0 #ffffff, inset 0 -2px 0 #ffffff, inset 2px 0 0 #ffffff;
+}
+@media (min-width: 768px) {
+  #solar-audit-page .audit-progress-bar .indicators .ball::after {
+    content: "";
+    display: block;
+    width: 233.3333333333px;
+    background-color: #c4c4c4;
+    height: 3px;
+    position: absolute;
+    top: 43%;
+    left: 100%;
+    z-index: 0;
+  }
+}
+#solar-audit-page #calendar-guide {
+  background: #f7f7f7;
+  mix-blend-mode: normal;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  padding: 1em 1.5em;
+}
+#solar-audit-page #calendar-guide .inner {
+  max-width: 500px;
+  margin: 0 auto;
+}
+#solar-audit-page #calendar-guide .inner .title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  color: #414143;
+}
+#solar-audit-page #calendar-guide .inner .guide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#solar-audit-page #calendar-guide .inner .guide li {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #414143;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+#solar-audit-page #calendar-guide .inner .guide li .color {
+  width: 25px;
+  height: 18px;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  margin-right: 1em;
+}
+#solar-audit-page #calendar-guide .inner .guide li .color.partly-booked {
+  background: #ee8b23;
+}
+#solar-audit-page #calendar-guide .inner .guide li .color.fully-booked {
+  background: #ea4b4b;
+}
+#solar-audit-page #calendar-guide .inner .guide li .color.available {
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+}
+#solar-audit-page #calendar-guide .inner .guide li .color.day-off {
+  background: #d0d0d0;
+}
+@media (min-width: 768px) {
+  #solar-audit-page #pick-a-time .indicators li:nth-of-type(1) .ball::after {
+    background-color: #209e02;
+  }
+}
+#solar-audit-page #pick-a-time #time-select {
+  padding: 1em 1.5em;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.9rem;
+  line-height: 15px;
+  color: #c4c4c4;
+}
+#solar-audit-page #pick-a-time #time-select .inner {
+  max-width: 500px;
+  margin: 0 auto;
+}
+#solar-audit-page #pick-a-time #time-select .ui-check {
+  display: block;
+  height: 18px;
+  width: 18px;
+  border: 1px solid #202020;
+  border-radius: 3px;
+}
+#solar-audit-page #pick-a-time #time-select .time-option {
+  position: absolute;
+  left: -1000000px;
+}
+#solar-audit-page #pick-a-time #time-select .time-option + label {
+  cursor: pointer;
+}
+#solar-audit-page #pick-a-time #time-select .time-option[type=checkbox]:checked + label .ui-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#solar-audit-page #pick-a-time #time-select .time-option[type=checkbox]:checked + label .ui-check::after {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 0.85rem;
+}
+
 /*# sourceMappingURL=style.min.css.map */

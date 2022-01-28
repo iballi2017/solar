@@ -29,6 +29,8 @@
     <link rel="stylesheet" href="../assets/plugins/bootstrap-4.6/dist/css/bootstrap.min.css">
     <!-- custom css -->
     <link rel="stylesheet" href="../stylesheet/style.min.css" />
+    <!-- calendar stylesheet -->
+    <link rel="stylesheet" href="../stylesheet/calendar.style.css">
 </head>
 
 <body>

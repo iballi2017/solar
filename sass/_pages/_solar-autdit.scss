@@ -1,0 +1,190 @@
+/* SHOPPING CART PAGE STYLE */
+
+@use "../_abstracts/colors";
+@use "../_partials/mixins";
+#solar-audit-page {
+    .audit-progress-bar {
+        max-width: 700px;
+        margin: 0 auto;
+        li {
+            text-align: center;
+            flex-basis: calc(100% / 3);
+        }
+
+        .labels {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.5em 0;
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            text-align: center;
+
+            color: #414143;
+        }
+
+        .indicators {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            li {
+                text-align: center;
+                flex-basis: calc(100% / 3);
+                cursor: pointer;
+                &:last-child {
+                    .ball {
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+
+                &.active {
+                    .ball {
+                        background-color: #209e02;
+                    }
+                }
+            }
+            .ball {
+                height: 23px;
+                width: 23px;
+                border-radius: 50%;
+                border: 3px solid #c4c4c4;
+                display: inline-block;
+                position: relative;
+                background-color: #ffffff;
+                z-index: 2;
+                box-shadow: inset 0 2px 0 #ffffff, inset -2px 0 0 #ffffff, inset 0 -2px 0 #ffffff, inset 2px 0 0 #ffffff;
+                @include mixins.minmq(768px) {
+                    &::after {
+                        content: "";
+                        display: block;
+                        // width: 100px;
+                        width: calc(700px / 3);
+                        background-color: #c4c4c4;
+                        height: 3px;
+                        position: absolute;
+                        top: 43%;
+                        left: 100%;
+                        z-index: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    #calendar-guide {
+        background: #f7f7f7;
+        mix-blend-mode: normal;
+        border: 1px solid #c4c4c4;
+        box-sizing: border-box;
+        padding: 1em 1.5em;
+        .inner {
+            // max-width: 700px;
+            max-width: 500px;
+            margin: 0 auto;
+            .title {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 15px;
+                line-height: 18px;
+                color: #414143;
+            }
+            .guide {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                li {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: #414143;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 1em;
+                    .color {
+                        width: 25px;
+                        height: 18px;
+                        background: #ffffff;
+                        mix-blend-mode: normal;
+                        margin-right: 1em;
+                        &.partly-booked {
+                            background: #ee8b23;
+                        }
+                        &.fully-booked {
+                            background: #ea4b4b;
+                        }
+                        &.available {
+                            background: #ffffff;
+                            border: 1px solid #c4c4c4;
+                        }
+                        &.day-off {
+                            background: #d0d0d0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #pick-a-time {
+        .indicators {
+            li:nth-of-type(1) {
+                .ball {
+                    @include mixins.minmq(768px) {
+                        &::after {
+                            background-color: #209e02;
+                        }
+                    }
+                }
+            }
+        }
+        #time-select {
+            padding: 1em 1.5em;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: .9rem;
+            line-height: 15px;
+            color: #c4c4c4;
+            .inner {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+
+            .ui-check {
+                display: block;
+                height: 18px;
+                width: 18px;
+                border: 1px solid #202020;
+                border-radius: 3px;
+            }
+            .time-option {
+                position: absolute;
+                left: -1000000px;
+
+                + label {
+                    cursor: pointer;
+                }
+            }
+            .time-option[type="checkbox"]:checked + label {
+                .ui-check {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    &::after {
+                        @include mixins.after("\f00c", 0.85rem);
+                    }
+                }
+            }
+        }
+    }
+}
