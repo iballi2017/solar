@@ -42,7 +42,6 @@ include '../components/header.php'
                 </div>
 
                 <div id="time-select">
-
                     <div class="inner">
                         <form action="#">
                             <table class="table table-bordered">
@@ -60,7 +59,7 @@ include '../components/header.php'
                                             9:00am - 11:00am
                                         </td>
                                         <td>
-                                            <input type="checkbox" name="time" id="9am" class="time-option">
+                                            <input type="checkbox" name="time" id="9am" class="checkbox">
                                             <label for="9am">
                                                 <span class="ui-check"></span>
                                             </label>
@@ -70,7 +69,7 @@ include '../components/header.php'
                                         <th scope="row">2</th>
                                         <td>12:00pm - 2:00pm</td>
                                         <td>
-                                            <input type="checkbox" name="time" id="12pm" class="time-option">
+                                            <input type="checkbox" name="time" id="12pm" class="checkbox">
                                             <label for="12pm">
                                                 <span class="ui-check"></span>
                                             </label>
@@ -80,7 +79,7 @@ include '../components/header.php'
                                         <th scope="row">3</th>
                                         <td>3:00pm - 5:00pm</td>
                                         <td>
-                                            <input type="checkbox" name="time" id="3pm" class="time-option">
+                                            <input type="checkbox" name="time" id="3pm" class="checkbox">
                                             <label for="3pm">
                                                 <span class="ui-check"></span>
                                             </label>

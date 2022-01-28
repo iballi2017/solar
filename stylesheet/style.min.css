@@ -3152,6 +3152,51 @@ body {
 }
 
 /* SHOPPING CART PAGE STYLE */
+#solar-audit-page .ui-check {
+  display: block;
+  height: 18px;
+  width: 18px;
+  border: 1px solid #202020;
+  border-radius: 3px;
+}
+#solar-audit-page .checkbox {
+  position: absolute;
+  left: -1000000px;
+}
+#solar-audit-page .checkbox + label {
+  cursor: pointer;
+}
+#solar-audit-page .checkbox[type=checkbox]:checked + label .ui-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#solar-audit-page .checkbox[type=checkbox]:checked + label .ui-check::after {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 0.85rem;
+}
+#solar-audit-page .ui-radio {
+  display: block;
+  height: 20px;
+  width: 20px;
+  border: 5px solid #f1f2f1;
+  border-radius: 50%;
+  margin: 0.5em auto;
+  margin-bottom: 0;
+  background-color: #c4c4c4;
+}
+#solar-audit-page .radio {
+  position: absolute;
+  left: -1000000px;
+}
+#solar-audit-page .radio + label {
+  cursor: pointer;
+}
+#solar-audit-page .radio[type=radio]:checked + label .ui-radio {
+  background-color: #209e02;
+}
 #solar-audit-page .audit-progress-bar {
   max-width: 700px;
   margin: 0 auto;
@@ -3287,30 +3332,28 @@ body {
   max-width: 500px;
   margin: 0 auto;
 }
-#solar-audit-page #pick-a-time #time-select .ui-check {
-  display: block;
-  height: 18px;
-  width: 18px;
-  border: 1px solid #202020;
-  border-radius: 3px;
+@media (min-width: 768px) {
+  #solar-audit-page #checkout .indicators li:nth-of-type(1) .ball::after,
+#solar-audit-page #checkout .indicators li:nth-of-type(2) .ball::after {
+    background-color: #209e02;
+  }
 }
-#solar-audit-page #pick-a-time #time-select .time-option {
-  position: absolute;
-  left: -1000000px;
+#solar-audit-page #checkout #bank-account-details .label {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #414143;
 }
-#solar-audit-page #pick-a-time #time-select .time-option + label {
-  cursor: pointer;
-}
-#solar-audit-page #pick-a-time #time-select .time-option[type=checkbox]:checked + label .ui-check {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#solar-audit-page #pick-a-time #time-select .time-option[type=checkbox]:checked + label .ui-check::after {
-  content: "\f00c";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 0.85rem;
+#solar-audit-page #checkout #bank-account-details .bank-name,
+#solar-audit-page #checkout #bank-account-details .account-number {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 24px;
+  color: #414143;
 }
 
 /*# sourceMappingURL=style.min.css.map */

@@ -143,25 +143,25 @@ for (let i = 0; i < stars.length; i++) {
 
 /* Out of stock product card */
 
-const OutOfStock = () =>{
-    const productCards = document.querySelectorAll(".out-of-stock");
-    const controlBtn = document.querySelectorAll(".out-of-stock .btn");
-    
-    for (let i = 0; i < productCards.length; i++) {
-      const para = document.createElement("div");
-      para.className = "linen";
-      document.body.appendChild(para);
-      productCards[i].appendChild(para);
-    }    
-    
-    controlBtn.forEach((btn) => {
-      btn.setAttribute("disabled", true);
-      btn.classList.add("disabled");
-    });
+const OutOfStock = () => {
+  const productCards = document.querySelectorAll(".out-of-stock");
+  const controlBtn = document.querySelectorAll(".out-of-stock .btn");
+
+  for (let i = 0; i < productCards.length; i++) {
+    const para = document.createElement("div");
+    para.className = "linen";
+    document.body.appendChild(para);
+    productCards[i].appendChild(para);
+  }
+
+  controlBtn.forEach((btn) => {
+    btn.setAttribute("disabled", true);
+    btn.classList.add("disabled");
+  });
 }
 
-function Init(){
-    OutOfStock();
+function Init() {
+  OutOfStock();
 }
 Init();
 
@@ -210,10 +210,13 @@ const renderCalendar = () => {
     "November",
     "December",
   ];
+  if (document.querySelector(".date h5")) {
+    document.querySelector(".date h5").innerHTML = months[date.getMonth()];
+  }
 
-  document.querySelector(".date h5").innerHTML = months[date.getMonth()];
-
-  document.querySelector(".date p").innerHTML = new Date().toDateString();
+  if (document.querySelector(".date p")) {
+    document.querySelector(".date p").innerHTML = new Date().toDateString();
+  }
 
   let days = "";
 
@@ -228,34 +231,72 @@ const renderCalendar = () => {
     ) {
       days += `<div class="today">${i}</div>`;
     } else {
-      days += `<div><a href="#">${i}</a></div>`;
+      days += `<div><a href="#" class="date-link">${i}</a></div>`;
     }
   }
 
   for (let j = 1; j <= nextDays; j++) {
     days += `<div class="next-date">${j}</div>`;
-    monthDays.innerHTML = days;
+    if (monthDays) {
+      monthDays.innerHTML = days;
+    }
   }
 };
 
-document.querySelector(".prev").addEventListener("click", () => {
-  date.setMonth(date.getMonth() - 1);
-  renderCalendar();
-});
 
-document.querySelector(".next").addEventListener("click", () => {
-  date.setMonth(date.getMonth() + 1);
-  renderCalendar();
-});
+if (document.querySelector(".prev")) {
+  document.querySelector(".prev").addEventListener("click", () => {
+    date.setMonth(date.getMonth() - 1);
+    renderCalendar();
+  });
+}
 
+if (document.querySelector(".next")) {
+  document.querySelector(".next").addEventListener("click", () => {
+    date.setMonth(date.getMonth() + 1);
+    renderCalendar();
+  });
+}
 renderCalendar();
 
 
-var dateLinks = document.querySelectorAll(".days a");
-for(let i = 0; i < dateLinks.length; i++){
+var dateLinks = document.querySelectorAll(".date-link");
+for (let i = 0; i < dateLinks.length; i++) {
   console.log(dateLinks[i]);
-  dateLinks[i].addEventListener("click", (e)=>{
+  dateLinks[i].addEventListener("click", (e) => {
     e.preventDefault();
-    console.log(e.target);
+    console.log(e.target);//actual day
+    // console.log(months[date.getMonth()]); //actual month
   })
+}
+
+
+/* PAYMENT OPTIONS */
+const bankTransferRadio = document.querySelector("#bankTransfer");
+const paystackRadio = document.querySelector("#paystack");
+
+if (bankTransferRadio && paystackRadio) {
+  bankTransferRadio.addEventListener("click", () => {
+    if (bankTransferRadio.checked) {
+      console.log("checked!!!");
+      let x = document.querySelector("#bank-account-details");
+      if (x) {
+        if (x.classList.contains("d-none")) {
+          x.classList.remove("d-none");
+        }
+      }
+    }
+  });
+
+  paystackRadio.addEventListener("click", () => {
+    if (paystackRadio.checked) {
+      console.log("checked!!!");
+      let x = document.querySelector("#bank-account-details");
+      if (x) {
+        if (!x.classList.contains("d-none")) {
+          x.classList.add("d-none");
+        }
+      }
+    }
+  });
 }

@@ -3,6 +3,57 @@
 @use "../_abstracts/colors";
 @use "../_partials/mixins";
 #solar-audit-page {
+    // checkbox
+    .ui-check {
+        display: block;
+        height: 18px;
+        width: 18px;
+        border: 1px solid #202020;
+        border-radius: 3px;
+    }
+    .checkbox {
+        position: absolute;
+        left: -1000000px;
+
+        + label {
+            cursor: pointer;
+        }
+    }
+    .checkbox[type="checkbox"]:checked + label {
+        .ui-check {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &::after {
+                @include mixins.after("\f00c", 0.85rem);
+            }
+        }
+    }
+
+    // radio
+    .ui-radio {
+        display: block;
+        height: 20px;
+        width: 20px;
+        border: 5px solid #f1f2f1;
+        border-radius: 50%;
+        margin: 0.5em auto;
+        margin-bottom: 0;
+        background-color: #c4c4c4;
+    }
+    .radio {
+        position: absolute;
+        left: -1000000px;
+
+        + label {
+            cursor: pointer;
+        }
+    }
+    .radio[type="radio"]:checked + label {
+        .ui-radio {
+            background-color: #209e02;
+        }
+    }
     .audit-progress-bar {
         max-width: 700px;
         margin: 0 auto;
@@ -152,38 +203,50 @@
             font-family: Montserrat;
             font-style: normal;
             font-weight: normal;
-            font-size: .9rem;
+            font-size: 0.9rem;
             line-height: 15px;
             color: #c4c4c4;
             .inner {
                 max-width: 500px;
                 margin: 0 auto;
             }
+        }
+    }
 
-            .ui-check {
-                display: block;
-                height: 18px;
-                width: 18px;
-                border: 1px solid #202020;
-                border-radius: 3px;
-            }
-            .time-option {
-                position: absolute;
-                left: -1000000px;
-
-                + label {
-                    cursor: pointer;
-                }
-            }
-            .time-option[type="checkbox"]:checked + label {
-                .ui-check {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    &::after {
-                        @include mixins.after("\f00c", 0.85rem);
+    #checkout {
+        .indicators {
+            li:nth-of-type(1),
+            li:nth-of-type(2) {
+                .ball {
+                    @include mixins.minmq(768px) {
+                        &::after {
+                            background-color: #209e02;
+                        }
                     }
                 }
+            }
+        }
+
+        #bank-account-details{
+    
+            .label {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 18px;
+    
+                color: #414143;
+            }
+            .bank-name,
+            .account-number {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 1.2rem;
+                line-height: 24px;
+    
+                color: #414143;
             }
         }
     }
