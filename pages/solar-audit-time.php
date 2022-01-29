@@ -25,7 +25,7 @@ include '../components/header.php'
                     <ul class="list-style-none pl-0 labels">
                         <li>SELECT A DATE </li>
                         <li>PICK A TIME </li>
-                        <li>CHECKOUT </li>
+                        <li>radioOUT </li>
                     </ul>
                     <ul class="list-style-none pl-0 indicators">
                         <li class="active">
@@ -56,32 +56,36 @@ include '../components/header.php'
                                     <tr>
                                         <th scope="row">1</th>
                                         <td>
-                                            9:00am - 11:00am
+                                            <label class="cursor-pointer" for="9am">9:00am - 11:00am</label>
                                         </td>
                                         <td>
-                                            <input type="checkbox" name="time" id="9am" class="checkbox">
+                                            <input type="radio" name="time" id="9am" class="radio">
                                             <label for="9am">
-                                                <span class="ui-check"></span>
+                                                <span class="ui-radio"></span>
                                             </label>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">2</th>
-                                        <td>12:00pm - 2:00pm</td>
                                         <td>
-                                            <input type="checkbox" name="time" id="12pm" class="checkbox">
+                                            <label class="cursor-pointer" for="12pm">12:00pm - 2:00pm</label>
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="time" id="12pm" class="radio">
                                             <label for="12pm">
-                                                <span class="ui-check"></span>
+                                                <span class="ui-radio"></span>
                                             </label>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">3</th>
-                                        <td>3:00pm - 5:00pm</td>
                                         <td>
-                                            <input type="checkbox" name="time" id="3pm" class="checkbox">
+                                            <label class="cursor-pointer" for="3pm">3:00pm - 5:00pm</label>
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="time" id="3pm" class="radio">
                                             <label for="3pm">
-                                                <span class="ui-check"></span>
+                                                <span class="ui-radio"></span>
                                             </label>
                                         </td>
                                     </tr>

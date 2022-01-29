@@ -86,7 +86,7 @@ include '../components/header.php'
                                         PAYMENT METHOD
                                     </div>
                                     <div class="card-body p-0">
-                                        <div class="px-3">
+                                        <div class="px-3 py-2">
                                             <ul class="row list-style-none pl-0 mb-0">
                                                 <li class="col-12 col-md-5">
                                                     <input class="radio" type="radio" name="payment-method" id="bankTransfer">

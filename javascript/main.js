@@ -261,8 +261,7 @@ const renderCalendar = () => {
       days += `<div class="today">${i}</div>`;
     } else {
       // days += `<div class="fully-booked"><a href="#" class="date-link">${i}</a></div>`; //for testing fully booked days
-      // days += `<div class="partly-booked"><a href="#" class="date-link">${i}</a></div>`; //for testing partially booked days
-     
+      // days += `<div class="partly-booked"><a href="#" class="date-link">${i}</a></div>`; //for testing partially booked days     
       days += `<div><a href="#" class="date-link">${i}</a></div>`;
 
     }
