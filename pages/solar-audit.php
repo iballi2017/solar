@@ -76,6 +76,7 @@ include '../components/header.php'
                         <div class="month">
                             <i class="fas fa-angle-left prev"></i>
                             <div class="date">
+                                <h6></h6>
                                 <h5></h5>
                                 <p></p>
                             </div>

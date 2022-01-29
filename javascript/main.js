@@ -168,6 +168,21 @@ Init();
 
 /* Calendar */
 const date = new Date();
+let month;
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
 
 const renderCalendar = () => {
   date.setDate(1);
@@ -196,27 +211,24 @@ const renderCalendar = () => {
 
   const nextDays = 7 - lastDayIndex - 1;
 
-  const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
   if (document.querySelector(".date h5")) {
     document.querySelector(".date h5").innerHTML = months[date.getMonth()];
+    month = months[date.getMonth()]
+    console.log(month);
   }
 
   if (document.querySelector(".date p")) {
     document.querySelector(".date p").innerHTML = new Date().toDateString();
   }
+
+  
+  // let _month = months.indexOf(month) + 1;
+  let _year = date.getFullYear();
+  if (document.querySelector(".date h6")) {
+    // document.querySelector(".date h6").innerHTML =  `${date.toLocaleDateString('en-us', { _month: 'long' })} ${_year}`;
+    document.querySelector(".date h6").innerHTML =  `${_year}`;
+  }
+
 
   let days = "";
 
@@ -248,6 +260,7 @@ if (document.querySelector(".prev")) {
   document.querySelector(".prev").addEventListener("click", () => {
     date.setMonth(date.getMonth() - 1);
     renderCalendar();
+    test();
   });
 }
 
@@ -255,20 +268,33 @@ if (document.querySelector(".next")) {
   document.querySelector(".next").addEventListener("click", () => {
     date.setMonth(date.getMonth() + 1);
     renderCalendar();
+    test();
   });
 }
 renderCalendar();
 
-
-var dateLinks = document.querySelectorAll(".date-link");
-for (let i = 0; i < dateLinks.length; i++) {
-  console.log(dateLinks[i]);
-  dateLinks[i].addEventListener("click", (e) => {
-    e.preventDefault();
-    console.log(e.target);//actual day
-    // console.log(months[date.getMonth()]); //actual month
-  })
+function test() {
+  var dateLinks = document.querySelectorAll(".date-link");
+  for (let i = 0; i < dateLinks.length; i++) {
+    // console.log(dateLinks[i]);
+    dateLinks[i].addEventListener("click", (e) => {
+      e.preventDefault();
+      console.log(e.target.innerHTML);//actual day
+      console.log(month);//actual month
+      console.log(months.indexOf(month) + 1)//actual month index
+      console.log(date.getFullYear());//actual year (current year thought);
+      let _day = e.target.innerHTML;
+      let _month = months.indexOf(month) + 1;
+      let _year = date.getFullYear();
+      let fullDate = `date : ${_day}/${_month}/${_year}`;
+      console.log(fullDate);
+      if (document.querySelector(".date h6")) {
+        document.querySelector(".date h6").innerHTML =  `${date.toLocaleDateString('en-us', { _month: 'long' })} ${_year}`;;
+      }
+    })
+  }
 }
+test();
 
 
 /* PAYMENT OPTIONS */
