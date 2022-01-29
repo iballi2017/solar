@@ -184,6 +184,16 @@ const months = [
   "December",
 ];
 
+// const weekDays = [
+//   "Sunday",
+//   "Monday",
+//   "Tuesday",
+//   "Wednesday",
+//   "Thursday",
+//   "Friday",
+//   "Saturday"
+// ]
+
 const renderCalendar = () => {
   date.setDate(1);
 
@@ -202,6 +212,7 @@ const renderCalendar = () => {
   ).getDate();
 
   const firstDayIndex = date.getDay();
+  console.log("firstDayIndex: ", firstDayIndex)
 
   const lastDayIndex = new Date(
     date.getFullYear(),
@@ -210,6 +221,10 @@ const renderCalendar = () => {
   ).getDay();
 
   const nextDays = 7 - lastDayIndex - 1;
+
+  console.log("lastDayIndex: ", lastDayIndex + 1);
+  console.log("nextDays: ", nextDays);
+  console.log("nextDays + lastDayIndex: ", nextDays + lastDayIndex + 1);
 
   if (document.querySelector(".date h5")) {
     document.querySelector(".date h5").innerHTML = months[date.getMonth()];
@@ -221,38 +236,48 @@ const renderCalendar = () => {
     document.querySelector(".date p").innerHTML = new Date().toDateString();
   }
 
-  
+
   // let _month = months.indexOf(month) + 1;
   let _year = date.getFullYear();
   if (document.querySelector(".date h6")) {
     // document.querySelector(".date h6").innerHTML =  `${date.toLocaleDateString('en-us', { _month: 'long' })} ${_year}`;
-    document.querySelector(".date h6").innerHTML =  `${_year}`;
+    document.querySelector(".date h6").innerHTML = `${_year}`;
   }
 
 
   let days = "";
 
   for (let x = firstDayIndex; x > 0; x--) {
+    console.log("padding days: ", firstDayIndex);
     days += `<div class="prev-date">${prevLastDay - x + 1}</div>`;
   }
 
   for (let i = 1; i <= lastDay; i++) {
+    // console.log("Number of days: ", lastDay);
     if (
       i === new Date().getDate() &&
       date.getMonth() === new Date().getMonth()
     ) {
       days += `<div class="today">${i}</div>`;
     } else {
+      // days += `<div class="fully-booked"><a href="#" class="date-link">${i}</a></div>`; //for testing fully booked days
+      // days += `<div class="partly-booked"><a href="#" class="date-link">${i}</a></div>`; //for testing partially booked days
+     
       days += `<div><a href="#" class="date-link">${i}</a></div>`;
+
     }
   }
 
   for (let j = 1; j <= nextDays; j++) {
+    console.log("nextDays: ", nextDays)
     days += `<div class="next-date">${j}</div>`;
     if (monthDays) {
       monthDays.innerHTML = days;
     }
   }
+
+
+
 };
 
 
@@ -274,11 +299,15 @@ if (document.querySelector(".next")) {
 renderCalendar();
 
 function test() {
-  var dateLinks = document.querySelectorAll(".date-link");
+  // var dateLinks = document.querySelectorAll(".date-link");
+  var dateLinks = document.querySelectorAll(".days div a");
   for (let i = 0; i < dateLinks.length; i++) {
     // console.log(dateLinks[i]);
     dateLinks[i].addEventListener("click", (e) => {
       e.preventDefault();
+      console.log(e.target.parentElement)
+      // e.target.parentElement.classList.add("fully-booked");
+      e.target.parentElement.classList.add("partly-booked");
       console.log(e.target.innerHTML);//actual day
       console.log(month);//actual month
       console.log(months.indexOf(month) + 1)//actual month index
@@ -289,12 +318,30 @@ function test() {
       let fullDate = `date : ${_day}/${_month}/${_year}`;
       console.log(fullDate);
       if (document.querySelector(".date h6")) {
-        document.querySelector(".date h6").innerHTML =  `${date.toLocaleDateString('en-us', { _month: 'long' })} ${_year}`;;
+        document.querySelector(".date h6").innerHTML = `${date.toLocaleDateString('en-us', {_month: 'long'})} ${_year}`;;
       }
     })
   }
 }
 test();
+
+/* Calenar tooltips */
+const partlyBooked = document.querySelectorAll(".partly-booked");
+const fullyBooked = document.querySelectorAll(".fully-booked");
+const available = document.querySelectorAll(".available");
+const dayOff = document.querySelectorAll(".day-off");
+
+function setCalendarTooltip(items, msg) {
+  if (items) {
+    for (let i = 0; i < items.length; i++) {
+      items[i].setAttribute("title", msg);;
+    }
+  }
+}
+setCalendarTooltip(partlyBooked, "Partly booked");
+setCalendarTooltip(fullyBooked, "Fully booked");
+setCalendarTooltip(available, "Available");
+setCalendarTooltip(dayOff, "Day off");
 
 
 /* PAYMENT OPTIONS */

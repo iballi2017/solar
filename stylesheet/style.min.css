@@ -1228,8 +1228,8 @@ body {
   height: 40px;
   left: 145px;
   top: 324px;
-  background: #209E02;
-  color: #FFFFFF;
+  background: #209e02;
+  color: #ffffff;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1288,7 +1288,7 @@ body {
   font-style: normal;
   font-weight: 900;
   font-size: 20px;
-  color: #15120F;
+  color: #15120f;
 }
 @media (min-width: 1000px) {
   #hero .carousel-caption h1 {
@@ -1325,11 +1325,11 @@ body {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: 1px solid #737373;
 }
 #hero .carousel-indicators li:hover, #hero .carousel-indicators li.active {
-  background: #209E02;
+  background: #209e02;
 }
 #hero .custom-slider-controls .controls g {
   transition: all 300ms ease-in-out;
@@ -1359,16 +1359,53 @@ body {
   }
 }
 
+#solar-audit-banner {
+  background-color: #eee623;
+}
+#solar-audit-banner .inner {
+  height: 150px;
+  max-width: 1500px;
+  margin: 0 auto;
+  background-image: url(../assets/images/solar-audit-banner-image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  #solar-audit-banner .inner {
+    height: 111px;
+    background-size: contain;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 500px) {
+  #solar-audit-banner .inner {
+    height: 72px;
+    background-size: contain;
+  }
+}
+@media screen and (max-width: 500px) and (min-width: 360px) {
+  #solar-audit-banner .inner {
+    height: 45px;
+    background-size: contain;
+  }
+}
+@media (max-width: 360px) {
+  #solar-audit-banner .inner {
+    height: 37px;
+    background-size: contain;
+  }
+}
+
 .tag-label {
   width: 100%;
   height: 55px;
-  background: #EE8B23;
+  background: #ee8b23;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;

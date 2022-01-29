@@ -351,7 +351,13 @@
             </nav>
         </section> -->
 
-
+        <section>
+            <a href="./pages/solar-audit.php">
+                <div id="solar-audit-banner">
+                    <div class="inner"> </div>
+                </div>
+            </a>
+        </section>
         <section id="what-we-do" class="bg-white">
             <div class="container auto-wrapper">
                 <div class="inner">
@@ -492,10 +498,10 @@
                             </li>
                             <li class="different-capacity">
                                 <div class="content">
-                                    <h5 class="title">Different Capacity</h5>                                    
+                                    <h5 class="title">Different Capacity</h5>
                                     <p class="body">We offer various alternatives and dynamic services.</p>
                                 </div>
-                            </li>                            
+                            </li>
                             <li class="quality">
                                 <div class="content">
                                     <h5 class="title">Quality</h5>
@@ -504,7 +510,7 @@
                                 </div>
                             </li>
                             <li class="competitive-price">
-                                                           <div class="content">
+                                <div class="content">
                                     <h5 class="title">Competitive Price</h5>
                                     <p class="body">Our prices reflect the excellent services we render to our clients.
                                     </p>
@@ -703,15 +709,15 @@
     <script>
         $(document).ready(function() {
             $(function() {
-                    $('.lazy').lazy({
-                        visibleOnly: true,
-                        effect: "fadeIn",
-                        effectTime: 2000,
-                        threshold: 0,
-                        onError: function(element) {
-                            console.log('error loading ' + element.data('src'));
-                        }
-                    });
+                $('.lazy').lazy({
+                    visibleOnly: true,
+                    effect: "fadeIn",
+                    effectTime: 2000,
+                    threshold: 0,
+                    onError: function(element) {
+                        console.log('error loading ' + element.data('src'));
+                    }
+                });
             });
 
         })
